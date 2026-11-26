@@ -6,8 +6,8 @@ const T=32,ID='x5_dinorex';
 const COL={rock:'#5c4034',rockTop:'#8a6450',steel:'#4e5462',steelTop:'#7a8294',ledge:'#c8aa78',crumble:'#b07a4a',safe:'#4fd08a',
  cart:'#9a7a58',gate:'#d24a5a',cracked:'#8f7b6a',lava:'#ff6e1e',lavaTop:'#ffd27a',vent:'#ffb03c',press:'#9aa0b4'};
 const ROOMS=[['R1 BÃI ĐÁP',0,30,60,60,'#2a1c1e'],['R2 SƯỜN ĐÁ LĂN',60,30,140,62,'#2c1e1e'],['R3 GIẾNG THÔNG HƠI',140,6,160,62,'#2e2022'],
- ['R4 ĐƯỜNG RAY QUẶNG',160,7,230,19,'#301e1c'],['MINI-BOSS',230,7,260,24,'#3a1a24'],['R5 LÒ ÉP',260,7,304,24,'#22262e'],
- ['R6 GIẾNG NHAM DÂNG',302,4,334,76,'#341c1a'],['R7 KÊNH XỈ',334,6,394,24,'#24242e'],['R8 CỔNG',394,6,424,24,'#24242e'],['BOSS',424,8,454,24,'#3c1a22']];
+ ['R4 ĐƯỜNG RAY QUẶNG',160,7,230,18,'#301e1c'],['MINI-BOSS',230,6,260,17,'#3a1a24'],['R5 LÒ ÉP',260,8,304,19,'#22262e'],
+ ['R6 GIẾNG NHAM DÂNG',302,4,334,76,'#341c1a'],['R7 KÊNH XỈ',334,6,394,17,'#24242e'],['R8 CỔNG',394,6,424,17,'#24242e'],['BOSS',424,8,454,19,'#3c1a22']];
 
 function build(s){
  const W={width:454*T,height:78*T,floor:18*T,platforms:[],hazards:[],enemies:[],bullets:[],particles:[],items:[],checkpoints:[{x:3*T,y:52*T},{x:162*T,y:14*T},{x:337*T,y:16*T}],
