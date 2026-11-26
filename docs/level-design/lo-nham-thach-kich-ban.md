@@ -14,7 +14,8 @@ Màn này thay cho `x5_dinorex` hiện tại. Boss, capsule Gaea Arm, 4 Reploid,
 | Nền parallax | **Krita** (miễn phí) | Vẽ nền xa và nền giữa khổ lớn. |
 | Bảng màu | Lospec, 24–32 màu cho chủ đề lửa | Đồng bộ tông với sprite PS. |
 
-- **Kích thước:** 1 ô = 32px trong game (vẽ ở 16px rồi phóng ×2). Khung hình = 30×17 ô. Nhân vật cao khoảng 1.6 ô.
+- **Kích thước:** 1 ô = 32px trong game (vẽ ở 16px rồi phóng ×2). Khung hình = 30×17 ô (bản Unity: 15×8.4 ô, phóng ×2 như Mega Man gốc). Nhân vật cao khoảng 1.6 ô.
+- **Chiều cao hành lang:** từ trần đến sàn khoảng 8–9 ô, gần đúng một màn hình như Mega Man truyền thống (R4, mini-boss, R5, R7, R8; phòng boss giới hạn camera từ y 8).
 - **Lớp LDtk:**
   - `Collision`: IntGrid. Giá trị: 1 = đặc, 2 = dốc 45°, 3 = dốc 22.5°, 4 = kệ một chiều, 5 = sàn vỡ, 6 = băng chuyền, 9 = dung nham.
   - `Tiles`: tự ghép từ Collision.
@@ -83,7 +84,7 @@ Tọa độ tính theo ô, gốc (0,0) ở góc trên trái thế giới, y tăn
   - Shadow: miễn sát thương gai nhưng **không** miễn hơi nóng.
 - **Lối ra:** mép phải phía trên, dẫn sang R4.
 
-### R4 – Đường ray quặng (x 160–230, ray ở y 12, dung nham ở y 20) · độ khó 4
+### R4 – Đường ray quặng (x 160–230, trần y 8, ray ở y 12, dung nham ở y 15) · độ khó 4
 - **Checkpoint 1** ở đầu phòng.
 - **Mục đích:** nhảy trên vật thể di động phía trên dung nham.
 - **Địa hình:**
@@ -103,7 +104,7 @@ Tọa độ tính theo ô, gốc (0,0) ở góc trên trái thế giới, y tăn
   - Lao ngang sát sàn: nhảy hoặc đá tường để né.
 - **Phần thưởng:** mở cửa vào Area 2. Hạ không mất máu thì được thưởng Souls.
 
-### R5 – Lò ép (x 260–312, nội thất, sàn y 18) · độ khó 5
+### R5 – Lò ép (x 260–312, nội thất, trần y 9, sàn y 18) · độ khó 5
 - **Mục đích:** né theo nhịp trong không gian chật. Đây cũng là lần đổi không gian: từ ngoài trời vào trong lò.
 - **Địa hình:**
   - Trần thấp.
@@ -128,7 +129,7 @@ Tọa độ tính theo ô, gốc (0,0) ở góc trên trái thế giới, y tăn
 - **Địch:** 2 Drone, chỉ để gây áp lực. Bắn hạ hay né đều được.
 - **Lối ra:** kệ rộng ở đỉnh, đi thẳng sang R7. Dung nham dừng lại ngay dưới mép cửa.
 
-### R7 – Kênh xỉ (x 344–404, nội thất, sàn y 16) · độ khó 6
+### R7 – Kênh xỉ (x 344–404, nội thất, trần y 8, sàn y 16) · độ khó 6
 - **Checkpoint 2** ở đầu phòng.
 - **Mục đích:** kết hợp mọi thứ đã học: nhịp, nhảy, bắn.
 - **Bẫy:**

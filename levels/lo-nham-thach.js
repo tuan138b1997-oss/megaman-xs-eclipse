@@ -6,8 +6,8 @@ const T=32,ID='x5_dinorex';
 const COL={rock:'#5c4034',rockTop:'#8a6450',steel:'#4e5462',steelTop:'#7a8294',ledge:'#c8aa78',crumble:'#b07a4a',safe:'#4fd08a',
  cart:'#9a7a58',gate:'#d24a5a',cracked:'#8f7b6a',lava:'#ff6e1e',lavaTop:'#ffd27a',vent:'#ffb03c',press:'#9aa0b4'};
 const ROOMS=[['R1 BÃI ĐÁP',0,30,60,60,'#2a1c1e'],['R2 SƯỜN ĐÁ LĂN',60,30,140,62,'#2c1e1e'],['R3 GIẾNG THÔNG HƠI',140,6,160,62,'#2e2022'],
- ['R4 ĐƯỜNG RAY QUẶNG',160,3,230,24,'#301e1c'],['MINI-BOSS',230,3,260,24,'#3a1a24'],['R5 LÒ ÉP',260,4,304,24,'#22262e'],
- ['R6 GIẾNG NHAM DÂNG',302,4,334,76,'#341c1a'],['R7 KÊNH XỈ',334,4,394,24,'#24242e'],['R8 CỔNG',394,4,424,24,'#24242e'],['BOSS',424,4,454,24,'#3c1a22']];
+ ['R4 ĐƯỜNG RAY QUẶNG',160,7,230,19,'#301e1c'],['MINI-BOSS',230,7,260,24,'#3a1a24'],['R5 LÒ ÉP',260,7,304,24,'#22262e'],
+ ['R6 GIẾNG NHAM DÂNG',302,4,334,76,'#341c1a'],['R7 KÊNH XỈ',334,6,394,24,'#24242e'],['R8 CỔNG',394,6,424,24,'#24242e'],['BOSS',424,8,454,24,'#3c1a22']];
 
 function build(s){
  const W={width:454*T,height:78*T,floor:18*T,platforms:[],hazards:[],enemies:[],bullets:[],particles:[],items:[],checkpoints:[{x:3*T,y:52*T},{x:162*T,y:14*T},{x:337*T,y:16*T}],
@@ -42,22 +42,22 @@ function build(s){
  [['L',50],['R',44],['L',38],['R',32],['L',26],['R',20]].forEach(([sd,y],i)=>P.vents.push({x:(sd==='L'?142:154)*T,y:y*T,w:4*T,h:1.4*T,on:1.2,off:1.6,phase:i*.55,dir:sd==='L'?1:-1}));
  for(const [x,y,w] of [[146,46,3],[150,34,3],[146,22,3]])ledge(x,y,w);
  // ---------- R4 Đường ray quặng ----------
- solid(160,3,230,4);solid(160,14,168,24);solid(168,22,222,24);lava(168,20,222,22);
- solid(184,16,187,22);solid(204,16,207,22);solid(222,14,230,24);
+ solid(160,7,230,8);solid(160,14,168,19);solid(168,17,222,19);lava(168,15,222,17);
+ solid(184,14,187,17);solid(204,14,207,17);solid(222,14,230,19);
  for(let i=0;i<4;i++){const c=ledge(164+i*15.5,12,4,{cart:true,area:'cart'});P.carts.push(c);}
  P.cartSpan=[160*T,226*T];P.cartSpeed=110;
- enemy('drone',180,9);enemy('drone',195,8);enemy('drone',211,9);
- ledge(195,18.6,4);W.items.push({id:ID+':tank',type:'tank',x:196.6*T,y:18.6*T-30,w:25,h:30,got:false});
+ enemy('drone',180,11);enemy('drone',195,10.5);enemy('drone',211,11);
+ ledge(195,14,4);W.items.push({id:ID+':tank',type:'tank',x:196.6*T,y:14*T-30,w:25,h:30,got:false});
  // ---------- Mini-boss: arena + gate ----------
- solid(230,3,260,4);solid(230,16,260,24);
- P.gate=solid(258,4,260,16,'gate',{gate:true});
+ solid(230,7,260,8);solid(230,16,260,24);
+ P.gate=solid(258,8,260,16,'gate',{gate:true});
  W.subs.push({id:'donut',x:242*T,y:9*T,w:110,h:110,hp:45,max:45,inv:0,cool:1.4,dead:false});
  // ---------- AREA 2 · R5 Lò ép ----------
- solid(260,4,312,6,'steel');const belt=solid(260,18,304,24,'steel',{belt:-120});P.belt=belt;
- [270,278,286,294].forEach((x,i)=>P.presses.push({x:x*T,top:6*T,w:4*T,low:18*T-14-60,phase:i*.45,y:6*T}));
+ solid(260,7,312,9,'steel');const belt=solid(260,18,304,24,'steel',{belt:-120});P.belt=belt;
+ [270,278,286,294].forEach((x,i)=>P.presses.push({x:x*T,top:9*T,w:4*T,low:18*T-14-60,phase:i*.45,y:6*T}));
  enemy('sniper',291,18);rescue(282,18);
  for(let x=304;x<312;x+=4)P.crumbles.push({pl:solid(x,18,x+4,19,'steel',{crumble:true,bridge:true}),delay:.5,respawn:5});
- solid(312,6,313,18,'steel');
+ solid(312,9,313,18,'steel');
  // ---------- R6 Giếng nham dâng (rising lava climb) ----------
  solid(302,19,304,76);solid(332,16,334,76);solid(304,72,332,76);
  const R6=[[308,66,4,'safe0'],[322,60,4,'c'],[310,54,4,'safe'],[324,48,4,'c'],[308,42,4,'safe'],[322,36,4,'c'],[310,30,4,''],[324,24,4,'c'],[318,18,6,'']];
@@ -66,16 +66,16 @@ function build(s){
  P.riser={x:304*T,w:28*T,bottom:74*T,top:74*T,stop:19.5*T,active:false,pause:0};
  enemy('drone',306,38);enemy('drone',327,28);
  // ---------- R7 Kênh xỉ ----------
- solid(334,4,394,6,'steel');solid(334,16,380,24,'steel');solid(380,22,384,24,'steel');lava(380,19,384,22);solid(384,16,388,24,'steel');solid(390,16,394,24,'steel');
+ solid(334,6,394,8,'steel');solid(334,16,380,24,'steel');solid(380,22,384,24,'steel');lava(380,19,384,22);solid(384,16,388,24,'steel');solid(390,16,394,24,'steel');
  const crack=solid(388,16,390,17,'cracked',{cracked:true});P.cracked.push(crack);
  solid(386,19,394,20,'steel');solid(386,20,394,24,'steel');
  W.items.push({id:ID+':gaea:arm',type:'capsule',armor:'gaea',part:'arm',x:391.2*T,y:19*T-70,w:44,h:70,got:(save.parts.gaea||[]).includes('arm')});
- [346,358,370].forEach((x,i)=>P.falls.push({x:x*T,y:6*T,w:2*T,h:10*T,on:1.5,off:1.5,phase:i*.9}));
+ [346,358,370].forEach((x,i)=>P.falls.push({x:x*T,y:8*T,w:2*T,h:8*T,on:1.5,off:1.5,phase:i*.9}));
  P.vents.push({x:352*T,y:12*T,w:1.6*T,h:4*T,on:1.0,off:1.4,phase:0,dir:0,hp:6,turret:true,label:'up'});
- P.vents.push({x:366*T,y:6*T,w:1.6*T,h:4*T,on:1.0,off:1.4,phase:.7,dir:0,hp:6,turret:true,label:'down'});
- rescue(364,16);enemy('drone',375,10);
+ P.vents.push({x:366*T,y:8*T,w:1.6*T,h:4*T,on:1.0,off:1.4,phase:.7,dir:0,hp:6,turret:true,label:'down'});
+ rescue(364,16);enemy('drone',375,11);
  // ---------- R8 Cổng + BOSS ----------
- solid(394,4,424,6,'steel');solid(394,16,424,24,'steel');rescue(404,16);
+ solid(394,6,424,8,'steel');solid(394,16,424,24,'steel');rescue(404,16);
  solid(424,18,454,24);lava(424,17,427,18,'boss');lava(451,17,454,18,'boss');P.bossLava=P.lava.slice(-2);
  W.platforms.push({x:-99999,y:-99999,w:0,h:0,kind:'proto',layer:'front'});
  W.boss={x:W.width-250,y:W.floor-120,w:80,h:120,vx:0,vy:0,dir:-1,max:140+s.index*5,hp:140+s.index*5,inv:0,t:0,state:0,action:0,attackAt:1.2,slow:0};
