@@ -1,4 +1,4 @@
-# Vẽ các element mới (pixel art) dùng chung cho 25 màn: assets/levels/common/el-*.png
+# Vẽ tay vài element không có trong kho sprite gốc: assets/levels/common/el-*.png
 # Mỗi sprite vẽ ở độ phân giải gốc (1 ô = 16px), game phóng ×2 khi vẽ. Ảnh nhiều khung xếp ngang.
 # Chạy: python3 tools/draw_elements.py   (từ docs/level-design/campaign)
 import os, json, math
@@ -158,12 +158,8 @@ def laser(f):
     return im
 
 
-SPRITES = {
-    'el-spike': spike(), 'el-thorn': thorn(), 'el-mine': sheet([mine(0), mine(1)]), 'el-elec': sheet([elec(f) for f in range(3)]),
-    'el-emitter': emitter(), 'el-holo': sheet([holo(0), holo(1)]), 'el-holob': sheet([holoB(0), holoB(1)]), 'el-bounce': bounce(),
-    'el-thruster': sheet([thruster(f) for f in range(3)]), 'el-turret': sheet([turret(0), turret(1)]), 'el-orb': sheet([orb(f) for f in range(4)]),
-    'el-mud': mud(), 'el-water': sheet([water(f) for f in range(4)]), 'el-gate': gate(), 'el-laser': sheet([laser(f) for f in range(3)]),
-}
+# Chỉ vẽ tay những thứ kho sprite gốc X5/X6 không có. Element còn lại cắt từ assets/archive bằng slice_archive.py.
+SPRITES = {'el-bounce': bounce(), 'el-mud': mud(), 'el-water': sheet([water(f) for f in range(4)])}
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
@@ -181,5 +177,5 @@ if __name__ == '__main__':
         big = im.resize((im.width * 2, im.height * 2), Image.NEAREST)
         pv.alpha_composite(big.crop((0, 0, min(big.width, 120), big.height)), (x, y + 12))
         d.text((x, y), n, fill=(230, 220, 200, 255))
-    pv.save(os.path.join(REPO, 'docs', 'level-design', 'campaign', 'elements-preview.png'))
+    pv.save(os.path.join(REPO, 'docs', 'level-design', 'campaign', 'elements-handdrawn-preview.png'))
     print(len(SPRITES), 'sprites')
