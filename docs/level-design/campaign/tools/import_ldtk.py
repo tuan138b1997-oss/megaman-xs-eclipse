@@ -45,7 +45,7 @@ def import_one(sid):
     old = json.load(open(old_p, encoding='utf8')) if os.path.exists(old_p) else {}
     theme = old.get('theme') or d['defs']['tilesets'][0]['identifier'].split('_')[-1].lower()
     L = dict(name=old.get('name', sid), stage=sid, theme=theme, tileSize=G, rooms=[], checkpoints=[], solids=[], slopes=[], ledges=[], conveyors=[],
-             hazards=[], zones=[], walls=[], switches=[], portals=[], enemies=[], items=[], turrets=[], vehicles=[], subBoss=None, palette=old.get('palette', {}))
+             hazards=[], zones=[], walls=[], switches=[], portals=[], enemies=[], items=[], turrets=[], vehicles=[], subBoss=None, palette=old.get('palette', {}), specials=[])
     gates, switches, portals = {}, [], []
     boss = None
     for lv in d['levels']:
@@ -82,6 +82,8 @@ def import_one(sid):
                 h = dict(type=t, **box, on=F.get('on'), off=F.get('off'), phase=F.get('phase') or 0)
                 if n == 'Hazard_LavaColumn' or F.get('column'): h['column'] = True
                 L['hazards'].append(h)
+            elif n in ('Hazard_Press', 'Hazard_ChaseWall', 'Zone_RisingMagma') and F.get('params'):
+                sp = json.loads(F['params']); sp.update({k: box[k] for k in ('x', 'w') if k in sp}); L['specials'].append(sp)
             elif n == 'Hazard_Press': L['hazards'].append(dict(type='trash', **box, on=None, off=None, phase=F.get('phase') or 0))
             elif n == 'Hazard_Mine': L['hazards'].append(dict(type='mine', x=round(X, 2), y=round(Y, 2), w=1, h=1, on=None, off=None, phase=0))
             elif n == 'Hazard_Void': L['hazards'].append(dict(type='void', **box, on=None, off=None, phase=0))
@@ -103,7 +105,7 @@ def import_one(sid):
                 if F.get('kind') == 'subBoss': gates['__sub__'] = box
                 else: gates[F.get('id')] = len(L['walls']); L['walls'].append(dict(type=F.get('kind') or 'gate', **box))
             elif n == 'Switch': switches.append((box, F.get('targets') or ''))
-            elif n == 'Portal': portals.append((box, F.get('id'), F.get('to'), F.get('rush'), code))
+            elif n == 'Portal': portals.append((box, F.get('id'), F.get('to'), F.get('rush'), code, F.get('alt')))
             elif n == 'Turret': L['turrets'].append(dict(x=box['x'], y=box['y'], hp=F.get('hp') or 6))
             elif n == 'Vehicle': L['vehicles'].append(dict(type='chaser' if F.get('type') == 'rideChaser' else 'mech', x=box['x'], y=round(Y + 2.2, 2)))
             elif n == 'SubBoss': L['subBoss'] = dict(id=F.get('id') or 'donut', x=box['x'], y=box['y'], hp=F.get('hp') or 45, room=code)
@@ -115,11 +117,12 @@ def import_one(sid):
                 L['hazards'].append(dict(type=DEFAULT_HAZ.get(theme, 'spike'), x=rx + x, y=ry + y, w=w, h=h, on=None, off=None, phase=0))
     for box, tg in switches:
         L['switches'].append(dict(x=box['x'], y=box['y'], targets=[gates[t] for t in tg.split(',') if t in gates]))
-    ids = {pid: i for i, (_, pid, _, _, _) in enumerate(portals)}
-    for box, pid, to, rush, room in portals:
+    ids = {pid: i for i, (_, pid, _, _, _, _) in enumerate(portals)}
+    for box, pid, to, rush, room, alt in portals:
         po = dict(x=box['x'], y=round(box['y'] + 2.5, 2), room=room)
         if rush is not None: po['rush'] = rush
         if to in ids: po['to'] = ids[to]
+        if alt: po['alt'] = True
         L['portals'].append(po)
     if L['subBoss'] and '__sub__' in gates: L['subBoss']['gate'] = gates['__sub__']
     rooms = L['rooms']; br = rooms[-1]

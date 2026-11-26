@@ -604,7 +604,8 @@
   {
    "x": 231.3,
    "y": 18.0,
-   "room": "R5"
+   "room": "R5",
+   "to": 2
   }
  ],
  "enemies": [
@@ -730,6 +731,7 @@
    "h": 13.0
   }
  },
+ "specials": [],
  "width": 432,
  "height": 66,
  "floorBoss": 24.0,

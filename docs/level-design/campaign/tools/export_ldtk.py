@@ -31,7 +31,8 @@ ENTITY_DEFS = [
     ('Item_SubTank', '#78c8ff', 26, 30, False, None, [('id', S)]),
     ('Item_Orb', '#ffe080', 24, 24, False, 'el-orb', []),
     ('Hazard_Flame', '#ff9a3c', 32, 32, True, 'el-fireball', [('on', F), ('off', F), ('phase', F)]),
-    ('Hazard_Press', '#e0b030', 64, 32, True, None, [('wait', F), ('slam', F), ('lift', F), ('phase', F)]),
+    ('Hazard_Press', '#e0b030', 64, 32, True, None, [('wait', F), ('slam', F), ('lift', F), ('phase', F), ('params', S)]),
+    ('Hazard_ChaseWall', '#c8c8d2', 64, 320, True, None, [('look', S), ('speed', F), ('params', S)]),
     ('Hazard_RollingRock', '#c09070', 32, 32, True, None, [('interval', F), ('speed', F), ('maxSpeed', F)]),
     ('Hazard_Laser', '#ff3c50', 20, 64, True, 'el-laser', [('on', F), ('off', F), ('phase', F)]),
     ('Hazard_Elec', '#a8e8ff', 64, 16, True, 'el-elec', [('on', F), ('off', F), ('phase', F), ('column', B)]),
@@ -47,7 +48,7 @@ ENTITY_DEFS = [
     ('Platform_Phase', '#a0e6ff', 96, 16, True, 'el-holo', [('phase', S)]),
     ('Platform_Bounce', '#ff8cdc', 64, 16, True, 'el-bounce', [('power', F)]),
     ('Conveyor', '#5a5e70', 128, 16, True, None, [('speed', F)]),
-    ('Zone_RisingMagma', '#ff6e1e', 128, 256, True, None, [('speedLow', F), ('speedHigh', F), ('stopY', F)]),
+    ('Zone_RisingMagma', '#ff6e1e', 128, 256, True, None, [('speedLow', F), ('speedHigh', F), ('stopY', F), ('params', S)]),
     ('Zone_GravityFlip', '#ff78dc', 128, 128, True, None, [('mode', S), ('label', S)]),
     ('Zone_Updraft', '#a0f0c8', 96, 256, True, None, [('power', F)]),
     ('Zone_Water', '#2a6ab8', 128, 128, True, None, []),
@@ -65,7 +66,7 @@ ENTITY_DEFS = [
     ('Switch', '#ffff78', 32, 32, False, 'el-switch', [('targets', S)]),
     ('Gate', '#d24a5a', 32, 96, True, 'el-gate', [('kind', S), ('id', S)]),
     ('Wall_Breakable', '#9a7b9a', 64, 64, True, 'el-wall-steel', [('breakBy', S), ('hp', I)]),
-    ('Portal', '#bfe8ff', 45, 80, False, 'el-teleporter', [('id', S), ('to', S), ('rush', I)]),
+    ('Portal', '#bfe8ff', 45, 80, False, 'el-teleporter', [('id', S), ('to', S), ('rush', I), ('alt', B)]),
     ('Turret', '#ffb04a', 32, 32, False, 'el-turret', [('hp', I)]),
     ('Vehicle', '#ffe678', 70, 70, False, None, [('type', S)]),
     ('SubBoss', '#ff3c82', 110, 110, True, None, [('id', S), ('hp', I)]),
@@ -287,13 +288,18 @@ def build_project(L, atlas_rects, atlas_size):
     for s in L['switches']:
         add('Switch', s['x'], s['y'], targets=','.join(wall_ids.get(t, str(t)) for t in s['targets']))
     for i, po in enumerate(L['portals']):
-        add('Portal', po['x'], po['y'] - 2.5, id=f'portal{i}', to=(f"portal{po['to']}" if po.get('to') is not None else None), rush=po.get('rush'))
+        add('Portal', po['x'], po['y'] - 2.5, id=f'portal{i}', to=(f"portal{po['to']}" if po.get('to') is not None else None), rush=po.get('rush'), alt=po.get('alt'))
     for t in L['turrets']: add('Turret', t['x'], t['y'], hp=t['hp'])
     for v in L['vehicles']: add('Vehicle', v['x'], v['y'] - 2.2, type={'mech': 'rideArmor', 'chaser': 'rideChaser'}[v['type']])
     if L.get('subBoss'):
         sb = L['subBoss']; add('SubBoss', sb['x'], sb['y'], 110 / G, 110 / G, id=sb['id'], hp=sb['hp'])
         if sb.get('gate'): g = sb['gate']; add('Gate', g['x'], g['y'], g['w'], g['h'], kind='subBoss', id='subBossGate')
     add('BossGate', L['bossGateX'], L['floorBoss'] - 4, 1, 4, boss=L['stage'])
+    for sp in L.get('specials', []):
+        prm = json.dumps(sp, ensure_ascii=False)
+        if sp['type'] == 'crusher': add('Hazard_Press', sp['x'], sp['y'], sp['w'], sp['h'], wait=sp['wait'], slam=sp['slam'], lift=sp['lift'], phase=sp['phase'], params=prm)
+        elif sp['type'] == 'chaser': add('Hazard_ChaseWall', sp['x'], sp['y'], sp['w'], sp['h'], look=sp.get('look'), speed=sp.get('speed0'), params=prm)
+        elif sp['type'] == 'riser': add('Zone_RisingMagma', sp['x'], sp['stop'], sp['w'], sp['bottom'] - sp['stop'], stopY=sp['stop'], params=prm)
     for name, b in L.get('extra', []):
         add(name, **b)
 

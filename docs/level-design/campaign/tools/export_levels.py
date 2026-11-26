@@ -13,7 +13,7 @@ src = open(os.path.join(REPO, 'campaign-data.js'), encoding='utf8').read()
 BP = json.JSONDecoder().raw_decode(src[src.index('{'):])[0]
 BPS = {s['id']: s for s in BP['stages']}
 
-SUBS = {'x5_grizzly': 'truck', 'x5_makkoeen': 'submarine', 'x6_mijinion': 'illumina'}
+SUBS = {'x5_grizzly': 'truck', 'x5_makkoeen': 'submarine', 'x6_mijinion': 'illumina', 'x6_heatnix': 'donut'}
 CHASER = {'x5_kraken', 'x6_wolfang'}
 TIMING = {'laser': (2.0, 1.0), 'elec': (1.5, 1.5), 'fire': (1.0, 2.5), 'lava': (1.5, 3.0), 'steam': (1.2, 1.6), 'trash': (None, None)}
 
@@ -29,7 +29,7 @@ def export(sid):
     boss = rooms[-1]
     assert boss['kind'] == 'boss', sid
     L = dict(name=st['title'], stage=sid, theme=bp['theme'], tileSize=32, rooms=[], checkpoints=[], solids=[], slopes=[], ledges=[],
-             conveyors=[], hazards=[], zones=[], walls=[], switches=[], portals=[], enemies=[], items=[], turrets=[], vehicles=[], subBoss=None)
+             conveyors=[], hazards=[], zones=[], walls=[], switches=[], portals=[], enemies=[], items=[], turrets=[], vehicles=[], subBoss=None, specials=[])
     caps = bp.get('capsules') or []
     hz_i = 0
     rescue_i = 0
@@ -40,6 +40,17 @@ def export(sid):
         bottom, top = oy + r['h'], oy
         L['rooms'].append(dict(code=r['code'], name=r['name'], x=ox, y=oy, w=r['w'], h=r['h'], area=area, kind=r['kind'] or 'room', difficulty=r['diff']))
         geo = r['geo']
+        sp_boxes = []
+        for g in geo:
+            if g[0] == 'special':
+                kw = dict(g[2]); kw['type'] = g[1]
+                for k in ('x', 'x1', 'trigger'):
+                    if k in kw: kw[k] = r1(ox + kw[k])
+                for k in ('y', 'low', 'bottom', 'stop'):
+                    if k in kw: kw[k] = r1(oy + kw[k])
+                if g[1] == 'trigger' or kw['type'] == 'riser' and 'trigger' in kw: pass
+                kw['room'] = r['code']; L['specials'].append(kw)
+                sp_boxes.append((g[2].get('x', 0), g[2].get('y', 0), g[2].get('w', 0), g[2].get('h', 0)))
         arrows = [g for g in geo if g[0] == 'arrow']
         switches = sorted([g for g in geo if g[0] == 'ent' and g[1] == 'K'], key=lambda g: g[2])
         sw_index = {}
@@ -88,6 +99,8 @@ def export(sid):
                 _, k, x, y, w, h = g
                 box = dict(x=r1(ox + x), y=r1(oy + y), w=r1(w), h=r1(h))
                 if k == 'shelf': continue
+                if k == 'trash' and (w <= .3 or h <= .3): continue  # dây cáp / ray: trang trí
+                if k == 'trash' and any(x < bx + bw and bx < x + w and y < by + bh and by < y + h for bx, by, bw, bh in sp_boxes): continue
                 si = link_switch(x) if k in ('laser', 'elec', 'door') else None
                 if si is not None:
                     L['walls'].append(dict(type='laser' if k in ('laser', 'elec') else 'gate', **box))
@@ -123,6 +136,9 @@ def export(sid):
                     mode = 'well' if 'hút' in lab else 'flipcycle' if 'mỗi' in lab else zone_mode_default
                     if sid == 'x5_necrobat' and mode == 'flipcycle': mode = 'lowgrav'
                     z['type'] = mode
+                if k == 'alarm' and sid == 'x6_mijinion':  # tâm ngắm Illumina: phủ cả phòng, mỗi phòng một vùng
+                    if any(z2['type'] == 'alarm' and z2.get('room') == r['code'] for z2 in L['zones']): continue
+                    z.update(x=ox, y=oy, w=r['w'], h=r['h'], label='tâm ngắm Illumina', room=r['code'])
                 L['zones'].append(z)
             elif t == 'ent':
                 _, c, x, y = g
@@ -161,6 +177,9 @@ def export(sid):
         for idx in by.values():
             for a, b in zip(idx[0::2], idx[1::2]):
                 L['portals'][a]['to'] = b; L['portals'][b]['to'] = a
+            if len(idx) % 2:
+                if sid in ('x6_turtloid', 'x6_sheldon'): L['portals'][idx[-1]]['alt'] = True  # lối thay thế sang Nightmare Zero / Dynamo (dữ liệu game)
+                else: L['portals'][idx[-1]]['to'] = idx[0]  # cổng vòng: đưa về cổng đầu phòng
     # checkpoint đầu màn
     r0 = rooms[0]
     start_y = next((r0['y'] + p[1] for g in r0['geo'] if g[0] == 'floor' for p in g[1] if p), r0['y'] + r0['h'] - 2)

@@ -22,6 +22,7 @@ rooms = [
 - **Trang trí:** núi rác ở nền, khối kim loại nén, đèn cảnh báo vàng-đen.'''),
 
  Room('R2', 'Trần ép 1', 44, 50, 64, 14, 3, [
+   SP('crusher', x=0, y=2, w=64, h=1.5, low=8.5, wait=3.2, slam=.8, hold=.5, lift=.5, phase=0),
    B(0, 0, 64, 2), BAR(0, 2, 64, 1.5, 'trash'), pits([10, 26, 42, 56]), X(2, 4.5, 'trần ép hạ xuống còn 1.5 ô mỗi 5s'),
    E('S', 44, 12), E('B', 34, 9), E('R', 28, 12), PATH((1, 9), (63, 9))], '''
 - **Mục đích:** giới thiệu **trần ép toàn phòng**, khác với máy ép đơn lẻ.
@@ -46,6 +47,7 @@ rooms = [
 - **Địch:** 1 Drone ruồi.'''),
 
  Room('R4', 'Trần ép 2', 132, 78, 64, 14, 5, [
+   SP('crusher', x=0, y=2, w=30, h=1.5, low=8.5, wait=3.2, slam=.8, hold=.5, lift=.5, phase=0), SP('crusher', x=34, y=2, w=30, h=1.5, low=8.5, wait=1.7, slam=.8, hold=.5, lift=.5, phase=1.2),
    B(0, 0, 64, 2), BAR(0, 2, 30, 1.5, 'trash'), BAR(34, 2, 30, 1.5, 'trash'), B(30, 2, 4, 6), pits([8, 20, 40, 52]),
    X(2, 4.5, 'trần A: 5s'), X(36, 4.5, 'trần B: 3.5s'), CV(42, 9.4, 18, -1),
    E('S', 56, 9), E('D', 24, 5), E('R', 10, 12), PATH((1, 9), (63, 9))], '''
@@ -90,6 +92,7 @@ rooms = [
 - **Lối phụ (Sub-Tank):** kệ thép cuối bãi (x ≈ 282, y ≈ 78). Đứng trên Ride Armor nhảy lên rồi bật ra khỏi xe để với tới.'''),
 
  Room('R6', 'Hầm tường ép đuổi', 290, 76, 80, 14, 7, [
+   SP('chaser', x=0, y=2, w=2, h=10, x1=80, trigger=3, speed0=90, speed1=120, look='steel'),
    B(0, 0, 80, 2), F((0, 12), (80, 12)), BAR(0, 2, 2, 10, 'trash'), AR(3, 7, 6, 0, 'alarm'), X(3, 3, 'tường ép 90 → 120px/s'),
    B(16, 2, 6, 6), B(34, 9, 4, 3), CV(42, 11.4, 14, -1), B(60, 2, 8, 7), B(72, 9, 3, 3), H('spike', 46, 11, 4, 1),
    P(26, 3, 4), E('D', 30, 7), E('D', 64, 10.6), E('H', 27.5, 2),

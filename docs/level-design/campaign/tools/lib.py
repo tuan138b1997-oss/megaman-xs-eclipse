@@ -24,6 +24,7 @@ def BAR(x, y, w, h, col='lava'): return ('bar', col, x, y, w, h)
 def Z(kind, x, y, w, h, label=''): return ('zone', kind, x, y, w, h, label)
 def AR(x, y, dx, dy, col='wind'): return ('arrow', col, x, y, dx, dy)
 def X(x, y, text): return ('text', x, y, text)
+def SP(kind, **kw): return ('special', kind, kw)   # cơ chế động cho bộ chạy (crusher/chaser/riser), tọa độ theo phòng
 def E(code, x, y): return ('ent', code, x, y)
 def PATH(*pts): return ('path', pts)
 def ALT(*pts): return ('alt', pts)

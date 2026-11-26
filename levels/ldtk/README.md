@@ -1,7 +1,7 @@
 # Project LDtk (LDtk 1.5.3)
 
 Mỗi màn có một file `<id>.ldtk`, mở bằng [LDtk](https://ldtk.io) (miễn phí). Bố cục thế giới **Free**: mỗi phòng của kịch bản là một Level đặt đúng tọa độ (1 ô = 32px).
-Hiện có: Lò Nham Thạch (`x5_dinorex`), Intro và 7 màn boss X5. Các đợt sau được thêm khi màn có dữ liệu chơi được.
+Hiện có 17 màn: Lò Nham Thạch (`x5_dinorex`), Intro, 7 màn boss X5 và 8 màn boss X6. 9 màn pháo đài được thêm ở đợt 3.
 
 ## Quy trình
 
@@ -34,7 +34,7 @@ Dốc (2, 3) cần thêm entity `Slope` để giữ đúng điểm đầu/cuối
 `PlayerSpawn, Checkpoint, Enemy_Sniper, Enemy_Drone, Enemy_Brute, NPC_Reploid, Item_Capsule (armor, part), Item_HeartTank, Item_SubTank, Item_Orb,
 Hazard_Flame, Hazard_Press, Hazard_RollingRock, Hazard_Laser, Hazard_Elec, Hazard_LavaColumn, Hazard_Steam, Hazard_Mine, Hazard_Void, Hazard_Area,
 Moving_Minecart, Platform_Moving, Platform_Lift, Platform_Phase (A/B), Platform_Bounce, Conveyor (speed), Slope,
-Zone_RisingMagma, Zone_GravityFlip, Zone_Updraft, Zone_Water, Zone_Wind, Zone_Current, Zone_LowGravity, Zone_BlackHole, Zone_Slow, Zone_Dark,
+Hazard_ChaseWall, Zone_RisingMagma, Zone_GravityFlip, Zone_Updraft, Zone_Water, Zone_Wind, Zone_Current, Zone_LowGravity, Zone_BlackHole, Zone_Slow, Zone_Dark,
 Zone_AcidRain, Zone_Alarm, Zone_Mud, Zone_Ice, Zone_Electric, Switch (targets), Gate (kind, id), Wall_Breakable (breakBy), Portal (id, to, rush),
 Turret, Vehicle (rideArmor/rideChaser), SubBoss (id, hp), BossGate`
 

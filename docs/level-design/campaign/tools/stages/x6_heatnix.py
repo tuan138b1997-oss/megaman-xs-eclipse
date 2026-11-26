@@ -64,6 +64,7 @@ rooms = [
 - **Vật phẩm:** Reploid #2 trên bè thứ hai.'''),
 
  Room('R5', 'Trục núi lửa', 260, O + 6, 26, 58, 7, s5 + [
+   SP('riser', x=2, w=22, bottom=56, stop=8, trigger=50, mode='step', step=4, rise=1, pause=5, look='lava'),
    H('lava', 2, 50, 22, 6), X(4, 48.5, 'dung nham dâng 4 ô mỗi 6s'), E('W', 13, 9), X(15, 8.5, 'Donut #3 chặn lối ra'),
    B(2, 3, 2, 5), CW(4, 3, 4), P(2, 8, 6), E('A', 3, 7), E('H', 22, 26), P(20, 27, 4),
    E('D', 10, 30), p5, ALT((14, 18), (5, 8)), ALT((19, 33), (22, 27))], '''
