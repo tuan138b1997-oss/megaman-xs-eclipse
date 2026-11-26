@@ -121,7 +121,7 @@ Tọa độ tính theo ô, gốc (0,0) ở góc trên trái thế giới, y tăn
 - Phòng nghỉ trước boss: Reploid #4, nạp năng lượng nhỏ, cửa boss.
 - Phòng tối hoàn toàn, chỉ có đàn đom đóm máy bay chậm làm đèn. Báo hiệu cơ chế của trận boss.
 
-### BOSS – Shining Hotarunicus (x 356–388, y -2–16)
+### BOSS – Shining Hotarunicus (x 356–388, y 0–16)
 - **Đấu trường 28 ô**, kín, hai vách đá tường được.
 - **Pha 1** (100–50% HP): bộ chiêu hiện có (tia laser, đạn sáng, phân thân).
 - **Pha 2** (dưới 50% HP):

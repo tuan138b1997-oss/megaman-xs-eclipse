@@ -121,9 +121,9 @@ rooms = [
 - Phòng nghỉ trước boss: Reploid #4, nạp năng lượng nhỏ, cửa boss.
 - Phòng tối hoàn toàn, chỉ có đàn đom đóm máy bay chậm làm đèn. Báo hiệu cơ chế của trận boss.'''),
 
- Room('BOSS', 'Shining Hotarunicus', 356, -2, 32, 18, 6, [
-   B(0, 0, 2, 16), B(30, 0, 2, 16), B(0, 0, 32, 1), F((0, 16), (32, 16)), Z('dark', 2, 1, 28, 15, ''), E('*', 20, 6),
-   X(4, 3, 'pha 2: tắt đèn'), PATH((3, 15), (29, 15))], '''
+ Room('BOSS', 'Shining Hotarunicus', 356, 0, 32, 16, 6, [
+   B(0, 0, 2, 12), B(30, 0, 2, 12), B(0, 0, 32, 1), F((0, 12), (32, 12)), Z('dark', 2, 1, 28, 11, ''), E('*', 20, 5),
+   X(4, 3, 'pha 2: tắt đèn'), PATH((3, 11), (29, 11))], '''
 - **Đấu trường 28 ô**, kín, hai vách đá tường được.
 - **Pha 1** (100–50% HP): bộ chiêu hiện có (tia laser, đạn sáng, phân thân).
 - **Pha 2** (dưới 50% HP):

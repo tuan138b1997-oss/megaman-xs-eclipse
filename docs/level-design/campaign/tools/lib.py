@@ -40,7 +40,7 @@ HAZ = {'lava': (255, 110, 30), 'water': (40, 105, 190), 'spike': (215, 215, 230)
        'trash': (120, 110, 90), 'dark': (25, 15, 35), 'steam': (230, 230, 230), 'mine': (255, 80, 80)}
 HAZ_NAME = {'lava': 'Dung nham', 'water': 'Nước', 'spike': 'Gai', 'elec': 'Điện', 'void': 'Vực (rơi = mất mạng)',
             'thorn': 'Bụi gai độc', 'mud': 'Bùn (làm chậm)', 'laser': 'Tia laser', 'acid': 'Axit', 'ice': 'Băng trơn',
-            'snow': 'Tuyết', 'fire': 'Lửa', 'trash': 'Rác/khối nghiền', 'dark': 'Vùng tối', 'steam': 'Hơi nóng', 'mine': 'Thủy lôi / mìn'}
+            'snow': 'Tuyết', 'fire': 'Lửa', 'trash': 'Rác/khối nghiền', 'dark': 'Vùng tối', 'steam': 'Hơi nóng', 'mine': 'Mìn / vật nổ'}
 ZONE = {'wind': (150, 210, 255), 'slow': (190, 140, 255), 'water': (90, 160, 230), 'dark': (140, 110, 170),
         'grav': (255, 120, 220), 'current': (90, 200, 230), 'updraft': (160, 240, 200), 'alarm': (255, 90, 90),
         'rain': (130, 220, 60), 'elec': (255, 235, 80)}
@@ -49,7 +49,7 @@ ZONE_NAME = {'wind': 'Vùng gió', 'slow': 'Vùng làm chậm', 'water': 'Vùng 
              'rain': 'Mưa axit', 'elec': 'Vùng điện'}
 PLAT = {'shelf': ((205, 175, 125), 'Bệ / kệ'), 'move': ((120, 220, 255), 'Bệ di động'), 'break': ((230, 140, 80), 'Sàn vỡ / sập'),
         'safe': ((110, 240, 140), 'Kệ an toàn'), 'bounce': ((255, 140, 220), 'Bệ bật nhảy'), 'thrust': ((255, 200, 90), 'Bệ phản lực'),
-        'holo': ((160, 230, 255), 'Bệ hologram ẩn hiện')}
+        'holo': ((160, 230, 255), 'Bệ hologram ẩn hiện / pha A'), 'holoB': ((200, 150, 255), 'Bệ pha B')}
 ICON = {'S': ('S', (255, 90, 90), 'Sniper'), 'D': ('D', (255, 160, 60), 'Drone'), 'B': ('B', (230, 80, 80), 'Brute'),
         'M': ('M', (255, 60, 130), 'Mini-boss'), '*': ('★', (255, 70, 70), 'Boss'), 'R': ('R', (120, 255, 140), 'Reploid cứu'),
         'H': ('H', (255, 120, 220), 'Heart Tank'), 'T': ('T', (120, 200, 255), 'Sub-Tank'), 'A': ('A', (120, 230, 255), 'Capsule giáp'),
