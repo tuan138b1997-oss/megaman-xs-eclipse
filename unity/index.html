@@ -5,8 +5,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | Mega Man XS Eclipse — Lò Nham Thạch (Unity)</title>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width="960" height="540" tabindex="-1" style="width: 960px; height: 540px; background: #231F20"></canvas>
+  <!-- XSFull: the game fills the browser window at 16:9 (letterboxed), crisp pixels. -->
+  <body style="margin: 0; padding: 0; border: 0; background: #000; overflow: hidden; height: 100vh;">
+    <canvas id="unity-canvas" width="960" height="540" tabindex="-1"
+      style="position: absolute; background: #000; image-rendering: pixelated; outline: none;"></canvas>
+    <div id="xs-loading" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#9fe6ff; font:16px sans-serif;">Đang tải… 0%</div>
+    <script>
+      (function () {
+        var c = document.getElementById("unity-canvas");
+        function fit() {
+          var w = window.innerWidth, h = window.innerHeight, s = Math.min(w / 16, h / 9);
+          var cw = Math.floor(s * 16), ch = Math.floor(s * 9);
+          c.style.width = cw + "px"; c.style.height = ch + "px";
+          c.style.left = Math.floor((w - cw) / 2) + "px"; c.style.top = Math.floor((h - ch) / 2) + "px";
+        }
+        window.addEventListener("resize", fit); fit();
+        c.addEventListener("click", function () { c.focus(); });
+      })();
+    </script>
     <script src="Build/WebGL.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -17,11 +33,6 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
 
         var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
-
-        document.body.style.textAlign = "left";
 
       }
 
@@ -36,7 +47,11 @@
         productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      }, function (progress) {
+        document.getElementById("xs-loading").textContent = "Đang tải… " + Math.round(progress * 100) + "%";
       }).then((unityInstance) => {
+        var l = document.getElementById("xs-loading"); if (l) l.remove();
+        document.querySelector("#unity-canvas").focus();
       }).catch((message) => {
         alert(message);
       });
