@@ -109,7 +109,10 @@ def write_doc(sid, st, size):
 
 
 order = list(STAGES.keys())
+REDONE = set(n[:-3] for n in os.listdir(os.path.join(os.path.dirname(__file__), 'stages')) if n.endswith('.py') and n != '__init__.py')
 for sid in order:
+    if sid in REDONE:  # đã viết lại theo chuẩn màn mẫu: dùng tools/gen2.py
+        continue
     sz = draw_stage(sid, STAGES[sid]); write_doc(sid, STAGES[sid], sz); print(sid, sz)
 
 # campaign overview

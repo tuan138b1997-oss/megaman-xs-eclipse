@@ -2,6 +2,20 @@
 
 Màn mẫu đã duyệt: **Lò Nham Thạch** (`x5_dinorex`) — xem `lo-nham-thach-kich-ban.md`. 25 màn còn lại dùng cùng khung: phòng có mục đích rõ, mỗi màn 1 cơ chế chính + 1 phụ, đoạn dọc, checkpoint giữa, bí mật cần giáp/kỹ năng.
 
+## Tiến độ làm lại theo chuẩn màn mẫu
+
+Các màn dưới đây đã được **viết lại đầy đủ** như màn mẫu Lò Nham Thạch: sơ đồ có địa hình theo ô (nền, dốc, hố, giếng dọc, kệ, bẫy, đường đi chính và lối bí mật), kịch bản từng phòng có tọa độ và thông số nhịp, bảng vật phẩm/kẻ địch, phần engine cần bổ sung và danh sách hình cần vẽ.
+
+| Đợt | Màn | Trạng thái |
+|---|---|---|
+| 1 | [Cao tốc Neo Arcadia](intro.md), [Tàu bọc thép](x5_grizzly.md), [Căn cứ đáy biển](x5_makkoeen.md), [Nhà máy điện](x5_kraken.md), [Phòng thí nghiệm Laser](x5_hotarunicus.md), [Rừng đột biến](x5_rosered.md), [Đài thiên văn](x5_necrobat.md), [Không quân](x5_pegacion.md) | Đã làm lại |
+| 2 | 8 màn boss X6 | Chờ |
+| 3 | 4 màn Zero Space (X5) + 5 màn Gate Lab (X6) | Chờ |
+
+Công cụ: `tools/gen2.py` (dữ liệu từng màn ở `tools/stages/<id>.py`, bộ vẽ ở `tools/lib.py`). Các màn chưa làm lại vẫn dùng `tools/gen.py` cũ; `gen.py` tự bỏ qua màn đã có trong `tools/stages/`.
+
+**Nguồn tham khảo:** không xem được video YouTube; các trang wiki và FAQ chi tiết bị chặn mạng trong môi trường này. Thiết kế dựa trên thông tin tóm tắt (tên màn, vật phẩm, cơ chế chính của X4/X5/X6/X8, bản X8 16-bit demake, X Corrupted) và dữ liệu `campaign-data.js`; bố cục là tự thiết kế, không chép bản đồ gốc.
+
 ## Danh sách màn
 
 | Màn | Boss | Chủ đề | Cơ chế chính | Độ khó cao nhất | Bí mật |
