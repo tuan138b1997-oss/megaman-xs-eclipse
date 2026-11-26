@@ -1,0 +1,649 @@
+{
+ "name": "Zero Space 2",
+ "stage": "x5_f2_shadow",
+ "theme": "shadow",
+ "tileSize": 32,
+ "rooms": [
+  {
+   "code": "R1",
+   "name": "Bệ xuất phát",
+   "x": 0,
+   "y": 36,
+   "w": 40,
+   "h": 18,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 3
+  },
+  {
+   "code": "R2",
+   "name": "Vực pha A/B",
+   "x": 40,
+   "y": 32,
+   "w": 64,
+   "h": 22,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 5
+  },
+  {
+   "code": "R3",
+   "name": "Luồng nâng 1",
+   "x": 104,
+   "y": 20,
+   "w": 40,
+   "h": 34,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 5
+  },
+  {
+   "code": "R4",
+   "name": "Chuỗi pha nhanh",
+   "x": 144,
+   "y": 20,
+   "w": 56,
+   "h": 22,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 6
+  },
+  {
+   "code": "MID",
+   "name": "Mắt bóng tối",
+   "x": 200,
+   "y": 16,
+   "w": 34,
+   "h": 20,
+   "area": 2,
+   "kind": "mini",
+   "difficulty": 6
+  },
+  {
+   "code": "R5",
+   "name": "Vực ba tầng",
+   "x": 234,
+   "y": 12,
+   "w": 60,
+   "h": 28,
+   "area": 2,
+   "kind": "room",
+   "difficulty": 6
+  },
+  {
+   "code": "R6",
+   "name": "Luồng nâng 2",
+   "x": 294,
+   "y": 6,
+   "w": 60,
+   "h": 36,
+   "area": 2,
+   "kind": "room",
+   "difficulty": 8
+  },
+  {
+   "code": "R7",
+   "name": "Trạm nghỉ",
+   "x": 354,
+   "y": 8,
+   "w": 30,
+   "h": 14,
+   "area": 2,
+   "kind": "room",
+   "difficulty": 2
+  },
+  {
+   "code": "BOSS",
+   "name": "Shadow Devil",
+   "x": 384,
+   "y": 2,
+   "w": 32,
+   "h": 18,
+   "area": 2,
+   "kind": "boss",
+   "difficulty": 7
+  }
+ ],
+ "checkpoints": [
+  {
+   "x": 3,
+   "y": 48.0
+  },
+  {
+   "x": 236.0,
+   "y": 26.0
+  },
+  {
+   "x": 356.0,
+   "y": 12.0
+  }
+ ],
+ "solids": [
+  {
+   "x": 0.0,
+   "y": 48.0,
+   "w": 24.0,
+   "h": 6.0,
+   "area": 1
+  },
+  {
+   "x": 202.0,
+   "y": 28.0,
+   "w": 8.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 213.0,
+   "y": 25.0,
+   "w": 8.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 224.0,
+   "y": 28.0,
+   "w": 8.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 234.0,
+   "y": 26.0,
+   "w": 6.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 290.0,
+   "y": 26.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 294.0,
+   "y": 26.0,
+   "w": 6.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 350.0,
+   "y": 12.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 354.0,
+   "y": 12.0,
+   "w": 30.0,
+   "h": 10.0,
+   "area": 2
+  },
+  {
+   "x": 384.0,
+   "y": 12.0,
+   "w": 32.0,
+   "h": 8.0,
+   "area": 2
+  }
+ ],
+ "slopes": [],
+ "ledges": [
+  {
+   "x": 28.0,
+   "y": 47.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.0
+  },
+  {
+   "x": 34.0,
+   "y": 45.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.7
+  },
+  {
+   "x": 44.0,
+   "y": 44.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 1.4
+  },
+  {
+   "x": 52.0,
+   "y": 42.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 2.1
+  },
+  {
+   "x": 60.0,
+   "y": 45.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.0
+  },
+  {
+   "x": 68.0,
+   "y": 41.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.7
+  },
+  {
+   "x": 76.0,
+   "y": 44.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 1.4
+  },
+  {
+   "x": 84.0,
+   "y": 42.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 2.1
+  },
+  {
+   "x": 92.0,
+   "y": 45.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.0
+  },
+  {
+   "x": 98.0,
+   "y": 43.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.7
+  },
+  {
+   "x": 108.0,
+   "y": 44.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 1.4
+  },
+  {
+   "x": 134.0,
+   "y": 26.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 2.1
+  },
+  {
+   "x": 138.0,
+   "y": 30.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.0
+  },
+  {
+   "x": 148.0,
+   "y": 28.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.7
+  },
+  {
+   "x": 156.0,
+   "y": 30.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 1.4
+  },
+  {
+   "x": 164.0,
+   "y": 27.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 2.1
+  },
+  {
+   "x": 172.0,
+   "y": 30.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.0
+  },
+  {
+   "x": 180.0,
+   "y": 28.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.7
+  },
+  {
+   "x": 188.0,
+   "y": 26.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 1.4
+  },
+  {
+   "x": 195.0,
+   "y": 28.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 2.1
+  },
+  {
+   "x": 242.0,
+   "y": 32.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.0
+  },
+  {
+   "x": 250.0,
+   "y": 28.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.7
+  },
+  {
+   "x": 258.0,
+   "y": 24.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 1.4
+  },
+  {
+   "x": 266.0,
+   "y": 20.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 2.1
+  },
+  {
+   "x": 274.0,
+   "y": 24.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 0.0
+  },
+  {
+   "x": 282.0,
+   "y": 28.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.7
+  },
+  {
+   "x": 288.0,
+   "y": 32.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 1.4
+  },
+  {
+   "x": 258.0,
+   "y": 34.0,
+   "w": 4.0,
+   "kind": "holo",
+   "phase": 2.1
+  },
+  {
+   "x": 274.0,
+   "y": 34.0,
+   "w": 4.0,
+   "kind": "holoB",
+   "phase": 0.0
+  },
+  {
+   "x": 314.0,
+   "y": 16.0,
+   "w": 3.0,
+   "kind": "holo",
+   "phase": 0.7
+  },
+  {
+   "x": 320.0,
+   "y": 20.0,
+   "w": 3.0,
+   "kind": "holoB",
+   "phase": 1.4
+  },
+  {
+   "x": 324.0,
+   "y": 14.0,
+   "w": 3.0,
+   "kind": "holo",
+   "phase": 2.1
+  },
+  {
+   "x": 340.0,
+   "y": 18.0,
+   "w": 3.0,
+   "kind": "holoB",
+   "phase": 0.0
+  },
+  {
+   "x": 346.0,
+   "y": 12.0,
+   "w": 3.0,
+   "kind": "holo",
+   "phase": 0.7
+  }
+ ],
+ "conveyors": [],
+ "hazards": [
+  {
+   "type": "void",
+   "x": 24.0,
+   "y": 50.0,
+   "w": 16.0,
+   "h": 4.0,
+   "on": null,
+   "off": null,
+   "phase": 0.0
+  },
+  {
+   "type": "void",
+   "x": 40.0,
+   "y": 52.0,
+   "w": 64.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 0.6
+  },
+  {
+   "type": "void",
+   "x": 104.0,
+   "y": 52.0,
+   "w": 40.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 1.2
+  },
+  {
+   "type": "void",
+   "x": 144.0,
+   "y": 40.0,
+   "w": 56.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 1.8
+  },
+  {
+   "type": "void",
+   "x": 200.0,
+   "y": 34.0,
+   "w": 34.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 2.4
+  },
+  {
+   "type": "void",
+   "x": 234.0,
+   "y": 38.0,
+   "w": 60.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 0.0
+  },
+  {
+   "type": "void",
+   "x": 294.0,
+   "y": 40.0,
+   "w": 60.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 0.6
+  },
+  {
+   "type": "void",
+   "x": 384.0,
+   "y": 18.0,
+   "w": 32.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 1.2
+  }
+ ],
+ "zones": [
+  {
+   "type": "updraft",
+   "x": 120.0,
+   "y": 22.0,
+   "w": 8.0,
+   "h": 30.0,
+   "label": "luồng nâng 150px/s"
+  },
+  {
+   "type": "updraft",
+   "x": 304.0,
+   "y": 8.0,
+   "w": 6.0,
+   "h": 32.0,
+   "label": ""
+  },
+  {
+   "type": "updraft",
+   "x": 330.0,
+   "y": 8.0,
+   "w": 6.0,
+   "h": 32.0,
+   "label": ""
+  }
+ ],
+ "walls": [],
+ "switches": [],
+ "portals": [],
+ "enemies": [
+  {
+   "type": "sniper",
+   "x": 19.5,
+   "y": 48.0
+  },
+  {
+   "type": "drone",
+   "x": 63.5,
+   "y": 36.5
+  },
+  {
+   "type": "drone",
+   "x": 87.5,
+   "y": 37.5
+  },
+  {
+   "type": "drone",
+   "x": 113.5,
+   "y": 32.5
+  },
+  {
+   "type": "sniper",
+   "x": 189.5,
+   "y": 26.0
+  },
+  {
+   "type": "drone",
+   "x": 263.5,
+   "y": 15.5
+  },
+  {
+   "type": "sniper",
+   "x": 275.5,
+   "y": 34.0
+  },
+  {
+   "type": "drone",
+   "x": 317.5,
+   "y": 28.5
+  },
+  {
+   "type": "drone",
+   "x": 341.5,
+   "y": 28.5
+  }
+ ],
+ "items": [
+  {
+   "type": "rescue",
+   "id": "x5_f2_shadow:reploid:0",
+   "x": 9.5,
+   "y": 48.0
+  },
+  {
+   "type": "rescue",
+   "id": "x5_f2_shadow:reploid:1",
+   "x": 139.5,
+   "y": 30.0
+  },
+  {
+   "type": "rescue",
+   "id": "x5_f2_shadow:reploid:2",
+   "x": 259.5,
+   "y": 34.0
+  },
+  {
+   "type": "rescue",
+   "id": "x5_f2_shadow:reploid:3",
+   "x": 368.5,
+   "y": 12.0
+  }
+ ],
+ "turrets": [],
+ "vehicles": [],
+ "subBoss": {
+  "id": "donut",
+  "x": 215.0,
+  "y": 17.0,
+  "hp": 45,
+  "room": "MID",
+  "gate": {
+   "x": 232.0,
+   "y": 17.0,
+   "w": 2,
+   "h": 17.0
+  }
+ },
+ "specials": [],
+ "width": 416,
+ "height": 56,
+ "floorBoss": 12.0,
+ "bossGateX": 385,
+ "areaMarks": [
+  200,
+  234
+ ],
+ "palette": {
+  "bg1": "#1e1830",
+  "bg2": "#18142a",
+  "rock1": "#605082",
+  "rock2": "#58467c"
+ }
+}

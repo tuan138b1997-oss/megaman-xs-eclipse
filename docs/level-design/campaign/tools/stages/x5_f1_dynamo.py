@@ -27,6 +27,7 @@ rooms = [
 - **Ghi chú:** màn pháo đài không có capsule, Heart Tank hay Sub-Tank. Bù lại có 4 Reploid và trạm nạp năng lượng lớn. Nên dùng giáp Falcon hoặc Fourth để lướt qua các cụm laser.'''),
 
  Room('R2', 'Laser quét 1', 44, 40, 64, 16, 4, [
+   SP('sweep', x=0, y=1, w=.8, h=11, x1=63, speed=140, interval=6, phase=0, look='laser'),
    pits([12, 28, 44], 64), sweep(4), AR(5, 6, 6, 0, 'alarm'), X(6, 2, 'cụm laser 1–2: quét trái → phải, 140px/s, mỗi 6s'),
    E('R', 30, 14), E('D', 36, 5), E('S', 58, 11), PATH((1, 11), (63, 11))], '''
 - **Mục đích:** giới thiệu **cụm laser tử thần**: một bức tường laser cao hết màn hình quét ngang.
@@ -45,6 +46,7 @@ rooms = [
 - **Địch:** 1 Drone.'''),
 
  Room('R4', 'Băng chuyền Boost', 130, 10, 64, 14, 5, [
+   SP('chaser', x=0, y=2, w=1, h=10, x1=64, trigger=2, speed0=160, speed1=160, look='laser'),
    B(0, 0, 64, 2), F((0, 12), (64, 12)), CV(6, 11.4, 20, 1), CV(38, 11.4, 20, 1), P(28, 11.6, 4, 'thrust'), sweep(2, 10, 2),
    AR(3, 6, 6, 0, 'alarm'), X(4, 3, 'cụm laser 3 đuổi theo 160px/s'), B(32, 8, 3, 4), E('B', 50, 11),
    PATH((1, 11), (31, 11), (33, 7), (36, 11), (63, 11))], '''
@@ -67,6 +69,7 @@ rooms = [
 - **Phần thưởng:** mở cửa khu laser đôi. Hạ không mất máu thì được thưởng Souls.'''),
 
  Room('R5', 'Laser quét đôi', 224, 10, 64, 16, 6, [
+   SP('sweep', x=0, y=1, w=.8, h=11, x1=63, speed=140, interval=7, phase=0, look='laser'), SP('sweep', x=63, y=1, w=.8, h=11, x1=0, speed=140, interval=7, phase=0, look='laser'),
    pits([8, 22, 36, 50], 64, fy=12), sweep(2), sweep(61), AR(3, 6, 5, 0, 'alarm'), AR(61, 6, -5, 0, 'alarm'),
    X(10, 2, 'cụm 4 quét → và cụm 5 quét ← cùng lúc'), E('C', 2, 11), E('R', 38, 14), E('S', 30, 11), E('D', 46, 5),
    PATH((1, 11), (63, 11))], '''
@@ -81,6 +84,7 @@ rooms = [
 - **Vật phẩm:** Reploid #2 trong hốc thứ ba.'''),
 
  Room('R6', 'Hành lang tử thần', 288, 10, 80, 14, 8, [
+   SP('chaser', x=0, y=2, w=1, h=10, x1=80, trigger=2, speed0=130, speed1=170, look='laser'),
    B(0, 0, 80, 2), F((0, 12), (80, 12)), sweep(1, 10, 2), AR(2, 6, 6, 0, 'alarm'), CV(6, 11.4, 16, 1), P(24, 11.6, 4, 'thrust'),
    B(30, 8, 3, 4), B(42, 2, 6, 6), CV(50, 11.4, 12, -1), P(64, 11.6, 4, 'thrust'), B(70, 9, 3, 3), H('void', 56, 12, 4, 2),
    X(6, 3, 'cụm laser 6 đuổi 130 → 170px/s, không hốc trú'), E('D', 36, 5), E('R', 76, 11),

@@ -82,8 +82,10 @@ def import_one(sid):
                 h = dict(type=t, **box, on=F.get('on'), off=F.get('off'), phase=F.get('phase') or 0)
                 if n == 'Hazard_LavaColumn' or F.get('column'): h['column'] = True
                 L['hazards'].append(h)
-            elif n in ('Hazard_Press', 'Hazard_ChaseWall', 'Zone_RisingMagma') and F.get('params'):
-                sp = json.loads(F['params']); sp.update({k: box[k] for k in ('x', 'w') if k in sp}); L['specials'].append(sp)
+            elif n in ('Hazard_Press', 'Hazard_ChaseWall', 'Zone_RisingMagma', 'Hazard_LaserSweep') and F.get('params'):
+                sp = json.loads(F['params'])
+                if n != 'Hazard_LaserSweep': sp.update({k: box[k] for k in ('x', 'w') if k in sp})
+                L['specials'].append(sp)
             elif n == 'Hazard_Press': L['hazards'].append(dict(type='trash', **box, on=None, off=None, phase=F.get('phase') or 0))
             elif n == 'Hazard_Mine': L['hazards'].append(dict(type='mine', x=round(X, 2), y=round(Y, 2), w=1, h=1, on=None, off=None, phase=0))
             elif n == 'Hazard_Void': L['hazards'].append(dict(type='void', **box, on=None, off=None, phase=0))

@@ -130,18 +130,26 @@ function specials(dt){const D=world.data;for(const sp of D.specials){sp.t+=dt;
   if(!sp.active&&p.x>trig&&p.x<x1&&p.y+p.h>sp.Y&&p.y<sp.Y+sp.H){sp.active=true;sp.pos=sp.X;toast(sp.look==='snow'?'TUYẾT LỞ!':'WARNING · TƯỜNG ÉP',1.4);}
   if(sp.active){const k=Math.min(1,(sp.pos-sp.X)/Math.max(1,x1-sp.X)),v=sp.speed0+(sp.speed1-sp.speed0)*k;sp.pos=Math.min(x1,sp.pos+v*dt);
    if(p.x<sp.pos+sp.W-6&&p.y+p.h>sp.Y&&p.y<sp.Y+sp.H)kill();if(sp.pos>=x1||p.x>x1+T)sp.active=false;if(p.x<sp.X)sp.active=false;}}
+ else if(sp.type==='sweep'){const x0=sp.X,x1=sp.x1*T,dist=Math.abs(x1-x0),tt=dist/sp.speed;
+  if(sp.patrol){const per=2*tt,u=((D.t+(sp.phase||0))%per)/per;sp.pos=x0+(x1-x0)*(.5-.5*Math.cos(u*2*Math.PI));sp.on=true;sp.warn=false;}
+  else{const c=(D.t+(sp.phase||0))%sp.interval;sp.on=c<tt;sp.pos=x0+(x1-x0)*Math.min(1,c/tt);sp.warn=!sp.on&&c>sp.interval-1;}
+  if(sp.on&&p.x+p.w>sp.pos&&p.x<sp.pos+Math.max(sp.W,12)&&p.y+p.h>sp.Y&&p.y<sp.Y+sp.H)hurt(10,(x1>x0?1:-1)*240);}
  else if(sp.type==='riser'){const x0=sp.x*T,x1=(sp.x+sp.w)*T,bot=sp.bottom*T,stop=sp.stop*T,inS=p.x+p.w>x0&&p.x<x1&&p.y<bot;
   if(!sp.active&&inS&&p.y>sp.trigger*T){sp.active=true;sp.top=bot;sp.phase=0;sp.pt=1.5;toast('WARNING · DUNG NHAM DÂNG',1.6);}
   if(sp.active){if(sp.mode==='step'){sp.pt-=dt;if(sp.pt<=0){if(sp.phase===0){sp.phase=1;sp.pt=sp.rise;sp.goal=Math.max(stop,sp.top-sp.step*T);}else{sp.phase=0;sp.pt=sp.pause;}}
     if(sp.phase===1)sp.top=Math.max(sp.goal,sp.top-(sp.step*T/sp.rise)*dt);else shake=Math.max(shake||0,sp.pt<.6?2:0);}
-   else sp.top=Math.max(stop,sp.top-(sp.speed||60)*dt);
+   else sp.top=Math.max(stop,sp.top-((sp.speed2&&sp.top<(bot+stop)/2)?sp.speed2:(sp.speed||60))*dt);
    if(inS&&p.y+p.h>sp.top+8)kill();if(!inS&&(p.x>x1+T||p.x<x0-T)){sp.active=false;}}}}}
 function drawSpecials(){const D=world.data,t=D.t;for(const sp of D.specials){
  if(sp.type==='crusher'){const b=sp.bottom??(sp.Y+sp.H);if(!vis(sp.X,sp.Y,sp.W,b-sp.Y+40))continue;
   for(let x=sp.X+24;x<sp.X+sp.W;x+=96){rr(x,sp.Y,10,b-sp.Y,'#4a4e5a');rr(x+3,sp.Y,4,b-sp.Y,'#8a8ea0');}
   tile('lv-crusher',1,0,sp.X,b-40,sp.W,44)||rr(sp.X,b-20,sp.W,20,'#e0b030');if(sp.warn&&Math.floor(t*8)%2)rr(sp.X,b,sp.W,4,'#ff4040');}
  else if(sp.type==='chaser'&&sp.active){const x=sp.pos;if(sp.look==='snow'){rr(sp.X-2000,sp.Y,x-sp.X+2000+sp.W,sp.H,'#e8f2ff');for(let y=sp.Y;y<sp.Y+sp.H;y+=18)rr(x+sp.W-8+Math.sin(t*9+y)*6,y,16,14,'#ffffff');}
+  else if(sp.look==='laser'){ctx.globalAlpha=.25;rr(sp.X,sp.Y,x-sp.X,sp.H,'#ff3c50');ctx.globalAlpha=1;ctx.filter='hue-rotate(150deg) saturate(1.6)';vtile('el-laser',1,0,x,sp.Y,24,sp.H);ctx.filter='none';}
   else{vtile('el-wall-steel',1,0,x-sp.W*2,sp.Y,sp.W*3,sp.H);tile('el-spike',1,0,x+sp.W-4,sp.Y,22,sp.H);}}
+ else if(sp.type==='sweep'){if(!vis(Math.min(sp.X,sp.x1*T)-40,sp.Y,Math.abs(sp.x1*T-sp.X)+80,sp.H))continue;
+  if(sp.on){ctx.filter='hue-rotate(150deg) saturate(1.6)';vtile('el-laser',1,0,sp.pos-6,sp.Y,20,sp.H);ctx.filter='none';cell('el-turret',5,Math.floor(t*10),sp.pos-12,sp.Y-28,31,31);}
+  else if(sp.warn&&Math.floor(t*8)%2)rr(sp.X-4,sp.Y,8,sp.H,'#ff506088');}
  else if(sp.type==='riser'&&sp.active){const x0=sp.x*T,w=sp.w*T,top=sp.top,bot=sp.bottom*T+2*T;rr(x0,top,w,bot-top,'#ff6e1ee8');for(let x=x0;x<x0+w;x+=26)rr(x,top+Math.sin(t*5+x)*3,16,4,'#ffd27a');for(let x=x0+20;x<x0+w;x+=70)cell('el-fireball',3,Math.floor(t*10)%3,x-12,top-24-Math.abs(Math.sin(t*2+x))*20,24,24);}}}
 function unstick(){for(const pl of world.platforms){if(pl.kind!=='ground'||pl.broken||!overlap(p,pl))continue;
   const l=p.x+p.w-pl.x,r=pl.x+pl.w-p.x,u=p.y+p.h-pl.y,d=pl.y+pl.h-p.y,m=Math.min(l,r,u,d);

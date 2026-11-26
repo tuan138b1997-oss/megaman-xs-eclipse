@@ -24,6 +24,7 @@ rooms = [
 - **Địch:** 2 Drone ở khoảng giữa các bệ: bị bắn trúng là rơi. Hạ chúng từ bệ trước rồi mới nhảy.'''),
 
  Room('R3', 'Laser quét dọc', 104, 36, 60, 22, 6, [
+   SP('sweep', x=14, y=1, w=.8, h=19, x1=40, speed=80, patrol=True, look='laser'), SP('sweep', x=40, y=1, w=.8, h=19, x1=14, speed=80, patrol=True, look='laser'),
    H('spike', 0, 20, 60, 2), B(0, 14, 2, 1), small(8, 14), small(18, 11), small(28, 13), small(38, 10), small(48, 12), B(56, 14, 4, 1),
    BAR(14, 1, 0.8, 19, 'laser'), BAR(40, 1, 0.8, 19, 'laser'), AR(15, 3, 6, 0, 'alarm'), AR(41, 3, -6, 0, 'alarm'),
    X(16, 1, 'tia dọc chạy ngang 80px/s'), E('R', 29, 12), E('D', 44, 4), PATH((1, 13), (9, 13), (19, 10), (29, 12), (39, 9), (49, 11), (57, 13), (59.5, 13))], '''
@@ -53,6 +54,7 @@ rooms = [
 - **Vật phẩm:** Reploid #3 ở mỏm bên kia.'''),
 
  Room('R5', 'Chuỗi bệ nhỏ 2', 256, 36, 70, 22, 8, [
+   SP('sweep', x=18, y=1, w=.8, h=19, x1=34, speed=80, patrol=True, look='laser'), SP('sweep', x=55, y=1, w=.8, h=19, x1=40, speed=80, patrol=True, look='laser'),
    H('spike', 0, 20, 70, 2), B(0, 14, 4, 1), small(10, 13), small(20, 10), small(30, 13, 4), small(40, 9), small(50, 12), small(60, 10), B(66, 14, 4, 1),
    BAR(25, 1, 0.8, 19, 'laser'), BAR(31, 4, 2, 9, 'trash'), BAR(55, 1, 0.8, 19, 'laser'), E('D', 16, 4), E('D', 46, 4),
    PATH((1, 13), (11, 12), (21, 9), (32, 12), (41, 8), (51, 11), (61, 9), (67, 13), (69.5, 13))], '''

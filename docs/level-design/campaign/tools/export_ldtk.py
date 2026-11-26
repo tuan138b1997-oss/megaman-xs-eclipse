@@ -32,6 +32,7 @@ ENTITY_DEFS = [
     ('Item_Orb', '#ffe080', 24, 24, False, 'el-orb', []),
     ('Hazard_Flame', '#ff9a3c', 32, 32, True, 'el-fireball', [('on', F), ('off', F), ('phase', F)]),
     ('Hazard_Press', '#e0b030', 64, 32, True, None, [('wait', F), ('slam', F), ('lift', F), ('phase', F), ('params', S)]),
+    ('Hazard_LaserSweep', '#ff3c50', 32, 320, True, 'el-laser', [('speed', F), ('patrol', B), ('params', S)]),
     ('Hazard_ChaseWall', '#c8c8d2', 64, 320, True, None, [('look', S), ('speed', F), ('params', S)]),
     ('Hazard_RollingRock', '#c09070', 32, 32, True, None, [('interval', F), ('speed', F), ('maxSpeed', F)]),
     ('Hazard_Laser', '#ff3c50', 20, 64, True, 'el-laser', [('on', F), ('off', F), ('phase', F)]),
@@ -299,6 +300,9 @@ def build_project(L, atlas_rects, atlas_size):
         prm = json.dumps(sp, ensure_ascii=False)
         if sp['type'] == 'crusher': add('Hazard_Press', sp['x'], sp['y'], sp['w'], sp['h'], wait=sp['wait'], slam=sp['slam'], lift=sp['lift'], phase=sp['phase'], params=prm)
         elif sp['type'] == 'chaser': add('Hazard_ChaseWall', sp['x'], sp['y'], sp['w'], sp['h'], look=sp.get('look'), speed=sp.get('speed0'), params=prm)
+        elif sp['type'] == 'sweep':
+            x0, x1 = min(sp['x'], sp['x1']), max(sp['x'], sp['x1']) + sp['w']
+            add('Hazard_LaserSweep', x0, sp['y'], x1 - x0, sp['h'], speed=sp['speed'], patrol=bool(sp.get('patrol')), params=prm)
         elif sp['type'] == 'riser': add('Zone_RisingMagma', sp['x'], sp['stop'], sp['w'], sp['bottom'] - sp['stop'], stopY=sp['stop'], params=prm)
     for name, b in L.get('extra', []):
         add(name, **b)

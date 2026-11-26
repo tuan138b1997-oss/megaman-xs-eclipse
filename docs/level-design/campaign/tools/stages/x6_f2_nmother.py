@@ -3,7 +3,7 @@ from kit import *
 THEME = dict(bg1=(54, 30, 30), bg2=(50, 28, 26), rock1=(120, 90, 90), rock2=(110, 80, 76))
 s5, p5 = shaft_up(26, 58, n=5)
 for i, g in enumerate(s5):
-    if g[0] == 'plat': s5[i] = ('plat', 'move') + g[2:]
+    if g[0] == 'plat': s5[i] = ('plat', 'thrust') + g[2:]  # thang máy: chạy lên xuống
 
 rooms = [
  Room('R1', 'Phòng gai', 0, 40, 50, 14, 4, [
@@ -53,6 +53,7 @@ rooms = [
 - **Vật phẩm:** Reploid #3 trên bệ thứ ba.'''),
 
  Room('R5', 'Trục thang máy dung nham', 260, -6, 26, 58, 8, s5 + [
+   SP('riser', x=2, w=22, bottom=56, stop=6, trigger=48, mode='smooth', speed=60, speed2=80, look='lava'),
    H('lava', 2, 52, 22, 4), AR(13, 52, 0, -4, 'alarm'), X(4, 50.5, 'dung nham dâng 60 → 80px/s'), X(3, 6, 'thang máy chạy lên 70px/s'),
    E('D', 10, 30), E('D', 18, 14), p5], '''
 - **Mục đích:** cao trào của màn. Trục dọc 600px: **thang máy** chạy lên chậm hơn **dung nham dâng**.

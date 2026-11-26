@@ -1,0 +1,619 @@
+{
+ "name": "Phòng thí nghiệm Gate 2",
+ "stage": "x6_f3_highmax",
+ "theme": "core",
+ "tileSize": 32,
+ "rooms": [
+  {
+   "code": "R1",
+   "name": "Mép vực gai",
+   "x": 0,
+   "y": 40,
+   "w": 40,
+   "h": 18,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 4
+  },
+  {
+   "code": "R2",
+   "name": "Chuỗi bệ nhỏ 1",
+   "x": 40,
+   "y": 36,
+   "w": 64,
+   "h": 22,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 6
+  },
+  {
+   "code": "R3",
+   "name": "Laser quét dọc",
+   "x": 104,
+   "y": 36,
+   "w": 60,
+   "h": 22,
+   "area": 1,
+   "kind": "room",
+   "difficulty": 6
+  },
+  {
+   "code": "MID",
+   "name": "Khối giáp Nightmare",
+   "x": 164,
+   "y": 36,
+   "w": 32,
+   "h": 20,
+   "area": 2,
+   "kind": "mini",
+   "difficulty": 6
+  },
+  {
+   "code": "R4",
+   "name": "Bệ totem",
+   "x": 196,
+   "y": 36,
+   "w": 60,
+   "h": 22,
+   "area": 2,
+   "kind": "room",
+   "difficulty": 7
+  },
+  {
+   "code": "R5",
+   "name": "Chuỗi bệ nhỏ 2",
+   "x": 256,
+   "y": 36,
+   "w": 70,
+   "h": 22,
+   "area": 2,
+   "kind": "room",
+   "difficulty": 8
+  },
+  {
+   "code": "R6",
+   "name": "Trạm nghỉ",
+   "x": 326,
+   "y": 40,
+   "w": 30,
+   "h": 14,
+   "area": 2,
+   "kind": "room",
+   "difficulty": 2
+  },
+  {
+   "code": "BOSS",
+   "name": "High Max",
+   "x": 356,
+   "y": 36,
+   "w": 32,
+   "h": 16,
+   "area": 2,
+   "kind": "boss",
+   "difficulty": 7
+  }
+ ],
+ "checkpoints": [
+  {
+   "x": 3,
+   "y": 52.0
+  },
+  {
+   "x": 198.0,
+   "y": 50.0
+  },
+  {
+   "x": 328.0,
+   "y": 50.0
+  }
+ ],
+ "solids": [
+  {
+   "x": 0.0,
+   "y": 52.0,
+   "w": 30.0,
+   "h": 6.0,
+   "area": 1
+  },
+  {
+   "x": 100.0,
+   "y": 50.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 1
+  },
+  {
+   "x": 104.0,
+   "y": 50.0,
+   "w": 2.0,
+   "h": 1.0,
+   "area": 1
+  },
+  {
+   "x": 160.0,
+   "y": 50.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 1
+  },
+  {
+   "x": 166.0,
+   "y": 48.0,
+   "w": 8.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 176.0,
+   "y": 45.0,
+   "w": 8.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 186.0,
+   "y": 48.0,
+   "w": 8.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 196.0,
+   "y": 50.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 252.0,
+   "y": 50.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 256.0,
+   "y": 50.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 322.0,
+   "y": 50.0,
+   "w": 4.0,
+   "h": 1.0,
+   "area": 2
+  },
+  {
+   "x": 326.0,
+   "y": 40.0,
+   "w": 30.0,
+   "h": 2.0,
+   "area": 2
+  },
+  {
+   "x": 326.0,
+   "y": 50.0,
+   "w": 30.0,
+   "h": 4.0,
+   "area": 2
+  },
+  {
+   "x": 356.0,
+   "y": 50.0,
+   "w": 32.0,
+   "h": 2.0,
+   "area": 2
+  },
+  {
+   "x": 356.0,
+   "y": 36.0,
+   "w": 2.0,
+   "h": 14.0,
+   "area": 2
+  },
+  {
+   "x": 386.0,
+   "y": 36.0,
+   "w": 2.0,
+   "h": 14.0,
+   "area": 2
+  },
+  {
+   "x": 356.0,
+   "y": 36.0,
+   "w": 32.0,
+   "h": 1.0,
+   "area": 2
+  }
+ ],
+ "slopes": [],
+ "ledges": [
+  {
+   "x": 34.0,
+   "y": 51.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.0
+  },
+  {
+   "x": 44.0,
+   "y": 51.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.7
+  },
+  {
+   "x": 54.0,
+   "y": 48.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 1.4
+  },
+  {
+   "x": 64.0,
+   "y": 50.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 2.1
+  },
+  {
+   "x": 74.0,
+   "y": 46.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.0
+  },
+  {
+   "x": 84.0,
+   "y": 49.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.7
+  },
+  {
+   "x": 94.0,
+   "y": 47.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 1.4
+  },
+  {
+   "x": 112.0,
+   "y": 50.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 2.1
+  },
+  {
+   "x": 122.0,
+   "y": 47.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.0
+  },
+  {
+   "x": 132.0,
+   "y": 49.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.7
+  },
+  {
+   "x": 142.0,
+   "y": 46.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 1.4
+  },
+  {
+   "x": 152.0,
+   "y": 48.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 2.1
+  },
+  {
+   "x": 206.0,
+   "y": 50.0,
+   "w": 4.0,
+   "kind": "shelf",
+   "phase": 0.0
+  },
+  {
+   "x": 218.0,
+   "y": 47.0,
+   "w": 4.0,
+   "kind": "shelf",
+   "phase": 0.7
+  },
+  {
+   "x": 230.0,
+   "y": 49.0,
+   "w": 4.0,
+   "kind": "shelf",
+   "phase": 1.4
+  },
+  {
+   "x": 242.0,
+   "y": 46.0,
+   "w": 4.0,
+   "kind": "shelf",
+   "phase": 2.1
+  },
+  {
+   "x": 266.0,
+   "y": 49.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.0
+  },
+  {
+   "x": 276.0,
+   "y": 46.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.7
+  },
+  {
+   "x": 286.0,
+   "y": 49.0,
+   "w": 4.0,
+   "kind": "shelf",
+   "phase": 1.4
+  },
+  {
+   "x": 296.0,
+   "y": 45.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 2.1
+  },
+  {
+   "x": 306.0,
+   "y": 48.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.0
+  },
+  {
+   "x": 316.0,
+   "y": 46.0,
+   "w": 2.0,
+   "kind": "shelf",
+   "phase": 0.7
+  }
+ ],
+ "conveyors": [],
+ "hazards": [
+  {
+   "type": "spike",
+   "x": 30.0,
+   "y": 56.0,
+   "w": 10.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 0.0
+  },
+  {
+   "type": "spike",
+   "x": 40.0,
+   "y": 56.0,
+   "w": 64.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 0.6
+  },
+  {
+   "type": "spike",
+   "x": 104.0,
+   "y": 56.0,
+   "w": 60.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 1.2
+  },
+  {
+   "type": "spike",
+   "x": 164.0,
+   "y": 54.0,
+   "w": 32.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 1.8
+  },
+  {
+   "type": "spike",
+   "x": 196.0,
+   "y": 56.0,
+   "w": 60.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 2.4
+  },
+  {
+   "type": "trash",
+   "x": 219.0,
+   "y": 40.0,
+   "w": 2.0,
+   "h": 7.0,
+   "on": null,
+   "off": null,
+   "phase": 0.0,
+   "column": true
+  },
+  {
+   "type": "trash",
+   "x": 243.0,
+   "y": 39.0,
+   "w": 2.0,
+   "h": 7.0,
+   "on": null,
+   "off": null,
+   "phase": 0.6,
+   "column": true
+  },
+  {
+   "type": "spike",
+   "x": 256.0,
+   "y": 56.0,
+   "w": 70.0,
+   "h": 2.0,
+   "on": null,
+   "off": null,
+   "phase": 1.2
+  }
+ ],
+ "zones": [],
+ "walls": [],
+ "switches": [],
+ "portals": [],
+ "enemies": [
+  {
+   "type": "sniper",
+   "x": 23.5,
+   "y": 52.0
+  },
+  {
+   "type": "drone",
+   "x": 67.5,
+   "y": 40.5
+  },
+  {
+   "type": "drone",
+   "x": 89.5,
+   "y": 41.5
+  },
+  {
+   "type": "drone",
+   "x": 147.5,
+   "y": 40.5
+  },
+  {
+   "type": "sniper",
+   "x": 230.5,
+   "y": 49.0
+  },
+  {
+   "type": "drone",
+   "x": 271.5,
+   "y": 40.5
+  },
+  {
+   "type": "drone",
+   "x": 301.5,
+   "y": 40.5
+  }
+ ],
+ "items": [
+  {
+   "type": "rescue",
+   "id": "x6_f3_highmax:reploid:0",
+   "x": 3.5,
+   "y": 52.0
+  },
+  {
+   "type": "rescue",
+   "id": "x6_f3_highmax:reploid:1",
+   "x": 132.5,
+   "y": 49.0
+  },
+  {
+   "type": "rescue",
+   "id": "x6_f3_highmax:reploid:2",
+   "x": 253.5,
+   "y": 50.0
+  },
+  {
+   "type": "rescue",
+   "id": "x6_f3_highmax:reploid:3",
+   "x": 340.5,
+   "y": 50.0
+  }
+ ],
+ "turrets": [],
+ "vehicles": [],
+ "subBoss": {
+  "id": "donut",
+  "x": 178.0,
+  "y": 38.0,
+  "hp": 45,
+  "room": "MID",
+  "gate": {
+   "x": 194.0,
+   "y": 37.0,
+   "w": 2,
+   "h": 17.0
+  }
+ },
+ "specials": [
+  {
+   "x": 118.0,
+   "y": 37.0,
+   "w": 0.8,
+   "h": 19,
+   "x1": 144.0,
+   "speed": 80,
+   "patrol": true,
+   "look": "laser",
+   "type": "sweep",
+   "room": "R3"
+  },
+  {
+   "x": 144.0,
+   "y": 37.0,
+   "w": 0.8,
+   "h": 19,
+   "x1": 118.0,
+   "speed": 80,
+   "patrol": true,
+   "look": "laser",
+   "type": "sweep",
+   "room": "R3"
+  },
+  {
+   "x": 274.0,
+   "y": 37.0,
+   "w": 0.8,
+   "h": 19,
+   "x1": 290.0,
+   "speed": 80,
+   "patrol": true,
+   "look": "laser",
+   "type": "sweep",
+   "room": "R5"
+  },
+  {
+   "x": 311.0,
+   "y": 37.0,
+   "w": 0.8,
+   "h": 19,
+   "x1": 296.0,
+   "speed": 80,
+   "patrol": true,
+   "look": "laser",
+   "type": "sweep",
+   "room": "R5"
+  }
+ ],
+ "width": 388,
+ "height": 60,
+ "floorBoss": 50.0,
+ "bossGateX": 357,
+ "areaMarks": [
+  164,
+  196
+ ],
+ "palette": {
+  "bg1": "#2c1c30",
+  "bg2": "#26182c",
+  "rock1": "#74607e",
+  "rock2": "#685678"
+ }
+}

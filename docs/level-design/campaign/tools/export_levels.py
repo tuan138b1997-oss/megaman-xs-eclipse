@@ -50,7 +50,8 @@ def export(sid):
                     if k in kw: kw[k] = r1(oy + kw[k])
                 if g[1] == 'trigger' or kw['type'] == 'riser' and 'trigger' in kw: pass
                 kw['room'] = r['code']; L['specials'].append(kw)
-                sp_boxes.append((g[2].get('x', 0), g[2].get('y', 0), g[2].get('w', 0), g[2].get('h', 0)))
+                gx, gx1 = g[2].get('x', 0), g[2].get('x1', g[2].get('x', 0))
+                sp_boxes.append((min(gx, gx1) - .5, g[2].get('y', 0), abs(gx1 - gx) + g[2].get('w', 0) + 1, g[2].get('h', 0)))
         arrows = [g for g in geo if g[0] == 'arrow']
         switches = sorted([g for g in geo if g[0] == 'ent' and g[1] == 'K'], key=lambda g: g[2])
         sw_index = {}
@@ -100,7 +101,7 @@ def export(sid):
                 box = dict(x=r1(ox + x), y=r1(oy + y), w=r1(w), h=r1(h))
                 if k == 'shelf': continue
                 if k == 'trash' and (w <= .3 or h <= .3): continue  # dây cáp / ray: trang trí
-                if k == 'trash' and any(x < bx + bw and bx < x + w and y < by + bh and by < y + h for bx, by, bw, bh in sp_boxes): continue
+                if k in ('trash', 'laser') and any(x < bx + bw and bx < x + w and y < by + bh and by < y + h for bx, by, bw, bh in sp_boxes): continue
                 si = link_switch(x) if k in ('laser', 'elec', 'door') else None
                 if si is not None:
                     L['walls'].append(dict(type='laser' if k in ('laser', 'elec') else 'gate', **box))
