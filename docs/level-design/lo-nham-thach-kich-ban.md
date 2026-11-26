@@ -15,6 +15,7 @@ Màn này thay cho `x5_dinorex` hiện tại. Boss, capsule Gaea Arm, 4 Reploid,
 | Bảng màu | Lospec, 24–32 màu cho chủ đề lửa | Đồng bộ tông với sprite PS. |
 
 - **Kích thước:** 1 ô = 32px trong game (vẽ ở 16px rồi phóng ×2). Khung hình = 30×17 ô (bản Unity: 15×8.4 ô, phóng ×2 như Mega Man gốc). Nhân vật cao khoảng 1.6 ô.
+- **Độ cao nhảy (riêng màn này):** X nhảy ~2.7 ô (vy 520 × hệ số giáp, bằng ~1.8 lần chiều cao X như Mega Man X gốc); các màn khác giữ vy 610.
 - **Chiều cao hành lang:** từ trần đến sàn khoảng 8–9 ô, gần đúng một màn hình như Mega Man truyền thống (R4, mini-boss, R5, R7, R8; phòng boss giới hạn camera từ y 8).
 - **Lớp LDtk:**
   - `Collision`: IntGrid. Giá trị: 1 = đặc, 2 = dốc 45°, 3 = dốc 22.5°, 4 = kệ một chiều, 5 = sàn vỡ, 6 = băng chuyền, 9 = dung nham.

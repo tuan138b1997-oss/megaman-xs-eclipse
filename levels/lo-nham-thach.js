@@ -179,6 +179,9 @@ function camY(){const cx=p.x+p.w/2,cy=p.y+p.h/2;let r=world.proto.rooms.filter((
 LEVELS_PROTO={};LEVELS_PROTO[ID]=build;
 const st=STAGES.find(s=>s.id===ID);if(st){st.tag='MÀN MẪU · LÒ NHAM THẠCH: dốc đá lăn, giếng hơi nóng, xe quặng, lò ép, giếng nham dâng. Bản khối màu để chơi thử.';}
 const baseBuild=buildWorld;buildWorld=function(id){const s=STAGES.find(s=>s.id===id);return LEVELS_PROTO[id]?LEVELS_PROTO[id](s):baseBuild(id);};
+// Classic Mega Man jump for this stage only (matches the Unity prototype): ground jump vy 520
+// instead of 610, ≈2.7 tiles. Other stages keep 610 because their shelves are 88 px apart.
+const STAGE_JUMP=520/610,baseStats=stats;stats=function(){const a=baseStats();if(world&&world.proto&&stage&&stage.id===ID)a.jumpMult*=STAGE_JUMP;return a;};
 const baseAfter=blueprintAfter;blueprintAfter=function(dt){baseAfter(dt);if(world.proto&&p){protoUpdate(dt);unstick();}};
 })();
 var LEVELS_PROTO;
