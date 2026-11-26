@@ -1,0 +1,11 @@
+{
+  "zipFiles": 309,
+  "weaponSheets": 44,
+  "bossRecords": 28,
+  "notes": [
+    "Menu2.gif contains DirectX installer controls; do not present them as game menu buttons.",
+    "The archive supplies Sigma Virus art, not a complete Hell Sigma body sheet. Final encounter uses this documented source.",
+    "X6 Parts beta unused sheet contains text and silhouettes rather than the claimed complete armor icon set.",
+    "Attack sheets named Blade/Shadow/Falcon contain effects, not full locomotion bodies. Native outfit poses and X6 armor mugshots are retained; locomotion uses reviewed base clips with a palette swap."
+  ]
+}
