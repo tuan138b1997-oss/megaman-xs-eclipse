@@ -15,10 +15,10 @@ def build():
     r.run(6).gap(2, 'gai').run(6, 'S').gap(3, 'gai').run(6, 'D').gap(3, 'gai').run(8, 'R').run(4)
     st.add(r.done(), A1)
 
-    r = R('R2', 'Vùng đảo trọng lực', 6, 'Bước vào vùng tím: trọng lực đảo, đi trên trần qua biển gai dài 50 ô (1650 px theo dữ liệu game); gai trần có khe 3 ô. '
-          'Hốc trần bí mật ở giữa: Secret Capsule.', timing='đảo trọng lực tức thời khi vào vùng tím; khe gai trần 3 ô')
+    r = R('R2', 'Vùng đảo trọng lực', 6, 'Bước vào vùng tím: trọng lực đảo, đi trên trần qua biển gai dài 50 ô (1650 px theo dữ liệu game); 4 cụm gai trần (mỗi cụm 3 ô) phải nhảy qua. '
+          'Hốc trần bí mật ở giữa: Secret Capsule.', timing='đảo trọng lực tức thời khi vào vùng tím; 4 cụm gai trần 3 ô')
     r.run(6).zone(50, 'grav', 'đảo trọng lực: đi trên trần', y0=1, walk=False)
-    r.special(50, 'grav', 0, prims=[('pit', 0, 50, 'gai'), ('spikes', 0, 12, 1, 'ceil'), ('spikes', 15, 30, 1, 'ceil'), ('spikes', 33, 50, 1, 'ceil'),
+    r.special(50, 'grav', 0, prims=[('pit', 0, 50, 'gai'), ('spikes', 7, 10, -9, 'ceil'), ('spikes', 17, 20, -9, 'ceil'), ('spikes', 27, 30, -9, 'ceil'), ('spikes', 37, 40, -9, 'ceil'),
                                      ('e', 'D', 10, -4), ('e', 'D', 32, -4), ('e', 'A', 24, -8.5, 'Secret Capsule (hốc trần)')], land=6)
     r.secret((-32, 0), (-32, -8.5), (-30, -8.5))
     st.add(r.done(), A1)

@@ -21,8 +21,8 @@ def build():
     st.add(Arena('MID', 'Điểm dừng', 5, 'Mini-boss: bóng Nightmare 45 HP chỉ hiện trong vệt đèn. Checkpoint 1.', w=24, boss='M', note='bóng Nightmare 45 HP',
                  timing='hiện 2 s / ẩn 2 s', extra=lambda b: b.ent('C', -2)), 'Mid')
 
-    r = R('R3', 'Đảo trọng lực', 6, 'Đi trên trần qua gai; gai trần có khe 3 ô.', timing='', h=12)
-    r.run(6, 'S R').special(30, 'grav', 0, prims=[('pit', 0, 30, 'gai'), ('zone', 0, -9, 30, 0, 'grav', 'đảo trọng lực'), ('spikes', 0, 12, 1, 'ceil'), ('spikes', 15, 30, 1, 'ceil'),
+    r = R('R3', 'Đảo trọng lực', 6, 'Trọng lực đảo: đi trên trần, nhảy qua 3 cụm gai trần (mỗi cụm 3 ô); rơi khỏi vùng đảo là rơi xuống hố gai.', timing='', h=12)
+    r.run(6, 'S R').special(30, 'grav', 0, prims=[('pit', 0, 30, 'gai'), ('zone', 0, -9, 30, 0, 'grav', 'đảo trọng lực'), ('spikes', 6, 9, -9, 'ceil'), ('spikes', 15, 18, -9, 'ceil'), ('spikes', 23, 26, -9, 'ceil'),
                                                ('e', 'D', 20, -4)], land=6)
     st.add(r.done(), A2)
 

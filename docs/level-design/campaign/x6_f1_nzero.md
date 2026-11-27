@@ -53,8 +53,8 @@ Mini-boss: bóng Nightmare 45 HP chỉ hiện trong vệt đèn. Checkpoint 1.
 ### R3 – Đảo trọng lực · đi ngang · độ khó 6
 *x 98–140, y 26–38 (42×12 ô) · vào ở sàn y 36, ra ở sàn y 36* · Area 2 · giếng hai chiều
 
-Đi trên trần qua gai; gai trần có khe 3 ô.
-- **Địa hình:** hố gai x 104–134 (rộng 30 ô); đảo trọng lực x 104–134, y 27–36 (đảo trọng lực); gai trần x 104–116; gai trần x 119–134
+Trọng lực đảo: đi trên trần, nhảy qua 3 cụm gai trần (mỗi cụm 3 ô); rơi khỏi vùng đảo là rơi xuống hố gai.
+- **Địa hình:** hố gai x 104–134 (rộng 30 ô); đảo trọng lực x 104–134, y 27–36 (đảo trọng lực); gai trần x 110–113; gai trần x 119–122; gai trần x 127–130
 - **Thực thể:** Sniper (100, 36); Reploid cứu (102, 36); Drone (124, 32)
 - **Đường chính dùng:** trọng lực đảo
 

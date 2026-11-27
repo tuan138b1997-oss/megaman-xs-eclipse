@@ -37,9 +37,9 @@ Gai sàn rải rác 2–3 ô, kệ một chiều phía trên. Sniper trên kệ.
 ### R2 – Vùng đảo trọng lực · đi ngang · độ khó 6
 *x 41–103, y 26–38 (62×12 ô) · vào ở sàn y 36, ra ở sàn y 36* · Area 1 · hành lang gai
 
-Bước vào vùng tím: trọng lực đảo, đi trên trần qua biển gai dài 50 ô (1650 px theo dữ liệu game); gai trần có khe 3 ô. Hốc trần bí mật ở giữa: Secret Capsule.
-- **Thông số:** đảo trọng lực tức thời khi vào vùng tím; khe gai trần 3 ô
-- **Địa hình:** đảo trọng lực x 47–97, y 27–36 (đảo trọng lực: đi trên trần); hố gai x 47–97 (rộng 50 ô); gai trần x 47–59; gai trần x 62–77; gai trần x 80–97
+Bước vào vùng tím: trọng lực đảo, đi trên trần qua biển gai dài 50 ô (1650 px theo dữ liệu game); 4 cụm gai trần (mỗi cụm 3 ô) phải nhảy qua. Hốc trần bí mật ở giữa: Secret Capsule.
+- **Thông số:** đảo trọng lực tức thời khi vào vùng tím; 4 cụm gai trần 3 ô
+- **Địa hình:** đảo trọng lực x 47–97, y 27–36 (đảo trọng lực: đi trên trần); hố gai x 47–97 (rộng 50 ô); gai trần x 54–57; gai trần x 64–67; gai trần x 74–77; gai trần x 84–87
 - **Thực thể:** Drone (57, 32); Drone (79, 32); Capsule giáp (71, 27.5) – Secret Capsule (hốc trần)
 - **Đường chính dùng:** trọng lực đảo
 - **Lối bí mật:** (71, 36) → (71, 27.5) → (73, 27.5)
