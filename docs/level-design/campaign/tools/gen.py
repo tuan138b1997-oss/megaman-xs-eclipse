@@ -8,7 +8,9 @@ os.makedirs(OUT + '/maps', exist_ok=True)
 FB = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 13)
 FS = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 11)
 FT = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 18)
-T = 6
+T = 8
+CORR = 9          # hành lang chuẩn: trần→sàn 9 ô
+VIEW = (20, 11.25)  # khung hình Unity 640×360 px tính theo ô
 THEME = {'intro': ((70, 62, 70), (150, 130, 110)), 'metal': ((60, 62, 72), (140, 140, 150)), 'water': ((30, 52, 80), (90, 140, 170)),
          'volt': ((52, 48, 30), (190, 170, 90)), 'nature': ((34, 52, 34), (110, 150, 90)), 'shadow': ((44, 34, 58), (120, 100, 150)),
          'wind': ((48, 62, 80), (170, 190, 210)), 'fire': ((60, 36, 30), (150, 100, 70)), 'ice': ((48, 66, 80), (190, 220, 235)),
@@ -21,7 +23,7 @@ HAZ = (255, 120, 40)
 
 
 def layout(rooms):
-    x, floor, out, prev = 0, 40, [], None
+    x, floor, out, prev = 0, 60, [], None
     for r in rooms:
         code, name, w, h, d = r[:5]
         if code.endswith('b') and prev is not None:  # branch below the previous room
@@ -31,9 +33,9 @@ def layout(rooms):
         if d in ('R', 'A'):
             rect = (x, floor - h, w, h); x += w
         elif d == 'U':
-            rect = (x, floor - h, w, h); x += w; floor = floor - h + 14
+            rect = (x, floor - h, w, h); x += w; floor = floor - h + CORR
         else:  # D
-            rect = (x, floor - 14, w, h); x += w; floor = floor - 14 + h
+            rect = (x, floor - CORR, w, h); x += w; floor = floor - CORR + h
         out.append((r, rect)); prev = rect
     ys = [rc[1] for _, rc in out]; miny = min(ys)
     return [(r, (rc[0], rc[1] - miny + 2, rc[2], rc[3])) for r, rc in out]
@@ -50,15 +52,15 @@ def draw_stage(sid, st):
         col = (90, 30, 50) if code in ('BOSS',) else (70, 40, 60) if code == 'MID' and 'M' in icons else bg
         d.rectangle([X, Y, X2, Y2], fill=col, outline=(130, 130, 150))
         if dr in ('R', 'A'):
-            d.rectangle([X, Y2 - 3 * T, X2, Y2], fill=rock)
+            d.rectangle([X, Y2 - 2 * T, X2, Y2], fill=rock)     # sàn
+            d.rectangle([X, Y, X2, Y + T], fill=rock)            # trần (luôn nằm trong khung hình)
+            if hh >= 17: d.rectangle([X + 2 * T, Y + 8 * T, X2 - 2 * T, Y + 9 * T], fill=rock)  # sàn tầng trên
         else:
             d.rectangle([X, Y, X + 2 * T, Y2], fill=rock); d.rectangle([X2 - 2 * T, Y, X2, Y2], fill=rock)
             if dr == 'U': d.rectangle([X, Y2 - 2 * T, X2, Y2], fill=rock)
-        tx = X + (2 * T + 4 if dr in ('U', 'D') else 4)
-        d.text((tx, Y + 3), f'{code} {name}', fill=(255, 230, 160), font=FB)
-        d.text((tx, Y + 19), f'độ khó {diff}', fill=(200, 200, 210), font=FS)
-        if haz:
-            d.text((tx, Y + 33), '⚠ ' + haz, fill=HAZ, font=FS)
+        tx = X + (2 * T + 4 if dr in ('U', 'D') else 4); ty = Y + (T + 2 if dr in ('R', 'A') else 3)
+        d.text((tx, ty), f'{code} {name} · {ww}×{hh}', fill=(255, 230, 160), font=FB)
+        d.text((tx, ty + 15), f'độ khó {diff}' + (f'  ⚠ {haz}' if haz else ''), fill=(200, 200, 210), font=FS)
         gl = [c for c in icons.split() if c in ICON]
         n = len(gl)
         for i, c in enumerate(gl):
@@ -66,24 +68,36 @@ def draw_stage(sid, st):
             if dr in ('U', 'D'):
                 cx = X + (ww * T) / 2 + (-18 if i % 2 else 18); cy = Y + 60 + (hh * T - 100) * (i + 1) / (n + 1)
             else:
-                cx = X + (ww * T) * (i + 1) / (n + 1); cy = Y2 - 3 * T - 16 - (22 if c in 'DH' else 0)
+                cx = X + (ww * T) * (i + 1) / (n + 1); cy = Y2 - 2 * T - 10 - (14 if c in 'DH' and hh > 9 else 0)
             d.ellipse([cx - 9, cy - 9, cx + 9, cy + 9], fill=ic); d.text((cx - 5, cy - 7), t, fill=(0, 0, 0), font=FS)
         ac = (120, 230, 255)
         if dr in ('R', 'A'):
-            yy = Y2 - 3 * T - 4; d.line([(X + 6, yy), (X2 - 8, yy)], fill=ac, width=2); d.polygon([(X2 - 4, yy), (X2 - 12, yy - 5), (X2 - 12, yy + 5)], fill=ac)
+            yy = Y2 - 2 * T - 2; d.line([(X + 6, yy), (X2 - 8, yy)], fill=ac, width=2); d.polygon([(X2 - 4, yy), (X2 - 12, yy - 5), (X2 - 12, yy + 5)], fill=ac)
         elif dr == 'U':
             xx = (X + X2) / 2; d.line([(xx, Y2 - 14), (xx, Y + 50)], fill=ac, width=2); d.polygon([(xx, Y + 44), (xx - 5, Y + 54), (xx + 5, Y + 54)], fill=ac)
         else:
             xx = (X + X2) / 2; d.line([(xx, Y + 50), (xx, Y2 - 20)], fill=ac, width=2); d.polygon([(xx, Y2 - 12), (xx - 5, Y2 - 22), (xx + 5, Y2 - 22)], fill=ac)
+    # khung hình chuẩn 20×11.25 ô đặt ở phòng đầu để so kích thước
+    (_, (fx, fy, fw, fh)) = L[0]
+    vx, vy = fx * T + 2 * T, (fy + fh) * T - VIEW[1] * T
+    d.rectangle([vx, vy, vx + VIEW[0] * T, vy + VIEW[1] * T], outline=(255, 255, 255), width=2)
+    d.text((vx + 4, vy - 14), 'khung hình 20×11.25 ô', fill=(255, 255, 255), font=FS)
     y0 = H * T + 12
     d.text((12, y0), f"{st['title'].upper()} · Boss: {st['boss']} · chủ đề {st['theme']} · {st['act']}", fill=(255, 230, 160), font=FT)
     for i, (k, (t, c, n)) in enumerate(ICON.items()):
         x = 12 + (i % 6) * 150; y = y0 + 34 + (i // 6) * 24
         d.ellipse([x, y, x + 16, y + 16], fill=c); d.text((x + 4, y + 2), t, fill=(0, 0, 0), font=FS); d.text((x + 22, y + 2), n, fill=(220, 220, 220), font=FS)
-    d.text((12, y0 + 90), '→ đường chính · ⚠ bẫy chính của phòng · nền tối = khung phòng, dải sáng = sàn/vách · 1 ô = 32px trong game',
+    d.text((12, y0 + 90), '→ đường chính · ⚠ bẫy chính · dải sáng = trần/sàn/vách · khung trắng = 1 màn hình (640×360 px = 20×11.25 ô) · hành lang 9 ô, phòng nhảy bệ 11 ô, 2 tầng 17 ô · 1 ô = 32px',
            fill=(200, 200, 200), font=FS)
     img.save(f"{OUT}/maps/{sid}.png", optimize=True)
     return img.size
+
+
+STANDARD = ('Theo màn mẫu Lò Nham Thạch: khung hình 640×360 px = 20×11.25 ô; hành lang trần→sàn 9 ô, khối trần '
+            'luôn nằm trong khung; phòng nhảy bệ/vực/nước 11 ô; phòng 2 tầng 17 ô (hai hành lang chồng nhau); '
+            'đấu trường cao 11 ô, rộng 20–30 ô; giếng rộng 12–20 ô, leo bằng đá tường và kệ nghỉ. '
+            'X nhảy cao ~2.6 ô (vy 520), xa ~5 ô: gờ trên đường chính ≤ 2.5 ô, hố ≤ 4 ô; '
+            'cao/xa hơn phải dùng đá tường, lướt-nhảy hoặc giáp, và chỉ dùng cho bí mật.')
 
 
 def write_doc(sid, st, size):
@@ -92,9 +106,11 @@ def write_doc(sid, st, size):
     lines = [f"# {st['title']} — Boss {st['boss']}", '',
              f"`{sid}` · chủ đề `{st['theme']}` · {st['act']} · tổng chiều ngang khoảng {tiles} ô ({tiles * 32}px)", '',
              f"![Sơ đồ](maps/{sid}.png)", '', '## Ý tưởng', st['concept'], '', '## Tham khảo', st['refs'], '',
+             '## Chuẩn kích thước', STANDARD, '',
              '## Nhịp màn', ' → '.join(f"{r[0]} ({r[5]})" for r in rooms), '', '## Kịch bản từng phòng', '']
     for code, name, w, h, dr, diff, desc, icons, haz in rooms:
         kind = {'R': 'đi ngang', 'U': 'leo dọc', 'D': 'đi xuống', 'A': 'đấu trường'}[dr]
+        if dr == 'R': kind += ', 2 tầng' if h >= 17 else ', nhảy bệ' if h >= 11 else ''
         ent = ', '.join(ICON[c][2] for c in icons.split() if c in ICON)
         lines += [f"### {code} – {name} ({w}×{h} ô, {kind}) · độ khó {diff}", desc]
         if haz: lines.append(f"- **Bẫy:** {haz}")
@@ -117,6 +133,7 @@ idx = ['# Kịch bản & sơ đồ toàn chiến dịch', '',
        'Màn mẫu đã duyệt: **Lò Nham Thạch** (`x5_dinorex`) — xem `lo-nham-thach-kich-ban.md`. 25 màn còn lại dùng cùng khung: phòng có mục đích rõ, mỗi màn 1 cơ chế chính + 1 phụ, đoạn dọc, checkpoint giữa, bí mật cần giáp/kỹ năng.', '',
        '## Danh sách màn', '| Màn | Boss | Chủ đề | Cơ chế chính | Độ khó cao nhất | Bí mật |', '|---|---|---|---|---|---|']
 idx.insert(5, '')
+idx[4:4] = ['## Chuẩn kích thước', STANDARD, '', '![Tổng quan](tong-quan-25-man.png)', '']
 for sid in order:
     st = STAGES[sid]; mx = max(r[5] for r in st['rooms'] if r[0] != 'BOSS')
     idx.append(f"| [{st['title']}]({sid}.md) | {st['boss']} | {st['theme']} | {', '.join(st['newMech'][:2])} | {mx} | {len(st['secrets'])} |")

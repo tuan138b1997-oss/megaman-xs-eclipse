@@ -2,6 +2,11 @@
 
 Màn mẫu đã duyệt: **Lò Nham Thạch** (`x5_dinorex`) — xem `lo-nham-thach-kich-ban.md`. 25 màn còn lại dùng cùng khung: phòng có mục đích rõ, mỗi màn 1 cơ chế chính + 1 phụ, đoạn dọc, checkpoint giữa, bí mật cần giáp/kỹ năng.
 
+## Chuẩn kích thước
+Theo màn mẫu Lò Nham Thạch: khung hình 640×360 px = 20×11.25 ô; hành lang trần→sàn 9 ô, khối trần luôn nằm trong khung; phòng nhảy bệ/vực/nước 11 ô; phòng 2 tầng 17 ô (hai hành lang chồng nhau); đấu trường cao 11 ô, rộng 20–30 ô; giếng rộng 12–20 ô, leo bằng đá tường và kệ nghỉ. X nhảy cao ~2.6 ô (vy 520), xa ~5 ô: gờ trên đường chính ≤ 2.5 ô, hố ≤ 4 ô; cao/xa hơn phải dùng đá tường, lướt-nhảy hoặc giáp, và chỉ dùng cho bí mật.
+
+![Tổng quan](tong-quan-25-man.png)
+
 ## Danh sách màn
 
 | Màn | Boss | Chủ đề | Cơ chế chính | Độ khó cao nhất | Bí mật |

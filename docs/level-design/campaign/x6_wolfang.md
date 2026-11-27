@@ -1,6 +1,6 @@
 # Bắc Cực — Boss Blizzard Wolfang
 
-`x6_wolfang` · chủ đề `ice` · Act II · X6 · tổng chiều ngang khoảng 328 ô (10496px)
+`x6_wolfang` · chủ đề `ice` · Act II · X6 · tổng chiều ngang khoảng 324 ô (10368px)
 
 ![Sơ đồ](maps/x6_wolfang.png)
 
@@ -10,12 +10,15 @@ Area 1 là chặng Ride Chaser trượt dốc tuyết bị tuyết lở đuổi;
 ## Tham khảo
 X6 North Pole Area, X4 Frost Walrus, X8 Avalanche Yeti (bản demake làm lại thành màn chơi thường).
 
+## Chuẩn kích thước
+Theo màn mẫu Lò Nham Thạch: khung hình 640×360 px = 20×11.25 ô; hành lang trần→sàn 9 ô, khối trần luôn nằm trong khung; phòng nhảy bệ/vực/nước 11 ô; phòng 2 tầng 17 ô (hai hành lang chồng nhau); đấu trường cao 11 ô, rộng 20–30 ô; giếng rộng 12–20 ô, leo bằng đá tường và kệ nghỉ. X nhảy cao ~2.6 ô (vy 520), xa ~5 ô: gờ trên đường chính ≤ 2.5 ô, hố ≤ 4 ô; cao/xa hơn phải dùng đá tường, lướt-nhảy hoặc giáp, và chỉ dùng cho bí mật.
+
 ## Nhịp màn
 R1 (1) → R2 (5) → MID (2) → R3 (5) → R4 (4) → R5 (2) → BOSS (6)
 
 ## Kịch bản từng phòng
 
-### R1 – Trạm trượt (30×16 ô, đi ngang) · độ khó 1
+### R1 – Trạm trượt (30×9 ô, đi ngang) · độ khó 1
 Lên Ride Chaser.
 - **Đặt trong phòng:** Ride Armor / Chaser
 
@@ -24,25 +27,25 @@ Ride Chaser xuống dốc dài; tuyết lở đuổi phía sau, nhảy qua khe b
 - **Bẫy:** tuyết lở
 - **Đặt trong phòng:** Drone, Drone, Reploid
 
-### MID – Trạm khí tượng (24×17 ô, đi ngang) · độ khó 2
+### MID – Trạm khí tượng (24×9 ô, đi ngang) · độ khó 2
 Checkpoint, xuống xe.
 - **Đặt trong phòng:** Checkpoint
 
-### R3 – Vách băng cao (24×46 ô, leo dọc) · độ khó 5
+### R3 – Vách băng cao (20×46 ô, leo dọc) · độ khó 5
 Bám tường băng X=3850 (trơn, trượt nhanh hơn); Blade Body ở hốc cao.
 - **Bẫy:** băng rơi
 - **Đặt trong phòng:** Drone, Capsule giáp
 
-### R4 – Hồ băng (60×16 ô, đi ngang) · độ khó 4
+### R4 – Hồ băng (60×9 ô, đi ngang) · độ khó 4
 Sàn băng trơn, băng nhọn rơi từ trần theo nhịp; Heart Tank trên tảng băng trôi.
 - **Bẫy:** sàn trơn
 - **Đặt trong phòng:** Sniper, Brute, Heart Tank
 
-### R5 – Hang băng (30×16 ô, đi ngang) · độ khó 2
+### R5 – Hang băng (30×9 ô, đi ngang) · độ khó 2
 Phòng nghỉ, Sub-Tank, cửa boss.
 - **Đặt trong phòng:** Sub-Tank, Reploid
 
-### BOSS – Blizzard Wolfang (30×17 ô, đấu trường) · độ khó 6
+### BOSS – Blizzard Wolfang (30×11 ô, đấu trường) · độ khó 6
 Sàn đấu đóng băng dần (trơn), sói phóng băng.
 - **Bẫy:** sàn trơn
 - **Đặt trong phòng:** Boss

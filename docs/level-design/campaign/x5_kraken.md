@@ -1,6 +1,6 @@
 # Nhà máy điện — Boss Volt Kraken
 
-`x5_kraken` · chủ đề `volt` · Act I · X5 · tổng chiều ngang khoảng 374 ô (11968px)
+`x5_kraken` · chủ đề `volt` · Act I · X5 · tổng chiều ngang khoảng 370 ô (11840px)
 
 ![Sơ đồ](maps/x5_kraken.png)
 
@@ -10,44 +10,47 @@ Nửa đầu là chặng Ride Chaser tốc độ cao xuyên nhà máy, nửa sau
 ## Tham khảo
 X5 Volt Kraken (Ride Chaser), X2 Overdrive Ostrich, X8 Gigabolt Man-O-War (tránh lỗi: không auto-scroll, người chơi điều tốc độ).
 
+## Chuẩn kích thước
+Theo màn mẫu Lò Nham Thạch: khung hình 640×360 px = 20×11.25 ô; hành lang trần→sàn 9 ô, khối trần luôn nằm trong khung; phòng nhảy bệ/vực/nước 11 ô; phòng 2 tầng 17 ô (hai hành lang chồng nhau); đấu trường cao 11 ô, rộng 20–30 ô; giếng rộng 12–20 ô, leo bằng đá tường và kệ nghỉ. X nhảy cao ~2.6 ô (vy 520), xa ~5 ô: gờ trên đường chính ≤ 2.5 ô, hố ≤ 4 ô; cao/xa hơn phải dùng đá tường, lướt-nhảy hoặc giáp, và chỉ dùng cho bí mật.
+
 ## Nhịp màn
 R1 (1) → R2 (4) → R3 (5) → MID (2) → R4 (5) → R5 (4) → R6 (2) → BOSS (6)
 
 ## Kịch bản từng phòng
 
-### R1 – Bãi xuất phát (30×16 ô, đi ngang) · độ khó 1
+### R1 – Bãi xuất phát (30×9 ô, đi ngang) · độ khó 1
 Lên Ride Chaser; bảng hướng dẫn nhảy/bắn khi đang chạy.
 - **Đặt trong phòng:** Ride Armor / Chaser
 
-### R2 – Đường băng điện (120×16 ô, đi ngang) · độ khó 4
+### R2 – Đường băng điện (120×9 ô, đi ngang) · độ khó 4
 Ride Chaser: dốc nhảy, cột điện phóng tia ngang (hồ quang), Drone lao từ phía sau. Vòng tăng tốc trên mặt đường.
 - **Bẫy:** hồ quang
 - **Đặt trong phòng:** Drone, Drone, Drone, Reploid
 
-### R3 – Cầu sập (60×16 ô, đi ngang) · độ khó 5
+### R3 – Cầu sập (60×9 ô, đi ngang) · độ khó 5
 Ride Chaser: cầu sập dần sau lưng, phải giữ tốc độ; nhảy cuối cầu để vào nhà máy.
 - **Bẫy:** cầu sập
 - **Đặt trong phòng:** Drone
 
-### MID – Trạm biến áp (30×17 ô, đi ngang) · độ khó 2
+### MID – Trạm biến áp (30×9 ô, đi ngang) · độ khó 2
 Xuống xe, checkpoint. Heart Tank trên nóc trạm (đá tường).
 - **Đặt trong phòng:** Checkpoint, Heart Tank
 
-### R4 – Tháp tụ điện (24×50 ô, leo dọc) · độ khó 5
+### R4 – Tháp tụ điện (20×50 ô, leo dọc) · độ khó 5
 Leo tháp: bệ đẩy Thruster bật theo nhịp, tia điện quét ngang mỗi tầng. Falcon Arm ở đỉnh tháp.
 - **Bẫy:** tia điện
 - **Đặt trong phòng:** Drone, Sniper, Capsule giáp
 
-### R5 – Phòng cuộn dây (50×16 ô, đi ngang) · độ khó 4
+### R5 – Phòng cuộn dây (50×9 ô, đi ngang) · độ khó 4
 Sàn nhiễm điện bật/tắt theo nhịp 1.2s; Reploid kẹt giữa hai cuộn dây.
 - **Bẫy:** sàn điện
 - **Đặt trong phòng:** Sniper, Brute, Reploid
 
-### R6 – Hành lang lõi (30×16 ô, đi ngang) · độ khó 2
+### R6 – Hành lang lõi (30×9 ô, đi ngang) · độ khó 2
 Phòng nghỉ, Sub-Tank trong hốc tường, cửa boss.
 - **Đặt trong phòng:** Sub-Tank, Reploid
 
-### BOSS – Volt Kraken (30×17 ô, đấu trường) · độ khó 6
+### BOSS – Volt Kraken (30×11 ô, đấu trường) · độ khó 6
 Đấu trường có 4 cột thu sét; pha 2 Kraken nạp điện các cột thành bẫy.
 - **Bẫy:** cột điện
 - **Đặt trong phòng:** Boss
