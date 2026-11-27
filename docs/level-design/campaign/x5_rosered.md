@@ -65,8 +65,8 @@ Mini-boss: lõi dây leo với 3 bông hoa phun gai; phải bắn hoa theo thứ
 
 Bùn làm chậm 40% và không lướt được. Bệ gỗ nổi chìm dần sau 1.5 s đứng. Heart Tank trên gò đất cao giữa đầm (nhảy từ bệ gỗ).
 - **Thông số:** bùn: tốc độ ×0.6; bệ gỗ chìm sau 1.5 s, nổi lại sau 3 s
-- **Địa hình:** vùng chậm x 172–180, y 41–44 (bùn ×0.6); hố bùn (chậm) x 180–194 (rộng 14 ô); khúc gỗ trôi x 183–186, y 43; khúc gỗ trôi x 189–192, y 43; khối x 197–200, y 40–44; vùng chậm x 198–206, y 41–44
-- **Thực thể:** Sniper (170, 44); Brute (176, 44); Heart Tank (198.5, 40) – gò đất; Sniper (202, 44); Checkpoint (208, 44)
+- **Địa hình:** vùng chậm x 172–180, y 41–44 (bùn ×0.6); hố bùn (chậm) x 180–194 (rộng 14 ô); khúc gỗ trôi x 183–186, y 43; khúc gỗ trôi x 189–192, y 43; khối x 197–200, y 41.5–44; vùng chậm x 198–206, y 41–44
+- **Thực thể:** Sniper (170, 44); Brute (176, 44); Heart Tank (198.5, 41.5) – gò đất; Sniper (202, 44); Checkpoint (208, 44)
 - **Đường chính dùng:** bệ di động, nhảy
 - **Lối bí mật:** (196, 44) → (198, 40)
 
@@ -111,7 +111,7 @@ Sàn có bụi gai mọc lại sau 4 s; boss treo trên dây leo trần.
 | Checkpoint | MID | 166 | 44 |  |
 | Sniper | R5 | 170 | 44 |  |
 | Brute | R5 | 176 | 44 |  |
-| Heart Tank | R5 | 198.5 | 40 | gò đất |
+| Heart Tank | R5 | 198.5 | 41.5 | gò đất |
 | Sniper | R5 | 202 | 44 |  |
 | Checkpoint | R5 | 208 | 44 |  |
 | Drone | R6 | 221.5 | 33.5 |  |

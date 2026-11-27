@@ -38,9 +38,9 @@
   {
    "name": "R3 Cầu thang Sigma",
    "x": 88.0,
-   "y": 34.0,
+   "y": 26.0,
    "w": 26.0,
-   "h": 12,
+   "h": 20,
    "kind": "R",
    "difficulty": 8,
    "area": "Area 2 · Boss Rush và cầu thang Sigma"
@@ -159,7 +159,7 @@
   },
   {
    "x": 88.0,
-   "y": 34.0,
+   "y": 26.0,
    "w": 26.0,
    "h": 1
   },

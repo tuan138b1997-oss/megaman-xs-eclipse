@@ -81,12 +81,12 @@ Khoang hàng: băng chuyền đẩy ngược −80 px/s. Ride Armor Pod ở đ�
 ### R6 – Nóc toa đầu và hầm · đi ngang · độ khó 7
 *x 239–294, y 2–14 (55×12 ô) · vào ở sàn y 12, ra ở sàn y 12* · Area 2 · khoang hàng và đầu tàu
 
-Cao trào. Gió mạnh −90 px/s; hai hầm đá quét qua nóc: trần hạ còn 1.6 ô, phải lướt sát nóc trước khi hầm tới (đèn đỏ + tiếng còi 1.5 s). Khe khớp nối 4 ô giữa hai hầm. Heart Tank trên nóc ống khói, lên bằng đá tường.
+Cao trào. Gió mạnh −90 px/s; hai hầm đá quét qua nóc: trần hạ còn 1.6 ô, phải lướt sát nóc trước khi hầm tới (đèn đỏ + tiếng còi 1.5 s). Khe khớp nối 4 ô giữa hai hầm. Heart Tank trên nóc ống khói thấp giữa hai hầm.
 - **Thông số:** gió −90 px/s; hầm tới mỗi 8 s, cảnh báo 1.5 s; khe 4 ô
-- **Địa hình:** vùng gió x 239–249, y 3–12 (← gió −90 px/s); hố vực (rơi = mất mạng) x 261–265 (rộng 4 ô); khối x 269–271, y 8–12; vùng gió x 280–290, y 3–12
-- **Thực thể:** Sniper (244, 12); Checkpoint (245, 12); Drone (269, 9); Heart Tank (270, 8) – trên ống khói; Brute (285, 12)
+- **Địa hình:** vùng gió x 239–249, y 3–12 (← gió −90 px/s); hố vực (rơi = mất mạng) x 261–265 (rộng 4 ô); khối x 269–271, y 9.5–12; vùng gió x 280–290, y 3–12
+- **Thực thể:** Sniper (244, 12); Checkpoint (245, 12); Drone (269, 9); Heart Tank (270, 9.5) – trên ống khói; Brute (285, 12)
 - **Đường chính dùng:** lướt dưới khe thấp, nhảy
-- **Lối bí mật:** (269, 12) → (269, 8) → (271, 8)
+- **Lối bí mật:** (269, 12) → (269, 9.5) → (271, 9.5)
 
 ### R7 – Toa chỉ huy · đi ngang · độ khó 2
 *x 294–314, y 2–14 (20×12 ô) · vào ở sàn y 12, ra ở sàn y 12* · Area 2 · khoang hàng và đầu tàu
@@ -126,7 +126,7 @@ Phòng nghỉ trong toa chỉ huy: năng lượng nhỏ, Reploid cuối, cửa b
 | Sniper | R6 | 244 | 12 |  |
 | Checkpoint | R6 | 245 | 12 |  |
 | Drone | R6 | 269 | 9 |  |
-| Heart Tank | R6 | 270 | 8 | trên ống khói |
+| Heart Tank | R6 | 270 | 9.5 | trên ống khói |
 | Brute | R6 | 285 | 12 |  |
 | Reploid cứu | R7 | 297 | 12 |  |
 | Reploid cứu | R7 | 306 | 12 |  |

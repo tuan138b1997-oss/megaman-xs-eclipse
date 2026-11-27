@@ -33,7 +33,7 @@ def build():
     r = R('R5', 'Đầm lấy', 5, 'Bùn làm chậm 40% và không lướt được. Bệ gỗ nổi chìm dần sau 1.5 s đứng. Heart Tank trên gò đất cao giữa đầm (nhảy từ bệ gỗ).',
           timing='bùn: tốc độ ×0.6; bệ gỗ chìm sau 1.5 s, nổi lại sau 3 s', h=13)
     r.run(4, 'S').zone(8, 'slow', 'bùn ×0.6', y0=7, ents='B').ledges(14, [(3, -1, 3), (9, -1, 3)], kind='log', pit='bun', land=4)
-    r.secret((-2, 0), (0, -4)).raw(('block', -1, -4, 2, 0), ('e', 'H', 0.5, -4, 'gò đất'))
+    r.secret((-2, 0), (0, -4)).raw(('block', -1, -2.5, 2, 0), ('e', 'H', 0.5, -2.5, 'gò đất'))
     r.zone(8, 'slow', '', y0=7, ents='S').run(4).ent('C', -2)
     st.add(r.done(), A2)
 

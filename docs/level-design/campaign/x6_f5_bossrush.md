@@ -51,7 +51,7 @@ Mini-boss: sảnh 8 cổng (2 hàng × 4), mỗi cổng đánh lại một boss 
 - **Thực thể:** Mini-boss (72, 44) – 8 boss Act II; Checkpoint (86, 44)
 
 ### R3 – Cầu thang Sigma · đi ngang · độ khó 8
-*x 88–114, y 34–46 (26×12 ô) · vào ở sàn y 44, ra ở sàn y 34* · Area 2 · Boss Rush và cầu thang Sigma
+*x 88–114, y 26–46 (26×20 ô) · vào ở sàn y 44, ra ở sàn y 34* · Area 2 · Boss Rush và cầu thang Sigma
 
 Cao trào: cầu thang bậc 2 ô đi lên, virus Sigma đuổi, gai giữa các bậc, sàn sụp ở 3 bậc. Checkpoint 2 ở chân cầu thang.
 - **Thông số:** bậc sụp sau 1 s; virus bám 140 px/s

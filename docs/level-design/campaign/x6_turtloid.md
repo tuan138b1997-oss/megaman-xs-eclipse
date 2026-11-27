@@ -46,7 +46,7 @@ Sân rộng 40 ô giữa các mái che cách nhau 8–10 ô: phải chạy hết
 
 Leo bậc đá có mái hiên che mưa từng tầng; công tắc #1 trên bậc giữa mở cổng đền phía trên.
 - **Thông số:** mưa rơi trong giếng; mái hiên che từng kệ
-- **Địa hình:** khối x 85–88, y 12–13; mưa axit x 78–88, y 3–28 (mưa); bệ / kệ x 80–83, y 25.5; bệ / kệ x 84–87, y 23; bệ / kệ x 80–83, y 20.5; bệ / kệ x 84–87, y 18; bệ / kệ x 80–83, y 15.5; bệ / kệ x 84–87, y 13
+- **Địa hình:** khối x 85–88, y 12–13; mưa axit x 78–88, y 3–28 (mưa); bệ / kệ x 80–83, y 25.5; bệ / kệ x 84–87, y 23; bệ / kệ x 80–83, y 20.5; bệ / kệ x 84–87, y 18; bệ / kệ x 80–83, y 15.5; bệ / kệ x 81–84, y 13
 - **Thực thể:** Công tắc (86, 17) – công tắc #1; Sniper (85.5, 23); Drone (81.5, 12.5)
 - **Đường chính dùng:** nhảy
 

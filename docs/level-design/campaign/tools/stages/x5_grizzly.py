@@ -48,10 +48,10 @@ def build():
     st.add(r.done(), A2)
 
     r = R('R6', 'Nóc toa đầu và hầm', 7, 'Cao trào. Gió mạnh −90 px/s; hai hầm đá quét qua nóc: trần hạ còn 1.6 ô, phải lướt sát nóc trước khi hầm tới '
-          '(đèn đỏ + tiếng còi 1.5 s). Khe khớp nối 4 ô giữa hai hầm. Heart Tank trên nóc ống khói, lên bằng đá tường.',
+          '(đèn đỏ + tiếng còi 1.5 s). Khe khớp nối 4 ô giữa hai hầm. Heart Tank trên nóc ống khói thấp giữa hai hầm.',
           timing='gió −90 px/s; hầm tới mỗi 8 s, cảnh báo 1.5 s; khe 4 ô', ceil=None)
     r.zone(10, 'wind', '← gió −90 px/s', y0=1, ents='S').ent('C', -4).low(8, 1.6, 'hầm 1: lướt').run(4).gap(4).run(6, 'D')
-    r.secret((-3, 0), (-3, -4), (-1, -4)).raw(('block', -3, -4, -1, 0), ('e', 'H', -2, -4, 'trên ống khói'))
+    r.secret((-3, 0), (-3, -2.5), (-1, -2.5)).raw(('block', -3, -2.5, -1, 0), ('e', 'H', -2, -2.5, 'trên ống khói'))
     r.low(8, 1.6, 'hầm 2: lướt').zone(10, 'wind', '', y0=1, ents='B').run(4)
     st.add(r.done(), A2)
 

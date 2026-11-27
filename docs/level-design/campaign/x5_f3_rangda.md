@@ -56,7 +56,7 @@ Mini-boss: mắt gai 45 HP bám trần, rơi xuống khi trúng đạn nạp. Ch
 
 Cao trào: giếng trọng lực đổi chiều mỗi 3 s (đèn báo 1 s), gai hai bên vách; kệ so le ở cả hai chiều. Checkpoint 2 ở đáy giếng.
 - **Thông số:** trọng lực đổi chiều mỗi 3 s, báo trước 1 s
-- **Địa hình:** khối x 138–141, y 12–13; đảo trọng lực x 129–141, y 4–36 (trọng lực đổi chiều 3 s); gai sàn x 129–129.6; gai sàn x 140.4–141; bệ / kệ x 131–134, y 33.5; bệ / kệ x 134–137, y 31; bệ / kệ x 137–140, y 28.5; bệ / kệ x 134–137, y 26; bệ / kệ x 131–134, y 23.5; bệ / kệ x 134–137, y 21; bệ / kệ x 137–140, y 18.5; bệ / kệ x 134–137, y 16; bệ / kệ x 131–134, y 13.5; bệ / kệ x 136–139, y 13.5
+- **Địa hình:** khối x 138–141, y 12–13; đảo trọng lực x 129–141, y 4–36 (trọng lực đổi chiều 3 s); gai sàn x 129–129.6; gai sàn x 140.4–141; bệ / kệ x 131–134, y 33.5; bệ / kệ x 134–137, y 31; bệ / kệ x 137–140, y 28.5; bệ / kệ x 134–137, y 26; bệ / kệ x 131–134, y 23.5; bệ / kệ x 134–137, y 21; bệ / kệ x 137–140, y 18.5; bệ / kệ x 134–137, y 16; bệ / kệ x 131–134, y 13.5; bệ / kệ x 134–137, y 13.5
 - **Thực thể:** Checkpoint (132, 36); Drone (138.5, 25.5); Sniper (135.5, 21); Reploid cứu (132.5, 13.5)
 - **Đường chính dùng:** nhảy
 

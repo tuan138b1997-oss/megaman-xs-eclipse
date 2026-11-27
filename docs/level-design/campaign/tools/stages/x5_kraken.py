@@ -28,9 +28,9 @@ def build():
     st.add(r.done(), A1)
 
     st.add(Arena('MID', 'Trạm biến áp', 5, 'Xuống xe. Mini-boss: máy biến áp canh gác 45 HP phóng 3 tia sét chạy dọc sàn và vách. Hạ xong: checkpoint 1. '
-                 'Heart Tank trên nóc trạm: đá tường lên vách trạm ở cuối sân.', w=26, boss='M', note='máy biến áp 45 HP',
-                 timing='3 tia sét dọc sàn mỗi 2.2 s', extra=lambda b: b.ent('C', -3).ent('R', -6)
-                 .raw(('block', -1, -5, 0, 0), ('e', 'H', -0.5, -5, 'nóc trạm')).secret((-1, 0), (-1, -5))), 'Mid')
+                 'Heart Tank trên nóc trạm: nhảy từ bệ máy cuối sân lên gờ mái.', w=26, boss='M', note='máy biến áp 45 HP',
+                 timing='3 tia sét dọc sàn mỗi 2.2 s', extra=lambda b: b.ent('C', -3).ent('R', -11)
+                 .raw(('block', -9, -2, -7, 0), ('ledge', -7, -4.4, 2, 'ke'), ('e', 'H', -6, -4.4, 'nóc trạm')).secret((-8, -2), (-6, -4.4))), 'Mid')
 
     s = Shaft('R4', 'Tháp tụ điện', 7, 'Cao trào. Tháp 20 ô rộng: bệ phản lực bật/tắt theo nhịp (đứng trên bệ đang tắt sẽ rơi), tia điện quét ngang mỗi 10 ô '
               '(báo trước bằng tia lửa ở hai đầu). Falcon Arm ở đỉnh tháp bên trái (dữ liệu game).', w=20, h=44,

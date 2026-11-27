@@ -63,8 +63,8 @@ Mini-boss: bóng Nightmare 45 HP chỉ hiện trong vệt đèn. Checkpoint 1.
 
 Cao trào: giếng tối, nửa trái trọng lực thường, nửa phải đảo; bệ thật/ảo đổi theo vệt đèn. Checkpoint 2 ở đáy.
 - **Thông số:** vệt đèn quét dọc 3 s
-- **Địa hình:** khối x 151–154, y 12–13; đảo trọng lực x 148–154, y 4–36 (nửa phải đảo trọng lực); vùng tối x 142–154, y 4–36; bệ ảo ảnh x 144–147, y 33.5; bệ ảo ảnh x 147–150, y 31; bệ ảo ảnh x 150–153, y 28.5; bệ ảo ảnh x 147–150, y 26; bệ ảo ảnh x 144–147, y 23.5; bệ ảo ảnh x 147–150, y 21; bệ ảo ảnh x 150–153, y 18.5; bệ ảo ảnh x 147–150, y 16; bệ ảo ảnh x 144–147, y 13.5; bệ ảo ảnh x 149–152, y 13.5
-- **Thực thể:** Checkpoint (145, 36); Drone (148.5, 23); Reploid cứu (151.5, 18.5); Sniper (150.5, 13.5)
+- **Địa hình:** khối x 151–154, y 12–13; đảo trọng lực x 148–154, y 4–36 (nửa phải đảo trọng lực); vùng tối x 142–154, y 4–36; bệ ảo ảnh x 144–147, y 33.5; bệ ảo ảnh x 147–150, y 31; bệ ảo ảnh x 150–153, y 28.5; bệ ảo ảnh x 147–150, y 26; bệ ảo ảnh x 144–147, y 23.5; bệ ảo ảnh x 147–150, y 21; bệ ảo ảnh x 150–153, y 18.5; bệ ảo ảnh x 147–150, y 16; bệ ảo ảnh x 144–147, y 13.5; bệ ảo ảnh x 147–150, y 13.5
+- **Thực thể:** Checkpoint (145, 36); Drone (148.5, 23); Reploid cứu (151.5, 18.5); Sniper (148.5, 13.5)
 - **Đường chính dùng:** nhảy
 
 ### R7 – Trạm năng lượng · đi ngang · độ khó 2
@@ -96,7 +96,7 @@ Bản sao Zero dùng Genmu Zero; thắng để mở khóa Zero thật.
 | Checkpoint | R5 | 145 | 36 |  |
 | Drone | R5 | 148.5 | 23 |  |
 | Reploid cứu | R5 | 151.5 | 18.5 |  |
-| Sniper | R5 | 150.5 | 13.5 |  |
+| Sniper | R5 | 148.5 | 13.5 |  |
 | Năng lượng lớn | R7 | 162 | 12 | trạm năng lượng lớn |
 | Boss | BOSS | 186 | 12 |  |
 

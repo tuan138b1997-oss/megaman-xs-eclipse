@@ -63,7 +63,7 @@ Virus Sigma bay theo người chơi (chậm 120 px/s, bắn tan được), vùng
 
 Cao trào: trục dọc rộng 20 ô, bệ chạy vòng quanh lõi ở tâm (bán kính 6 ô, 1 vòng / 8 s); virus bay ra từ lõi. Checkpoint 2 ở đáy trục.
 - **Thông số:** bệ quay 1 vòng / 8 s; virus mỗi 2.5 s
-- **Địa hình:** khối x 125–128, y 12–13; sàn điện x 118–122, y 16–20 (lõi virus); bệ xoay x 114–117, y 37.5; bệ xoay x 119–122, y 35; bệ xoay x 124–127, y 32.5; bệ xoay x 119–122, y 30; bệ xoay x 114–117, y 27.5; bệ xoay x 119–122, y 25; bệ xoay x 124–127, y 22.5; bệ xoay x 119–122, y 20; bệ xoay x 114–117, y 17.5; bệ xoay x 119–122, y 15; bệ xoay x 124–127, y 12.5
+- **Địa hình:** khối x 125–128, y 12–13; sàn điện x 118–122, y 16–20 (lõi virus); bệ xoay x 114–117, y 37.5; bệ xoay x 119–122, y 35; bệ xoay x 124–127, y 32.5; bệ xoay x 119–122, y 30; bệ xoay x 114–117, y 27.5; bệ xoay x 119–122, y 25; bệ xoay x 124–127, y 22.5; bệ xoay x 119–122, y 20; bệ xoay x 114–117, y 17.5; bệ xoay x 119–122, y 15; bệ xoay x 121–124, y 12.5
 - **Thực thể:** Checkpoint (116, 40); Drone (120.5, 27); Reploid cứu (115.5, 17.5)
 - **Đường chính dùng:** nhảy
 

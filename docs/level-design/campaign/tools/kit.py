@@ -185,6 +185,8 @@ class Shaft:
                 x0, y0 = placed[-1]; nx = min(Rr, x0 + 5)
                 if nx <= x0: break
                 placed.append((nx, y0))
+            # a ledge less than 2.2 tiles under the exit floor must not sit under the exit block (W-5..W-2)
+            placed = [(min(x, W - 5.0 - w - 1.0), y) if y - r.exit < 2.2 and x + w > W - 5.0 else (x, y) for x, y in placed]
             prev_y = None
             for i, (x, y) in enumerate(placed):
                 r.prims.append(('ledge', x, y, w, kind)); r.path.append((cen(x), y, tag if y != prev_y else 'j'))

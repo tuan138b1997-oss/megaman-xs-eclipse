@@ -24,7 +24,7 @@ def build():
                  extra=lambda b: b.ent('C', -2)), 'Mid')
 
     r = R('R3', 'Cầu thang Sigma', 8, 'Cao trào: cầu thang bậc 2 ô đi lên, virus Sigma đuổi, gai giữa các bậc, sàn sụp ở 3 bậc. Checkpoint 2 ở chân cầu thang.',
-          timing='bậc sụp sau 1 s; virus bám 140 px/s')
+          timing='bậc sụp sau 1 s; virus bám 140 px/s', h=20, floor=18)
     r.ent('C', 2).run(4, 'D').step(-2, 4).gap(2, 'gai', -2).step(-2, 4).ent('S', 2).gap(2, 'gai', -2).step(-2, 4).ent('R', 2).run(4, 'B')
     st.add(r.done(), A2)
 

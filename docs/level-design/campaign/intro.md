@@ -48,7 +48,7 @@ Hai hố nhỏ trên cầu gãy (2 và 3 ô). Rơi xuống chỉ mất 4 HP và 
 
 Giếng giữa hai trụ cầu, dạy đá tường: bảng chỉ dẫn "giữ → vào tường + Space". Kệ nghỉ mỗi 2.5 ô cho người chưa quen; Drone tuần ở giữa.
 - **Thông số:** bảng: giữ hướng vào tường + Space để đá tường
-- **Địa hình:** khối x 103–106, y 12–13; bệ / kệ x 98–101, y 25.5; bệ / kệ x 102–105, y 23; bệ / kệ x 98–101, y 20.5; bệ / kệ x 102–105, y 18; bệ / kệ x 98–101, y 15.5; bệ / kệ x 102–105, y 13
+- **Địa hình:** khối x 103–106, y 12–13; bệ / kệ x 98–101, y 25.5; bệ / kệ x 102–105, y 23; bệ / kệ x 98–101, y 20.5; bệ / kệ x 102–105, y 18; bệ / kệ x 98–101, y 15.5; bệ / kệ x 99–102, y 13
 - **Thực thể:** Drone (99.5, 12.5)
 - **Đường chính dùng:** nhảy, đá tường
 

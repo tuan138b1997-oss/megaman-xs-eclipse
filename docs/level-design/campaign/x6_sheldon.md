@@ -62,8 +62,8 @@ Mini-boss: tinh thể làm lạnh 45 HP phản đạn thường, chỉ đạn n�
 
 Cao trào: leo bệ kính băng trơn (đứng lâu trượt khỏi mép), laser ngang đi theo gương ở hai tầng. Tường giả bên trái ở tầng trên (đi xuyên được) → capsule Shadow Head. Checkpoint 2 ở đáy.
 - **Thông số:** bệ kính trơn; laser gương bật 2 s / tắt 2 s
-- **Địa hình:** khối x 124–127, y 12–13; tia laser x 115–127, y 26–27 (laser gương); tia laser x 115–127, y 16–17 (laser gương); kính trơn x 117–120, y 33.5; kính trơn x 120–123, y 31; kính trơn x 123–126, y 28.5; kính trơn x 120–123, y 26; kính trơn x 117–120, y 23.5; kính trơn x 120–123, y 21; kính trơn x 123–126, y 18.5; kính trơn x 120–123, y 16; kính trơn x 117–120, y 13.5; kính trơn x 122–125, y 13.5; bệ / kệ x 115–118, y 10
-- **Thực thể:** Checkpoint (118, 36); Drone (124.5, 25.5); Drone (124.5, 15.5); Reploid cứu (123.5, 13.5); Capsule giáp (116.5, 10) – Shadow Head
+- **Địa hình:** khối x 124–127, y 12–13; tia laser x 115–127, y 26–27 (laser gương); tia laser x 115–127, y 16–17 (laser gương); kính trơn x 117–120, y 33.5; kính trơn x 120–123, y 31; kính trơn x 123–126, y 28.5; kính trơn x 120–123, y 26; kính trơn x 117–120, y 23.5; kính trơn x 120–123, y 21; kính trơn x 123–126, y 18.5; kính trơn x 120–123, y 16; kính trơn x 117–120, y 13.5; kính trơn x 120–123, y 13.5; bệ / kệ x 115–118, y 10
+- **Thực thể:** Checkpoint (118, 36); Drone (124.5, 25.5); Drone (124.5, 15.5); Reploid cứu (121.5, 13.5); Capsule giáp (116.5, 10) – Shadow Head
 - **Đường chính dùng:** nhảy
 - **Lối bí mật:** (119, 12) → (116.5, 10)
 
@@ -100,7 +100,7 @@ Boss phản đạn bằng khiên; gương ở 4 góc làm đạn dội lại.
 | Checkpoint | R4 | 118 | 36 |  |
 | Drone | R4 | 124.5 | 25.5 |  |
 | Drone | R4 | 124.5 | 15.5 |  |
-| Reploid cứu | R4 | 123.5 | 13.5 |  |
+| Reploid cứu | R4 | 121.5 | 13.5 |  |
 | Capsule giáp | R4 | 116.5 | 10 | Shadow Head |
 | Sniper | R5 | 131 | 12 |  |
 | Drone | R5 | 133 | 9 |  |

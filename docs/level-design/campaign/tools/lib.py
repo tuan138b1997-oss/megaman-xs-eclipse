@@ -428,5 +428,6 @@ def export_json(st, path):
             elif k == 'e':
                 x, y = G(p[2], p[3]); o = dict(type=p[1], name=ENT[p[1]][2], x=x, y=y, room=r.code, note=p[4] if len(p) > 4 else '')
                 (J['enemies'] if ENT[p[1]][3] in ('enemy', 'boss') else J['items']).append(o)
-        J['path'] += [dict(x=G(x, y)[0], y=G(x, y)[1], move=t or 'walk') for x, y, t in r.path]
+        if not getattr(r, 'branch', False):
+            J['path'] += [dict(x=G(x, y)[0], y=G(x, y)[1], move=t or 'walk') for x, y, t in r.path]
     json.dump(J, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

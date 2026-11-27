@@ -52,18 +52,19 @@ Ride Chaser trên cầu treo: mặt cầu sập dần sau lưng khi xe đã đi 
 ### MID – Trạm biến áp · đấu trường · độ khó 5
 *x 216–242, y 34–46 (26×12 ô) · vào ở sàn y 44, ra ở sàn y 44* · Mid
 
-Xuống xe. Mini-boss: máy biến áp canh gác 45 HP phóng 3 tia sét chạy dọc sàn và vách. Hạ xong: checkpoint 1. Heart Tank trên nóc trạm: đá tường lên vách trạm ở cuối sân.
+Xuống xe. Mini-boss: máy biến áp canh gác 45 HP phóng 3 tia sét chạy dọc sàn và vách. Hạ xong: checkpoint 1. Heart Tank trên nóc trạm: nhảy từ bệ máy cuối sân lên gờ mái.
 - **Thông số:** 3 tia sét dọc sàn mỗi 2.2 s
-- **Thực thể:** Mini-boss (228, 44) – máy biến áp 45 HP; Checkpoint (239, 44); Reploid cứu (236, 44); Heart Tank (241.5, 39) – nóc trạm
-- **Lối bí mật:** (241, 44) → (241, 39)
+- **Địa hình:** khối x 233–235, y 42–44; bệ / kệ x 235–237, y 39.6
+- **Thực thể:** Mini-boss (228, 44) – máy biến áp 45 HP; Checkpoint (239, 44); Reploid cứu (231, 44); Heart Tank (236, 39.6) – nóc trạm
+- **Lối bí mật:** (234, 42) → (236, 39.6)
 
 ### R4 – Tháp tụ điện · leo dọc · độ khó 7
 *x 242–262, y 2–46 (20×44 ô) · vào ở sàn y 44, ra ở sàn y 12* · Area 2 · tháp và lõi nhà máy
 
 Cao trào. Tháp 20 ô rộng: bệ phản lực bật/tắt theo nhịp (đứng trên bệ đang tắt sẽ rơi), tia điện quét ngang mỗi 10 ô (báo trước bằng tia lửa ở hai đầu). Falcon Arm ở đỉnh tháp bên trái (dữ liệu game).
 - **Thông số:** bệ phản lực: bật 2 s / tắt 1 s; tia điện quét ngang 2 s một lần, báo trước 0.6 s
-- **Địa hình:** khối x 257–260, y 12–13; sàn điện x 244–260, y 32–33 (tia quét); sàn điện x 244–260, y 20–21 (tia quét); bệ phản lực x 246–249, y 41.5; bệ phản lực x 251–254, y 39; bệ phản lực x 256–259, y 36.5; bệ phản lực x 251–254, y 34; bệ phản lực x 246–249, y 31.5; bệ phản lực x 251–254, y 29; bệ phản lực x 256–259, y 26.5; bệ phản lực x 251–254, y 24; bệ phản lực x 246–249, y 21.5; bệ phản lực x 251–254, y 19; bệ phản lực x 256–259, y 16.5; bệ phản lực x 251–254, y 14; bệ phản lực x 256–259, y 14; bệ / kệ x 245–249, y 8
-- **Thực thể:** Sniper (252.5, 34); Drone (252.5, 21); Drone (257.5, 11); Capsule giáp (247, 8) – Falcon Arm (đỉnh tháp)
+- **Địa hình:** khối x 257–260, y 12–13; sàn điện x 244–260, y 32–33 (tia quét); sàn điện x 244–260, y 20–21 (tia quét); bệ phản lực x 246–249, y 41.5; bệ phản lực x 251–254, y 39; bệ phản lực x 256–259, y 36.5; bệ phản lực x 251–254, y 34; bệ phản lực x 246–249, y 31.5; bệ phản lực x 251–254, y 29; bệ phản lực x 256–259, y 26.5; bệ phản lực x 251–254, y 24; bệ phản lực x 246–249, y 21.5; bệ phản lực x 251–254, y 19; bệ phản lực x 256–259, y 16.5; bệ phản lực x 251–254, y 14; bệ phản lực x 253–256, y 14; bệ / kệ x 245–249, y 8
+- **Thực thể:** Sniper (252.5, 34); Drone (252.5, 21); Drone (254.5, 11); Capsule giáp (247, 8) – Falcon Arm (đỉnh tháp)
 - **Đường chính dùng:** nhảy
 - **Lối bí mật:** (252, 12) → (247, 8)
 
@@ -103,11 +104,11 @@ Phòng nghỉ: Sub-Tank trong hốc tường (bắn vỡ nắp), Reploid, cửa 
 | Drone | R3 | 204 | 41 |  |
 | Mini-boss | MID | 228 | 44 | máy biến áp 45 HP |
 | Checkpoint | MID | 239 | 44 |  |
-| Reploid cứu | MID | 236 | 44 |  |
-| Heart Tank | MID | 241.5 | 39 | nóc trạm |
+| Reploid cứu | MID | 231 | 44 |  |
+| Heart Tank | MID | 236 | 39.6 | nóc trạm |
 | Sniper | R4 | 252.5 | 34 |  |
 | Drone | R4 | 252.5 | 21 |  |
-| Drone | R4 | 257.5 | 11 |  |
+| Drone | R4 | 254.5 | 11 |  |
 | Capsule giáp | R4 | 247 | 8 | Falcon Arm (đỉnh tháp) |
 | Checkpoint | R5 | 264 | 12 |  |
 | Sniper | R5 | 270 | 12 |  |

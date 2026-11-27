@@ -64,8 +64,8 @@ Cao trào: bệ nhỏ 2 ô + Totem + laser dọc chạy ngang qua chuỗi; Drone
 
 Leo giữa các totem bắn đạn ngang.
 - **Thông số:** totem bắn mỗi 1.8 s
-- **Địa hình:** khối x 145–148, y 12–13; bệ / kệ x 140–143, y 25.5; bệ / kệ x 144–147, y 23; bệ / kệ x 140–143, y 20.5; bệ / kệ x 144–147, y 18; bệ / kệ x 140–143, y 15.5; bệ / kệ x 144–147, y 13
-- **Thực thể:** Drone (141.5, 17.5); Reploid cứu (145.5, 13)
+- **Địa hình:** khối x 145–148, y 12–13; bệ / kệ x 140–143, y 25.5; bệ / kệ x 144–147, y 23; bệ / kệ x 140–143, y 20.5; bệ / kệ x 144–147, y 18; bệ / kệ x 140–143, y 15.5; bệ / kệ x 141–144, y 13
+- **Thực thể:** Drone (141.5, 17.5); Reploid cứu (142.5, 13)
 - **Đường chính dùng:** nhảy
 
 ### R7 – Trạm năng lượng · đi ngang · độ khó 2
@@ -96,7 +96,7 @@ Khiên bất khả xâm phạm; dùng Charge Saber của Blade (giữ ↑ rồi 
 | Sniper | R5 | 133.333 | 28 |  |
 | Reploid cứu | R5 | 134.667 | 28 |  |
 | Drone | R6 | 141.5 | 17.5 |  |
-| Reploid cứu | R6 | 145.5 | 13 |  |
+| Reploid cứu | R6 | 142.5 | 13 |  |
 | Năng lượng lớn | R7 | 156 | 12 | trạm năng lượng lớn |
 | Brute | R7 | 161 | 12 |  |
 | Boss | BOSS | 180 | 12 |  |
