@@ -1,0 +1,288 @@
+{
+ "intro": {
+  "title": "Neo Arcadia Highway (Intro)",
+  "boss": "boss-intro",
+  "theme": "intro",
+  "capsules": [
+   "🛡️ Capsule Fourth Armor (X=3880, Y=620 — Đầu Area 2): Sau khi qua Mid-Checkpoint (3350px), nhảy vào Ride Armor Pod (X=3240), nhảy lên bệ tầng 2 đấm vỡ bức tường thép nứt (X=3680) để mở buồng chứa Fourth Armor. Cao tốc đổ nát 2 tầng + Ride Armor Pod phá tường + Capsule Fourth Armor Area 1 (0–3200px): Cầu vượt cao tốc 2 tầng bị nứt gãy với 2 hố vực lớn. Mid-Gate (3350px): Nhảy vào Ride Armor Pod để đập vỡ tường thép nứt. Area 2 (3500–6650px): Đường cao tốc 3 làn dẫn lên tháp chỉ huy. Boss Arena: Hạ 1D-1000 rồi chạm trán High Max."
+  ],
+  "summary": "PROLOGUE Neo Arcadia Highway (Intro) — Boss: 1D-1000 & High Max 🛡️ FOURTH ARMOR (FULL) 7600×960px • #881f69493c 📋 Copy Prompt AI 🛡️ Capsule Fourth Armor (X=3880, Y=620 — Đầu Area 2): Sau khi qua Mid-Checkpoint (3350px), nhảy vào Ride Armor Pod (X=3240), nhảy lên bệ tầng 2 đấm vỡ bức tường thép nứt (X=3680) để mở buồng chứa Fourth Armor. Cao tốc đổ nát 2 tầng + Ride Armor Pod phá tường + Capsule Fourth Armor Area 1 (0–3200px): Cầu vượt cao tốc 2 tầng bị nứt gãy với 2 hố vực lớn. Mid-Gate (3350px): Nhảy vào Ride Armor Pod để đập vỡ tường thép nứt. Area 2 (3500–6650px): Đường cao tốc 3 làn dẫn lên tháp chỉ huy. Boss Arena: Hạ 1D-1000 rồi chạm trán High Max. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Trụ cầu bê tông Wall-Jump, Hố gãy cao tốc, Ride Armor Pod, Tường thép nứt, Capsule Fourth Armor, Sàn nứt đấu trường High Max. 🧱 Element & Tileset:"
+ },
+ "x5_grizzly": {
+  "title": "Armored Train (Crescent Grizzly)",
+  "boss": "boss-x5_grizzly",
+  "theme": "metal",
+  "capsules": [
+   "🛡️ Capsule Falcon Armor — Foot Part (X=5160, Y=560 — Toa tàu số 6 Area 2): Hạ Sub-Boss đầu máy tại Mid-Gate, lấy Ride Armor Pod (X=3720), đi qua khoang băng chuyền và dùng cú đấm Mech phá vách toa thép nứt (X=4980). 8 Toa tàu tách rời + Gió ngược + Sub-Boss Đầu máy + Ride Armor lấy Falcon Foot Area 1: Nhảy qua 4 toa tàu bọc thép đầu tiên trong cơn gió ngược cực mạnh. Mid-Gate: Đánh Sub-Boss Đầu máy. Area 2: Chui vào khoang tàu chở hàng có băng chuyền đẩy ngược, dùng Ride Armor đục vách toa số 6 lấy Falcon Foot Part."
+  ],
+  "summary": "X5 / X4 Armored Train (Crescent Grizzly) — Boss: Crescent Grizzly 🛡️ FALCON: FOOT PART 7600×960px • #41e12d68fd 📋 Copy Prompt AI 🛡️ Capsule Falcon Armor — Foot Part (X=5160, Y=560 — Toa tàu số 6 Area 2): Hạ Sub-Boss đầu máy tại Mid-Gate, lấy Ride Armor Pod (X=3720), đi qua khoang băng chuyền và dùng cú đấm Mech phá vách toa thép nứt (X=4980). 8 Toa tàu tách rời + Gió ngược + Sub-Boss Đầu máy + Ride Armor lấy Falcon Foot Area 1: Nhảy qua 4 toa tàu bọc thép đầu tiên trong cơn gió ngược cực mạnh. Mid-Gate: Đánh Sub-Boss Đầu máy. Area 2: Chui vào khoang tàu chở hàng có băng chuyền đẩy ngược, dùng Ride Armor đục vách toa số 6 lấy Falcon Foot Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: 8 Toa tàu bọc thép tách rời, Tháp pháo đầu máy (Sub-Boss), Băng chuyền trong khoang tàu, Ride Armor Pod, Vách toa thép nứt, Capsule Falcon Foot. 🧱 Element & Tileset:",
+  "bossName": "Crescent Grizzly",
+  "weak": "Spike Ball / Twin Dream",
+  "attacks": "Crescent Shot: Phóng lưỡi liềm năng lượng xanh bay vòng cung về phía người chơi. Burrow & Ambush: Đào sâu xuống sàn toa tàu, di chuyển ngầm rồi trồi lên cào mạnh. Claw Slash: Lao tới vung vuốt cận chiến tầm gần. Overdrive (Phase 2): Bắn liên hoàn loạt lưỡi liềm lớn và giậm đất tạo sóng chấn động."
+ },
+ "x5_makkoeen": {
+  "title": "Ocean Base (Tidal Makkoeen)",
+  "boss": "boss-x5_makkoeen",
+  "theme": "water",
+  "capsules": [
+   "🛡️ Capsule Falcon Armor — Head Part (X=2580, Y=440 — Tầng trần Area 1): Tận dụng trọng lực nước nhẹ (0.32) để nhảy siêu cao bám vào trụ tường X=2350, nhảy lên bệ trần khoang tàu ngầm để mở Capsule mảnh đầu Falcon. Trọng lực nước 0.32 + Sub-Boss Tàu ngầm U-555 + Hốc trần lấy Falcon Head Area 1: Bến cảng ngập nước trọng lực thấp (0.32), nhảy siêu cao né thủy lôi trôi nổi và leo lên hốc trần lấy Falcon Head Part. Mid-Gate: Chạm trán tàu ngầm tuần tra U-555. Area 2: Đường ống áp suất đáy biển giấu Heart Tank."
+  ],
+  "summary": "X5 / X4 Ocean Base (Tidal Makkoeen) — Boss: Tidal Makkoeen 🛡️ FALCON: HEAD PART 7600×960px • #28ef1e1215 📋 Copy Prompt AI 🛡️ Capsule Falcon Armor — Head Part (X=2580, Y=440 — Tầng trần Area 1): Tận dụng trọng lực nước nhẹ (0.32) để nhảy siêu cao bám vào trụ tường X=2350, nhảy lên bệ trần khoang tàu ngầm để mở Capsule mảnh đầu Falcon. Trọng lực nước 0.32 + Sub-Boss Tàu ngầm U-555 + Hốc trần lấy Falcon Head Area 1: Bến cảng ngập nước trọng lực thấp (0.32), nhảy siêu cao né thủy lôi trôi nổi và leo lên hốc trần lấy Falcon Head Part. Mid-Gate: Chạm trán tàu ngầm tuần tra U-555. Area 2: Đường ống áp suất đáy biển giấu Heart Tank. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Mặt nước trọng lực thấp, Thủy lôi nhấp nháy, Tàu ngầm U-555 (Sub-Boss), Capsule Falcon Head, Đường ống hải lưu, Bẫy gai san hô. 🧱 Element & Tileset:",
+  "bossName": "Tidal Makkoeen",
+  "weak": "Crescent Shot / C-Sword",
+  "attacks": "Gel Shaver: Phóng mảnh băng lướt sát mặt sàn tốc độ cao. Water Jet Dive: Phóng vọt xuyên ngang màn hình kèm xoáy nước đẩy lùi. Ice Block Drop: Tạo khối băng lớn rơi từ trên trần xuống ép góc. Overdrive (Phase 2): Bắn mưa mảnh băng 360 độ kết hợp lướt liên tục."
+ },
+ "x5_kraken": {
+  "title": "Energy Plant (Volt Kraken)",
+  "boss": "boss-x5_kraken",
+  "theme": "volt",
+  "capsules": [
+   "🛡️ Capsule Falcon Armor — Arm Part (X=5620, Y=350 — Đỉnh tháp Area 2): Sau khi hoàn thành chặng Ride Chaser ở Area 1, dùng chuỗi bệ đẩy Thruster và Wall-Jump leo lên đỉnh trụ tường X=5450 để mở Capsule mảnh tay Falcon. Area 1: Ride Chaser (Hoverbike) tốc độ cao -> Area 2: Trục leo tháp tụ điện lấy Falcon Arm Area 1 (0–3200px): Chế độ Ride Chaser (mô-tô bay) phóng tốc độ cao qua dốc nhảy và tấm tăng tốc Boost. Mid-Gate: Trạm ngắt điện. Area 2: Leo tháp tụ điện thẳng đứng bằng bệ đẩy Thruster và Wall-Jump để lấy Falcon Arm Part & mở cổng điện."
+  ],
+  "summary": "X5 / X4 Energy Plant (Volt Kraken) — Boss: Volt Kraken 🛡️ FALCON: ARM PART 7600×960px • #07415cf1db 📋 Copy Prompt AI 🛡️ Capsule Falcon Armor — Arm Part (X=5620, Y=350 — Đỉnh tháp Area 2): Sau khi hoàn thành chặng Ride Chaser ở Area 1, dùng chuỗi bệ đẩy Thruster và Wall-Jump leo lên đỉnh trụ tường X=5450 để mở Capsule mảnh tay Falcon. Area 1: Ride Chaser (Hoverbike) tốc độ cao -> Area 2: Trục leo tháp tụ điện lấy Falcon Arm Area 1 (0–3200px): Chế độ Ride Chaser (mô-tô bay) phóng tốc độ cao qua dốc nhảy và tấm tăng tốc Boost. Mid-Gate: Trạm ngắt điện. Area 2: Leo tháp tụ điện thẳng đứng bằng bệ đẩy Thruster và Wall-Jump để lấy Falcon Arm Part & mở cổng điện. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Đường đua Ride Chaser + dốc nhảy, Tấm Boost cao thế, Cột phóng điện chu kỳ, Bệ đẩy Thruster, Capsule Falcon Arm, Công tắc ngắt tường điện. 🧱 Element & Tileset:",
+  "bossName": "Volt Kraken",
+  "weak": "Gel Shaver / F-Splasher",
+  "attacks": "Tri-Thunder: Bắn 3 luồng sét chạy dọc theo tường và sàn. Electric Tentacle: Vươn xúc tu điện quất tầm trung. Spark Mine: Thả cầu điện lơ lửng phát nổ thành tia sét. Overdrive (Phase 2): Triệu hồi cột sét đánh liên tiếp từ trần xuống đấu trường."
+ },
+ "x5_hotarunicus": {
+  "title": "Laser Lab (Shining Hotarunicus)",
+  "boss": "boss-x5_hotarunicus",
+  "theme": "volt",
+  "capsules": [
+   "🛡️ Capsule Falcon Armor — Body Part (X=2540, Y=470 — Khoang quang học #2 Area 1): Leo lên bệ cao X=2150 bắn công tắc quang học #2 để ngắt tường Laser đỏ, sau đó Air-Dash sang bệ kín bên phải bức tường X=2350. 3 Khoang công tắc quang học (Mở buồng Falcon Body) -> Area 2: Bệ Hologram Blink & Băng chuyền Area 1: Giải mã 2 lớp tường Laser đỏ bằng công tắc quang học trên cao và mở buồng giấu Falcon Body Part. Mid-Gate: Rank Gate. Area 2: Vượt qua vực không đáy dài 1,800px chỉ có chuỗi 5 bệ Hologram ẩn hiện theo nhịp."
+  ],
+  "summary": "X5 / X4 Laser Lab (Shining Hotarunicus) — Boss: Shining Hotarunicus 🛡️ FALCON: BODY PART 7600×960px • #dee68bebdb 📋 Copy Prompt AI 🛡️ Capsule Falcon Armor — Body Part (X=2540, Y=470 — Khoang quang học #2 Area 1): Leo lên bệ cao X=2150 bắn công tắc quang học #2 để ngắt tường Laser đỏ, sau đó Air-Dash sang bệ kín bên phải bức tường X=2350. 3 Khoang công tắc quang học (Mở buồng Falcon Body) -> Area 2: Bệ Hologram Blink & Băng chuyền Area 1: Giải mã 2 lớp tường Laser đỏ bằng công tắc quang học trên cao và mở buồng giấu Falcon Body Part. Mid-Gate: Rank Gate. Area 2: Vượt qua vực không đáy dài 1,800px chỉ có chuỗi 5 bệ Hologram ẩn hiện theo nhịp. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Công tắc quang học, Tường Laser đỏ, Capsule Falcon Body, 5 Bệ Hologram ẩn hiện (Blink), Băng chuyền tốc độ cao. 🧱 Element & Tileset:",
+  "bossName": "Shining Hotarunicus",
+  "weak": "Tri-Thunder / E-Blade",
+  "attacks": "Will Laser: Bắn tia laser điều hướng uốn cong đuổi theo người chơi. Prism Flash: Bay lên cao và tỏa tia sáng phân tách nhiều hướng. Hover Dash: Lướt nhanh trên không để đổi vị trí. Overdrive (Phase 2): Bắn chùm laser khổng lồ quét toàn bộ chiều ngang màn hình."
+ },
+ "x5_rosered": {
+  "title": "Mutant Jungle (Spike Rosered)",
+  "boss": "boss-x5_rosered",
+  "theme": "nature",
+  "capsules": [
+   "🛡️ Capsule Gaea Armor — Foot Part (X=5040, Y=440 — Tán cây cổ thụ Area 2): Dùng Falcon Armor bay hoặc nấm đàn hồi + Air-Dash lên thân cây trụ X=4850, nhảy sang bệ lá di động. Rừng nấm đàn hồi 2 tầng -> Sub-Boss Dây leo -> Trục leo thân cây lấy Gaea Foot Area 1: Dùng nấm đàn hồi sinh học bật nhảy lên tầng tán cây cao để tránh bụi gai độc dưới đất. Mid-Gate: Hạ Sub-Boss Dây leo khổng lồ. Area 2: Leo dọc thân cây cổ thụ cao 600px lấy Gaea Foot Part và Heart Tank ẩn."
+  ],
+  "summary": "X5 / X4 Mutant Jungle (Spike Rosered) — Boss: Spike Rosered 🛡️ GAEA: FOOT PART 7600×960px • #b91db842be 📋 Copy Prompt AI 🛡️ Capsule Gaea Armor — Foot Part (X=5040, Y=440 — Tán cây cổ thụ Area 2): Dùng Falcon Armor bay hoặc nấm đàn hồi + Air-Dash lên thân cây trụ X=4850, nhảy sang bệ lá di động. Rừng nấm đàn hồi 2 tầng -> Sub-Boss Dây leo -> Trục leo thân cây lấy Gaea Foot Area 1: Dùng nấm đàn hồi sinh học bật nhảy lên tầng tán cây cao để tránh bụi gai độc dưới đất. Mid-Gate: Hạ Sub-Boss Dây leo khổng lồ. Area 2: Leo dọc thân cây cổ thụ cao 600px lấy Gaea Foot Part và Heart Tank ẩn. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Nấm bật nhảy đàn hồi, Bụi gai hồng, Thân cây cổ thụ Wall-Jump, Sub-Boss Dây leo độc, Capsule Gaea Foot. 🧱 Element & Tileset:",
+  "bossName": "Spike Rosered",
+  "weak": "Ground Fire / Quake Blazer",
+  "attacks": "Spike Ball: Tung quả cầu gai nảy liên tục trên sàn và tường. Vine Whip: Quất roi gai tầm xa đánh chéo lên không. Clone Illusion: Phân thân thành 2 bản sao tấn công kẹp. Overdrive (Phase 2): Triệu hồi gai mọc từ mặt đất và mưa cầu gai."
+ },
+ "x5_necrobat": {
+  "title": "Planetarium (Dark Necrobat)",
+  "boss": "boss-x5_necrobat",
+  "theme": "shadow",
+  "capsules": [
+   "🛡️ Capsule Gaea Armor — Head Part (X=2950, Y=440 — Đỉnh đài thiên văn cuối Area 1): Tận dụng trọng lực vũ trụ (0.42) và vùng làm chậm Time Zone để nhảy qua bệ thiên thể di động X=2050 lên bệ cao X=2850. Trọng lực vũ trụ 0.42 + Vùng làm chậm Time Zone + Cổng dịch chuyển lấy Gaea Head Area 1: Đài thiên văn vũ trụ trọng lực thấp (0.42) với bệ thiên thể trôi nổi dẫn tới Gaea Head Part. Mid-Gate: Cổng dịch chuyển không gian. Area 2: Chuỗi bệ quỹ đạo di động kết hợp hố đen giả lập."
+  ],
+  "summary": "X5 / X4 Planetarium (Dark Necrobat) — Boss: Dark Necrobat 🛡️ GAEA: HEAD PART 7600×960px • #d014d04d4f 📋 Copy Prompt AI 🛡️ Capsule Gaea Armor — Head Part (X=2950, Y=440 — Đỉnh đài thiên văn cuối Area 1): Tận dụng trọng lực vũ trụ (0.42) và vùng làm chậm Time Zone để nhảy qua bệ thiên thể di động X=2050 lên bệ cao X=2850. Trọng lực vũ trụ 0.42 + Vùng làm chậm Time Zone + Cổng dịch chuyển lấy Gaea Head Area 1: Đài thiên văn vũ trụ trọng lực thấp (0.42) với bệ thiên thể trôi nổi dẫn tới Gaea Head Part. Mid-Gate: Cổng dịch chuyển không gian. Area 2: Chuỗi bệ quỹ đạo di động kết hợp hố đen giả lập. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Bệ thiên thể di động, Vùng sáng Time Zone làm chậm, Cổng dịch chuyển thiên văn, Capsule Gaea Head, Nền tinh vân vũ trụ. 🧱 Element & Tileset:",
+  "bossName": "Dark Necrobat",
+  "weak": "Will Laser / C-Flasher",
+  "attacks": "Dark Hold: Đóng băng thời gian tạm thời trong đấu trường rồi lao vào hút máu. Sonic Wave: Phóng sóng siêu âm mở rộng theo hình nón. Bat Swarm: Triệu hồi đàn dơi cơ khí đuổi theo người chơi. Overdrive (Phase 2): Liên tục dịch chuyển tức thời kèm sóng âm dày đặc."
+ },
+ "x5_dinorex": {
+  "title": "Volcano Base (Burn Dinorex)",
+  "boss": "boss-x5_dinorex",
+  "theme": "fire",
+  "capsules": [
+   "🛡️ Capsule Gaea Armor — Arm Part (X=5540, Y=290 — Hang đá đỉnh trục dung nham Area 2): Leo gấp vách núi lửa cao 600px khi dung nham dâng từ dưới lên, dùng Charge Shot hoặc Falcon Spear phá khối đá nứt (X=5380). 5 Cột dung nham phun trào + Ride Armor đi xuyên gai + Trục leo vách núi lửa lấy Gaea Arm Area 1: Vượt qua 4 cột dung nham phun trào theo chu kỳ và sàn sắt nóng đỏ. Mid-Gate: Lên Ride Armor đi xuyên thảm gai dài 320px. Area 2: Leo gấp vách núi lửa cao 600px khi dung nham dâng, phá hang đá lấy Gaea Arm Part."
+  ],
+  "summary": "X5 / X4 Volcano Base (Burn Dinorex) — Boss: Burn Dinorex 🛡️ GAEA: ARM PART 7600×960px • #e610ceb162 📋 Copy Prompt AI 🛡️ Capsule Gaea Armor — Arm Part (X=5540, Y=290 — Hang đá đỉnh trục dung nham Area 2): Leo gấp vách núi lửa cao 600px khi dung nham dâng từ dưới lên, dùng Charge Shot hoặc Falcon Spear phá khối đá nứt (X=5380). 5 Cột dung nham phun trào + Ride Armor đi xuyên gai + Trục leo vách núi lửa lấy Gaea Arm Area 1: Vượt qua 4 cột dung nham phun trào theo chu kỳ và sàn sắt nóng đỏ. Mid-Gate: Lên Ride Armor đi xuyên thảm gai dài 320px. Area 2: Leo gấp vách núi lửa cao 600px khi dung nham dâng, phá hang đá lấy Gaea Arm Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Cột dung nham phun trào, Thảm gai nham thạch, Ride Armor Pod, Hiệu ứng dung nham dâng, Hang đá Gaea Arm. 🧱 Element & Tileset:",
+  "bossName": "Burn Dinorex",
+  "weak": "Wing Spiral / W-Shredder",
+  "attacks": "Ground Fire: Phun cầu lửa rơi xuống đất rồi bùng cháy lan dọc mặt sàn. Tail Whip & Stomp: Quất đuôi lửa và giậm chân gây rung chấn. Flame Breath: Khạc luồng lửa tầm trung thiêu đốt phía trước. Overdrive (Phase 2): Gầm lên tạo cột dung nham phun trào khắp đấu trường."
+ },
+ "x5_pegacion": {
+  "title": "Air Force (Spiral Pegacion)",
+  "boss": "boss-x5_pegacion",
+  "theme": "wind",
+  "capsules": [
+   "🛡️ Capsule Gaea Armor — Body Part (X=5940, Y=440 — Boong chiến hạm số 4 cuối Area 2): Sau khi hạ Pháo đài hộ tống ở Mid-Gate và lấy Heart Tank (X=3950), cưỡi quạt nâng khí Updraft (X=4620) nhảy sang bệ bay di động tới boong tàu số 4. 4 Chiến hạm bay + Quạt nâng khí Updraft + Sub-Boss Pháo đài bay + Gaea Body Part Area 1: Chiến đấu trên boong các tuần dương hạm bay giữa bão gió ngược, dùng quạt phản lực Updraft bay qua khoảng không 270px. Mid-Gate: Hạ Pháo đài hộ tống. Area 2: Chuỗi bệ bay di động trên tầng mây lấy Heart Tank và Gaea Body Part."
+  ],
+  "summary": "X5 / X4 Air Force (Spiral Pegacion) — Boss: Spiral Pegacion 🛡️ GAEA: BODY PART 7600×960px • #4ecab9c7f4 📋 Copy Prompt AI 🛡️ Capsule Gaea Armor — Body Part (X=5940, Y=440 — Boong chiến hạm số 4 cuối Area 2): Sau khi hạ Pháo đài hộ tống ở Mid-Gate và lấy Heart Tank (X=3950), cưỡi quạt nâng khí Updraft (X=4620) nhảy sang bệ bay di động tới boong tàu số 4. 4 Chiến hạm bay + Quạt nâng khí Updraft + Sub-Boss Pháo đài bay + Gaea Body Part Area 1: Chiến đấu trên boong các tuần dương hạm bay giữa bão gió ngược, dùng quạt phản lực Updraft bay qua khoảng không 270px. Mid-Gate: Hạ Pháo đài hộ tống. Area 2: Chuỗi bệ bay di động trên tầng mây lấy Heart Tank và Gaea Body Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Boong tuần dương hạm bay, Quạt nâng khí Updraft, Bệ bay di động, Gió ngược tốc độ cao, Capsule Gaea Body. 🧱 Element & Tileset:",
+  "bossName": "Spiral Pegacion",
+  "weak": "Dark Hold",
+  "attacks": "Wing Spiral: Tạo lốc xoáy gió bay thẳng lên hoặc lướt ngang. Air Charge: Bay vọt lên cao rồi lao chéo xuống với tốc độ cực nhanh. Feather Barrage: Rải lông vũ năng lượng khi bay ngang trần. Overdrive (Phase 2): Tạo cơn bão lốc liên hoàn kết hợp lao kích tốc độ cao."
+ },
+ "x5_f1_dynamo": {
+  "title": "Zero Space 1 (Dynamo)",
+  "boss": "boss-x5_f1_dynamo",
+  "theme": "shadow",
+  "capsules": [],
+  "summary": "X5-F1 Zero Space 1 (Dynamo) — Boss: Dynamo 7600×960px • #8c64421bbe 📋 Copy Prompt AI ℹ️ Màn pháo đài Zero Space 1: Không chứa Light Capsule; khuyên dùng Falcon Armor hoặc Fourth Armor để lướt qua 6 cụm Laser tử thần. 6 Cụm Laser tử thần quét toàn màn + Băng chuyền tốc độ cao + Hốc trú ẩn Area 1 & 2: Lối vào không gian Zero Virus dài 7,600px với 6 cụm tia Laser tử thần quét theo chu kỳ, kết hợp bệ tăng tốc Boost và băng chuyền. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: 6 Cụm Laser tử thần, Trụ chắn Cyberblock, Bệ tăng tốc Boost, Băng chuyền tốc độ. 🧱 Element & Tileset:"
+ },
+ "x5_f2_shadow": {
+  "title": "Zero Space 2 (Shadow Devil)",
+  "boss": "boss-x5_f2_shadow",
+  "theme": "shadow",
+  "capsules": [],
+  "summary": "X5-F2 Zero Space 2 (Shadow Devil) — Boss: Shadow Devil 7600×960px • #4006bfea26 📋 Copy Prompt AI ℹ️ Màn pháo đài Zero Space 2: Không chứa Light Capsule; mang theo vũ khí Tri-Thunder để khắc chế điểm yếu con mắt đỏ của Shadow Devil. Vực không đáy toàn màn + Chuỗi 10 Bệ Hologram Blink 2 pha & Quạt nâng khí Thử thách Platforming đỉnh cao: cả Area 1 và Area 2 đều là vực không đáy dài hơn 2,300px mỗi khu vực, chỉ có 10 bệ Cyber nhấp nháy 2 pha và 2 luồng khí nâng ở giữa. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Vực không đáy kép, 10 Bệ Cyber nhấp nháy 2 pha, 2 Luồng khí nâng Updraft, Trạm nghỉ Mid-Gate. 🧱 Element & Tileset:",
+  "bossName": "Shadow Devil",
+  "weak": "Tri-Thunder",
+  "attacks": "Blob Split: Tách cơ thể thành từng khối bùn đen bay ngang màn hình theo hàng. Eye Laser: Mở con mắt đỏ duy nhất (điểm yếu) và bắn tia laser thẳng. Ground Slam: Biến thành hình khối khổng lồ đập xuống sàn. Overdrive (Phase 2): Tốc độ tách khối tăng gấp đôi, chéo nhau khó né."
+ },
+ "x5_f3_rangda": {
+  "title": "Zero Space 3 (Rangda Bangda W)",
+  "boss": "boss-x5_f3_rangda",
+  "theme": "shadow",
+  "capsules": [
+   "🛡️ Secret Light Capsule Act I (X=5260, Y=340 — Hốc trần Area 2): Kích hoạt Vùng Đảo Trọng Lực (Gravity Flip) đi lộn ngược trên trần vượt qua biển gai 1,650px và trụ tường X=4650 để mở khóa Black Zero hoặc Ultimate Armor X5! Biển gai sàn + Đảo trọng lực trần nhà giấu Secret Capsule Black Zero / Ultimate X5 Area 1: Tháp leo tường né sàn gai dày đặc. Area 2: Kích hoạt Vùng Đảo Trọng Lực (Gravity Flip) để đi bộ lộn ngược trên trần nhà vượt qua biển gai dài 1,650px và mở Secret Capsule trước khi đấu Rangda Bangda W."
+  ],
+  "summary": "X5-F3 Zero Space 3 (Rangda Bangda W) — Boss: Rangda Bangda W 🛡️ BLACK ZERO / ULT. X5 7600×960px • #d5452db3b3 📋 Copy Prompt AI 🛡️ Secret Light Capsule Act I (X=5260, Y=340 — Hốc trần Area 2): Kích hoạt Vùng Đảo Trọng Lực (Gravity Flip) đi lộn ngược trên trần vượt qua biển gai 1,650px và trụ tường X=4650 để mở khóa Black Zero hoặc Ultimate Armor X5! Biển gai sàn + Đảo trọng lực trần nhà giấu Secret Capsule Black Zero / Ultimate X5 Area 1: Tháp leo tường né sàn gai dày đặc. Area 2: Kích hoạt Vùng Đảo Trọng Lực (Gravity Flip) để đi bộ lộn ngược trên trần nhà vượt qua biển gai dài 1,650px và mở Secret Capsule trước khi đấu Rangda Bangda W. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Biển gai sàn dài 1650px, Vùng Đảo Trọng Lực, Secret Capsule Black Zero/Ultimate X5, Bức tường mặt nạ Rangda Bangda. 🧱 Element & Tileset:",
+  "bossName": "Rangda Bangda W",
+  "weak": "Tri-Thunder / Crescent Shot",
+  "attacks": "Eye Beams (Xanh/Đỏ/Xanh lá): Hai mắt thay phiên mở ra bắn đạn đuổi, tia sét hoặc lao tới. Sun Nose Charge: Mũi mặt trời tách khỏi tường lao xoay tròn xuống sàn. Wall Spikes: Tường hai bên thu hẹp đẩy người chơi vào sàn gai. Overdrive (Phase 2): Cả 2 mắt và mũi kích hoạt cùng lúc."
+ },
+ "x5_f4_sigma": {
+  "title": "Zero Space Final (Final Sigma W)",
+  "boss": "boss-x5_f4_sigma",
+  "theme": "core",
+  "capsules": [],
+  "summary": "X5-F4 Zero Space Final (Final Sigma W) — Boss: Final Sigma W 7600×960px • #93e5e1f218 📋 Copy Prompt AI ℹ️ Màn trùm cuối Act I: Hoàn thành màn này để mở khóa toàn bộ Chiến dịch Act II (Mega Man X6). Hợp nhất mọi cơ chế Act I: Trọng lực biến thiên + Bệ di chuyển + Cổng quyết chiến Sigma Đoạn đường cuối cùng Act I dài 7,600px kết hợp vực sâu, bệ di chuyển không gian, tấm tăng tốc và vùng đảo trọng lực dẫn tới lõi Virus Sigma. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Nền không gian vỡ vụn, Bệ di chuyển lõi virus, Vùng đảo trọng lực, Cổng quyết chiến Final Sigma W. 🧱 Element & Tileset:"
+ },
+ "x6_turtloid": {
+  "title": "Inami Temple (Rainy Turtloid)",
+  "boss": "boss-x6_turtloid",
+  "theme": "nature",
+  "capsules": [
+   "🛡️ Capsule Shadow Armor — Body Part (X=3820, Y=440 — Mái đền tầng cao Area 2): Sau khi bắn công tắc #1 mở cổng đền, nhảy lên mái che tầng 2 (X=3740) phía trên Heart Tank. Mưa Axit xanh + 8 Mái che trụ đá + Capsule Shadow Body + Alt Path Nightmare Zero Area 1: Ngôi đền cổ chìm trong Mưa Axit định kỳ, di chuyển qua các mái che trụ đá và bắn công tắc mở cổng đền. Area 2: Tầng cao giấu Shadow Body Part và Heart Tank; tầng dưới vào cổng Alt Path đánh Nightmare Zero."
+  ],
+  "summary": "X6 [YT 03:26] Inami Temple (Rainy Turtloid) — Boss: Rainy Turtloid 🛡️ SHADOW: BODY PART 7600×960px • #67f8905c73 📋 Copy Prompt AI 🛡️ Capsule Shadow Armor — Body Part (X=3820, Y=440 — Mái đền tầng cao Area 2): Sau khi bắn công tắc #1 mở cổng đền, nhảy lên mái che tầng 2 (X=3740) phía trên Heart Tank. Mưa Axit xanh + 8 Mái che trụ đá + Capsule Shadow Body + Alt Path Nightmare Zero Area 1: Ngôi đền cổ chìm trong Mưa Axit định kỳ, di chuyển qua các mái che trụ đá và bắn công tắc mở cổng đền. Area 2: Tầng cao giấu Shadow Body Part và Heart Tank; tầng dưới vào cổng Alt Path đánh Nightmare Zero. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Hiệu ứng Mưa Axit xanh, 8 Mái che trụ đá, Capsule Shadow Body, 2 Công tắc mở tường đền, Hố gai nhánh dưới, Cổng dịch chuyển Nightmare Zero. 🧱 Element & Tileset:",
+  "bossName": "Rainy Turtloid",
+  "weak": "Ice Burst / Hyoroga",
+  "attacks": "Meteor Rain: Bắn loạt cầu nước lên trời rồi rơi thẳng đứng xuống như mưa sao băng. Shell Spin: Rút vào mai rùa xoay tròn lao dội tường khắp phòng. Back Crystal Shield: 2 viên pha lê trên lưng chặn đạn cho đến khi bị phá vỡ. Overdrive (Phase 2): Xoay mai tốc độ cực đại kèm mưa axit."
+ },
+ "x6_sheldon": {
+  "title": "Laser Institute (Shield Sheldon)",
+  "boss": "boss-x6_sheldon",
+  "theme": "shadow",
+  "capsules": [
+   "🛡️ Capsule Shadow Armor — Head Part (X=4620, Y=340 — Tầng trên Area 2 [YT 01:15:35]): Bắn công tắc X=2950 mở cửa, leo lên bệ kính băng cao X=4380 và đi xuyên bức tường giả X=4450. Bệ kính băng trơn + Tia Laser gương + Tường giả Shadow Head + Hành lang trần gai Area 1: Viện nghiên cứu Laser với bệ kính băng trơn trượt và hệ thống tia laser gương. Area 2: Tường giả đi xuyên ở tầng trên giấu Light Capsule Shadow Head Part."
+  ],
+  "summary": "X6 [YT 11:28] Laser Institute (Shield Sheldon) — Boss: Shield Sheldon 🛡️ SHADOW: HEAD PART 7600×960px • #70f07b3575 📋 Copy Prompt AI 🛡️ Capsule Shadow Armor — Head Part (X=4620, Y=340 — Tầng trên Area 2 [YT 01:15:35]): Bắn công tắc X=2950 mở cửa, leo lên bệ kính băng cao X=4380 và đi xuyên bức tường giả X=4450. Bệ kính băng trơn + Tia Laser gương + Tường giả Shadow Head + Hành lang trần gai Area 1: Viện nghiên cứu Laser với bệ kính băng trơn trượt và hệ thống tia laser gương. Area 2: Tường giả đi xuyên ở tầng trên giấu Light Capsule Shadow Head Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Bệ kính băng trơn trượt, Tia laser phản xạ gương, Tường giả đi xuyên, Capsule Shadow Head, Hành lang trần gai, Cổng Alt Path Dynamo. 🧱 Element & Tileset:",
+  "bossName": "Shield Sheldon",
+  "weak": "Metal Anchor / Rakukojin",
+  "attacks": "Guard Shell: Dựng khiên năng lượng phản xạ đạn bắn tới. Shell Toss: Ném 4 mảnh vỏ sò bay bao vây rồi khép góc. Laser Reflection: Bắn tia laser dội qua các mảnh vỏ sò. Overdrive (Phase 2): Tạo kết giới vỏ sò xoay kín và bắn laser liên hoàn."
+ },
+ "x6_mijinion": {
+  "title": "Weapon Center (Infinity Mijinion)",
+  "boss": "boss-x6_mijinion",
+  "theme": "metal",
+  "capsules": [
+   "🛡️ Capsule Blade Armor — Head Part (X=5020, Y=440 — Bệ cáp cuối Area 2 [YT 01:12:15]): Phá lõi cáp Illumina ở Mid-Gate, vượt qua chuỗi bệ dây cáp trên vực lớn Area 2 và nhảy vọt lên bệ cao X=4920. Siêu phi thuyền Illumina khóa tâm ngắm + Vực 7 Bệ dây cáp + Capsule Blade Head Area 1: Phóng qua bến cảng vũ khí dưới hỏa lực khóa mục tiêu của siêu phi thuyền Illumina và vượt chuỗi 4 bệ dây cáp trên vực lớn. Mid-Gate: Bắn lõi cáp Illumina. Area 2: Vượt vực cáp tầng cao lấy Blade Head Part."
+  ],
+  "summary": "X6 [YT 13:28] Weapon Center (Infinity Mijinion) — Boss: Infinity Mijinion 🛡️ BLADE: HEAD PART 7600×960px • #cebe284f35 📋 Copy Prompt AI 🛡️ Capsule Blade Armor — Head Part (X=5020, Y=440 — Bệ cáp cuối Area 2 [YT 01:12:15]): Phá lõi cáp Illumina ở Mid-Gate, vượt qua chuỗi bệ dây cáp trên vực lớn Area 2 và nhảy vọt lên bệ cao X=4920. Siêu phi thuyền Illumina khóa tâm ngắm + Vực 7 Bệ dây cáp + Capsule Blade Head Area 1: Phóng qua bến cảng vũ khí dưới hỏa lực khóa mục tiêu của siêu phi thuyền Illumina và vượt chuỗi 4 bệ dây cáp trên vực lớn. Mid-Gate: Bắn lõi cáp Illumina. Area 2: Vượt vực cáp tầng cao lấy Blade Head Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Phi thuyền Illumina nền sau, Tâm ngắm khóa mục tiêu, 7 Bệ dây cáp di động, Capsule Blade Head, Vực thẳm rộng 1,800px, Lõi cáp Illumina. 🧱 Element & Tileset:",
+  "bossName": "Infinity Mijinion",
+  "weak": "Guard Shell",
+  "attacks": "Ray Arrow: Bắn loạt tia năng lượng từ trên xuống theo hàng. Infinite Clone: Mỗi khi bị đánh thường sẽ tạo thêm bản sao bọ nước. Bubble Trap: Thả bong bóng điện bay lơ lửng khắp phòng. Overdrive (Phase 2): Phóng chùm tia Ray Arrow dày đặc kèm 3 bản sao cùng lúc."
+ },
+ "x6_yammark": {
+  "title": "Amazon Area (Commander Yammark)",
+  "boss": "boss-x6_yammark",
+  "theme": "nature",
+  "capsules": [
+   "🛡️ Capsule Blade Armor — Foot Part (X=4550, Y=360 — Nhánh trên Area 2 [YT 21:52]): Tại ngã ba Mid-Checkpoint (3350px), nhảy lên tầng tán cây phía trên (X=3650) để lấy mảnh chân Blade Armor. Rừng 2 tầng tách nhánh tại Mid-Checkpoint (Trên: Blade Foot | Dưới: Hang Heart Tank) Area 1: Rừng Amazon rậm rạp với bệ nấm bật nhảy và bọ Nightmare. Tại Mid-Checkpoint (3350px), bản đồ tách thành 2 tầng độc lập dài 1,500px: Tầng trên lấy Blade Foot Part; Tầng dưới lấy Heart Tank."
+  ],
+  "summary": "X6 [YT 21:15] Amazon Area (Commander Yammark) — Boss: Commander Yammark 🛡️ BLADE: FOOT PART 7600×960px • #0f3909e9c0 📋 Copy Prompt AI 🛡️ Capsule Blade Armor — Foot Part (X=4550, Y=360 — Nhánh trên Area 2 [YT 21:52]): Tại ngã ba Mid-Checkpoint (3350px), nhảy lên tầng tán cây phía trên (X=3650) để lấy mảnh chân Blade Armor. Rừng 2 tầng tách nhánh tại Mid-Checkpoint (Trên: Blade Foot | Dưới: Hang Heart Tank) Area 1: Rừng Amazon rậm rạp với bệ nấm bật nhảy và bọ Nightmare. Tại Mid-Checkpoint (3350px), bản đồ tách thành 2 tầng độc lập dài 1,500px: Tầng trên lấy Blade Foot Part; Tầng dưới lấy Heart Tank. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Tán cây 2 tầng tách nhánh dài 1500px, Ngã ba Mid-Checkpoint, Hang động tầng dưới, Capsule Blade Foot, Bọ Nightmare. 🧱 Element & Tileset:",
+  "bossName": "Commander Yammark",
+  "weak": "Ray Arrow / Rekkoha",
+  "attacks": "Yammar Option: Triệu hồi 3 chuồn chuồn mini xoay quanh người bắn đạn hỗ trợ. Swoop Dive: Bay vọt lên cao rồi lao chéo cắt ngang màn hình. Spread Shot: Bắn loạt đạn xanh hình quạt từ trên không. Overdrive (Phase 2): Liên tục thả đàn chuồn chuồn và đổi độ cao bất ngờ."
+ },
+ "x6_shark": {
+  "title": "Recycle Lab (Metal Shark Player)",
+  "boss": "boss-x6_shark",
+  "theme": "metal",
+  "capsules": [
+   "🛡️ Capsule Shadow Armor — Foot Part (X=5080, Y=620 — Khoang ép phế liệu Area 2): Lên Ride Armor Pod (X=3240) ở Mid-Gate, đục thủng tường rác thứ 2 (X=4950) giữa 2 máy ép thủy lực. 4 Trần Máy Ép Thủy Lực -> Ride Armor phá bãi rác lấy Shadow Foot -> Đường hầm Auto-Scroll Area 1: Nhà máy tái chế với 2 trần máy ép thủy lực sọc vàng-đen dập liên hồi xen kẽ hố trú ẩn. Mid-Gate: Hạ Mini-Boss ép trần và lên Ride Armor. Area 2: Dùng Ride Armor đục xuyên tường rác khổng lồ lấy Shadow Foot Part."
+  ],
+  "summary": "X6 [YT 24:44] Recycle Lab (Metal Shark Player) — Boss: Metal Shark Player 🛡️ SHADOW: FOOT PART 7600×960px • #08ffb9a7cd 📋 Copy Prompt AI 🛡️ Capsule Shadow Armor — Foot Part (X=5080, Y=620 — Khoang ép phế liệu Area 2): Lên Ride Armor Pod (X=3240) ở Mid-Gate, đục thủng tường rác thứ 2 (X=4950) giữa 2 máy ép thủy lực. 4 Trần Máy Ép Thủy Lực -> Ride Armor phá bãi rác lấy Shadow Foot -> Đường hầm Auto-Scroll Area 1: Nhà máy tái chế với 2 trần máy ép thủy lực sọc vàng-đen dập liên hồi xen kẽ hố trú ẩn. Mid-Gate: Hạ Mini-Boss ép trần và lên Ride Armor. Area 2: Dùng Ride Armor đục xuyên tường rác khổng lồ lấy Shadow Foot Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: 4 Trần máy ép thủy lực, Ride Armor Pod, Tường phế liệu nứt, Capsule Shadow Foot, Băng chuyền nhà máy, Cổng Alt Path Auto-Scroll. 🧱 Element & Tileset:",
+  "bossName": "Metal Shark Player",
+  "weak": "Meteor Rain / Ensuizan",
+  "attacks": "Metal Anchor: Phóng mỏ neo sắt rơi xuống đất và nảy lên gây sát thương lớn. Floor Swim: Lặn xuống sàn thép, để lộ vây lưng lao tới rồi nhảy vọt lên. Maverick Clone Summon: Hồi sinh bản sao bóng ma của các Maverick cũ. Overdrive (Phase 2): Gọi mưa mỏ neo sắt kết hợp triệu hồi bản sao liên tục."
+ },
+ "x6_heatnix": {
+  "title": "Magma Area (Blaze Heatnix)",
+  "boss": "boss-x6_heatnix",
+  "theme": "fire",
+  "capsules": [
+   "🛡️ Capsule Shadow Armor — Arm Part (X=5520, Y=270 — Đỉnh trục leo dung nham Area 2 [YT 01:08:54]): Hạ Nightmare Donut #3 (X=4850), leo lên đỉnh trục dọc X=5250 và dùng Charge Saber phá khối sắt nứt (X=5360). 3 Cỗ máy vòng lửa Nightmare Donut + Bệ phản lực Thruster + Trục leo dọc lấy Shadow Arm Area 1: Vượt hồ dung nham bằng bệ đẩy phản lực Thruster và tiêu diệt 2 cỗ máy vòng lửa Nightmare Donut. Area 2: Trục leo dọc giữa lòng núi lửa khi dung nham dâng cao, hạ Donut #3 và phá khối sắt lấy Shadow Arm Part."
+  ],
+  "summary": "X6 [YT 29:15] Magma Area (Blaze Heatnix) — Boss: Blaze Heatnix 🛡️ SHADOW: ARM PART 7600×960px • #3b56fdad3a 📋 Copy Prompt AI 🛡️ Capsule Shadow Armor — Arm Part (X=5520, Y=270 — Đỉnh trục leo dung nham Area 2 [YT 01:08:54]): Hạ Nightmare Donut #3 (X=4850), leo lên đỉnh trục dọc X=5250 và dùng Charge Saber phá khối sắt nứt (X=5360). 3 Cỗ máy vòng lửa Nightmare Donut + Bệ phản lực Thruster + Trục leo dọc lấy Shadow Arm Area 1: Vượt hồ dung nham bằng bệ đẩy phản lực Thruster và tiêu diệt 2 cỗ máy vòng lửa Nightmare Donut. Area 2: Trục leo dọc giữa lòng núi lửa khi dung nham dâng cao, hạ Donut #3 và phá khối sắt lấy Shadow Arm Part. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: 3 Vòng lửa Nightmare Donut, Bệ phản lực Thruster, Trục leo dọc dung nham dâng, Khối sắt nứt, Capsule Shadow Arm. 🧱 Element & Tileset:",
+  "bossName": "Blaze Heatnix",
+  "weak": "Ground Dash / Sentsuizan",
+  "attacks": "Magma Blade: Vung kiếm lửa phóng sóng nhiệt hình bán nguyệt. Dive Bomb: Biến thành cầu lửa phượng hoàng lao thẳng xuống đất. Flame Pillars: Tạo loạt cột lửa bùng lên từ mặt sàn. Overdrive (Phase 2): Phủ lửa toàn thân, bay hình số 8 thả mưa cầu lửa."
+ },
+ "x6_wolfang": {
+  "title": "North Pole Area (Blizzard Wolfang)",
+  "boss": "boss-x6_wolfang",
+  "theme": "ice",
+  "capsules": [
+   "🛡️ Capsule Blade Armor — Body Part (X=4020, Y=350 — Vách băng cao đầu Area 2 [YT 35:01]): Sau chặng trượt Ride Chaser né tuyết lở, bám tường băng X=3850 nhảy lên bệ kính cao X=3920. Area 1: Ride Chaser trượt dốc tuyết lở Avalanche -> Area 2: Vách băng cao lấy Blade Body Area 1 (0–3200px): Ride Chaser trượt tốc độ cao trên dốc tuyết lở Avalanche né các tảng băng lăn khổng lồ. Area 2: Vách băng cao giấu Blade Body Part và đoạn hành lang khối băng trôi sát trần gai ở cuối màn."
+  ],
+  "summary": "X6 [YT 33:26] North Pole Area (Blizzard Wolfang) — Boss: Blizzard Wolfang 🛡️ BLADE: BODY PART 7600×960px • #ecbf2695f7 📋 Copy Prompt AI 🛡️ Capsule Blade Armor — Body Part (X=4020, Y=350 — Vách băng cao đầu Area 2 [YT 35:01]): Sau chặng trượt Ride Chaser né tuyết lở, bám tường băng X=3850 nhảy lên bệ kính cao X=3920. Area 1: Ride Chaser trượt dốc tuyết lở Avalanche -> Area 2: Vách băng cao lấy Blade Body Area 1 (0–3200px): Ride Chaser trượt tốc độ cao trên dốc tuyết lở Avalanche né các tảng băng lăn khổng lồ. Area 2: Vách băng cao giấu Blade Body Part và đoạn hành lang khối băng trôi sát trần gai ở cuối màn. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Dốc tuyết lở Ride Chaser, Khối tuyết lở Avalanche, Sàn băng quán tính cao, Vách băng cao, Capsule Blade Body, Khối băng kẹp trần gai. 🧱 Element & Tileset:",
+  "bossName": "Blizzard Wolfang",
+  "weak": "Magma Blade / Shoenzan",
+  "attacks": "Ice Burst: Tạo khối băng bay thẳng rồi vỡ thành mảnh băng sắc nhọn. Wall Cling Pounce: Bám lên tường/trần rồi phóng xuống vồ người chơi. Slide Tackle: Trượt băng tốc độ cao trên mặt sàn. Overdrive (Phase 2): Hú gọi mưa băng từ trần và lao vồ liên tục."
+ },
+ "x6_scaravich": {
+  "title": "Central Museum (Ground Scaravich)",
+  "boss": "boss-x6_scaravich",
+  "theme": "metal",
+  "capsules": [
+   "🛡️ Capsule Blade Armor — Arm Part (X=4840, Y=420 — Hốc cao cụm phòng Cell 2 Area 2 [YT 45:41]): Vượt qua đèn pha quét an ninh và Đại Cột Totem ở Mid-Gate, đi vào cụm cổng Cell 2 (P3/P4) và leo lên vách X=4650. Đèn pha quét an ninh (Searchlights) + 4 Cổng Dịch Chuyển 2 Cụm Phòng + Blade Arm Part Area 1: Hành lang bảo tàng tối có Đèn pha quét an ninh và Cụm cổng Cell 1 (P1–P2) chứa Heart Tank. Mid-Gate: Phá Đại Cột Totem. Area 2: Cụm cổng Cell 2 (P3–P4) với bẫy đá lăn, Blade Arm Part và cổng Alt Path."
+  ],
+  "summary": "X6 [YT 37:18] Central Museum (Ground Scaravich) — Boss: Ground Scaravich 🛡️ BLADE: ARM PART 7600×960px • #7e393cfa10 📋 Copy Prompt AI 🛡️ Capsule Blade Armor — Arm Part (X=4840, Y=420 — Hốc cao cụm phòng Cell 2 Area 2 [YT 45:41]): Vượt qua đèn pha quét an ninh và Đại Cột Totem ở Mid-Gate, đi vào cụm cổng Cell 2 (P3/P4) và leo lên vách X=4650. Đèn pha quét an ninh (Searchlights) + 4 Cổng Dịch Chuyển 2 Cụm Phòng + Blade Arm Part Area 1: Hành lang bảo tàng tối có Đèn pha quét an ninh và Cụm cổng Cell 1 (P1–P2) chứa Heart Tank. Mid-Gate: Phá Đại Cột Totem. Area 2: Cụm cổng Cell 2 (P3–P4) với bẫy đá lăn, Blade Arm Part và cổng Alt Path. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: 5 Đèn pha quét an ninh (Searchlights), 4 Cổng dịch chuyển Cell 1 & Cell 2, Đại Cột Totem cổ, Đá lăn Boulder, Capsule Blade Arm. 🧱 Element & Tileset:",
+  "bossName": "Ground Scaravich",
+  "weak": "Yammar Option",
+  "attacks": "Ground Dash (Rolling Rock): Đẩy tảng đá khổng lồ lăn ngang đấu trường, càng lăn càng to. Burrow Drop: Đào lên trần rồi thả đá vụn xuống đầu người chơi. Boulder Toss: Hất đá bay theo đường parabol. Overdrive (Phase 2): Tạo tảng đá năng lượng khổng lồ vỡ ra nhiều mảnh."
+ },
+ "x6_f1_nzero": {
+  "title": "Nightmare Space (Nightmare Zero)",
+  "boss": "boss-x6_f1_nzero",
+  "theme": "shadow",
+  "capsules": [],
+  "summary": "X6-F1 Nightmare Space (Nightmare Zero) — Boss: Nightmare Zero 7600×960px • #743fb415e3 📋 Copy Prompt AI ℹ️ Màn tái ngộ Zero: Đánh bại Nightmare Zero để giải cứu & mở khóa Zero thật cho các tầng phòng thí nghiệm Gate. Không gian ác mộng nhiễu tối + Đèn quét ảo ảnh + Bệ Blink & Đảo trọng lực Area 1: Hành lang không gian tối với đèn quét ảo ảnh và bệ Blink vượt vực. Area 2: Vùng đảo trọng lực dẫn tới trận tái đấu định mệnh với Nightmare Zero. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Màn tối nhiễu không gian, Đèn quét ảo ảnh, Bệ Cyber nhấp nháy, Vùng đảo trọng lực. 🧱 Element & Tileset:",
+  "bossName": "Nightmare Zero",
+  "weak": "X-Buster / Z-Saber",
+  "attacks": "Nightmare Saber: Chém kiếm tím tạo sóng năng lượng tầm xa. Sentsuizan Dive: Nhảy lên rồi đâm chéo xuống mặt đất. Earthquake Punch: Đấm xuống đất tạo sóng địa chấn hất tung đá. Overdrive (Phase 2): Tốc độ di chuyển tăng vọt kèm bóng mờ tím."
+ },
+ "x6_f2_nmother": {
+  "title": "Gate's Secret Lab 1 (Nightmare Mother)",
+  "boss": "boss-x6_f2_nmother",
+  "theme": "fire",
+  "capsules": [],
+  "summary": "X6-F2 [YT 01:19] Gate's Secret Lab 1 (Nightmare Mother) — Boss: Nightmare Mother 7600×960px • #c31b717499 📋 Copy Prompt AI ℹ️ Tầng 1 Phòng thí nghiệm Gate: Khuyên mặc trọn bộ Blade Armor hoặc Shadow Armor (miễn nhiễm gai) vừa thu thập đủ 4 mảnh. Area 1: Biển gai & Bệ di động -> Area 2: Trục leo dọc dung nham dâng cao Area 1: Hành lang phòng thí nghiệm tầng 1 phủ gai sàn dày đặc với bệ di động vượt vực. Area 2: Trục leo thẳng đứng dài 600px với dung nham dâng từ dưới lên dẫn tới Nightmare Mother. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Sàn gai dày đặc, Bệ di động dọc/ngang, Trục leo dọc dung nham dâng, Bệ phản lực Thruster. 🧱 Element & Tileset:",
+  "bossName": "Gate",
+  "weak": "Bắn vỡ Nightmare Orb để mảnh vỡ dội ngược vào Gate",
+  "attacks": "Nightmare Orb: Tạo cầu năng lượng nhiều màu; bắn vỡ cầu để mảnh vỡ văng ngược gây sát thương cho Gate. Floor Destruction: Phá hủy bệ đứng trong đấu trường để tạo hố vực. Beam Sweep: Bay lơ lửng bắn tia laser quét chéo. Overdrive (Phase 2): Thả liên tiếp 3 quả cầu Nightmare kết hợp tia laser."
+ },
+ "x6_f3_highmax": {
+  "title": "Gate's Secret Lab 2 (High Max)",
+  "boss": "boss-x6_f3_highmax",
+  "theme": "core",
+  "capsules": [],
+  "summary": "X6-F3 [YT 01:22] Gate's Secret Lab 2 (High Max) — Boss: High Max 7600×960px • #9204835424 📋 Copy Prompt AI ℹ️ Tầng 2 Phòng thí nghiệm Gate: Dùng Charge Saber của Blade Armor (giữ Up + Release) để làm choáng lớp giáp bất khả xâm phạm của High Max. Vực gai toàn khu vực + Chuỗi bệ nhỏ & Cột Totem chặn bệ + Băng chuyền laser Thử thách kiểm soát nhảy chính xác nhất game: cả Area 1 và Area 2 đều là vực gai tử thần với chuỗi 10 bệ nhỏ lơ lửng, tia laser quét và 2 cột Totem chặn ngay trên bệ nhảy dẫn tới High Max. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Vực gai toàn khu vực giữa, 10 Bệ nhỏ lơ lửng, 2 Cột Totem chặn bệ, Tia laser quét dọc. 🧱 Element & Tileset:",
+  "bossName": "Gate",
+  "weak": "Bắn vỡ Nightmare Orb để mảnh vỡ dội ngược vào Gate",
+  "attacks": "Nightmare Orb: Tạo cầu năng lượng nhiều màu; bắn vỡ cầu để mảnh vỡ văng ngược gây sát thương cho Gate. Floor Destruction: Phá hủy bệ đứng trong đấu trường để tạo hố vực. Beam Sweep: Bay lơ lửng bắn tia laser quét chéo. Overdrive (Phase 2): Thả liên tiếp 3 quả cầu Nightmare kết hợp tia laser."
+ },
+ "x6_f4_gate": {
+  "title": "Gate's Secret Lab 3 (Gate)",
+  "boss": "boss-x6_f4_gate",
+  "theme": "core",
+  "capsules": [
+   "🛡️ Secret Light Capsule Act II — Ultimate Armor (X=1850, Y=320 — Trần biển gai Area 1): Kích hoạt Vùng Đảo Trọng Lực (X=1150) lộn ngược lên trần nhà đi qua biển gai 1,150px để nhận trọn bộ Ultimate Armor (Nova Strike bất tử!). Vùng Đảo Trọng Lực lấy Secret Ultimate Armor -> Đấu trường Gate có vực thẳm giữa sàn! Area 1: Kích hoạt Vùng Đảo Trọng Lực đi ngược trên trần để vượt biển gai 1,150px và mở Secret Capsule ULTIMATE ARMOR. Area 2: Trạm hồi máu đầy trước phòng Gate. Đấu trường Gate có vực thẳm ở giữa sàn kèm 3 bệ lơ lửng!"
+  ],
+  "summary": "X6-F4 [YT 01:25] Gate's Secret Lab 3 (Gate) — Boss: Gate 🛡️ ULTIMATE ARMOR (FULL) 7600×960px • #7c34a46659 📋 Copy Prompt AI 🛡️ Secret Light Capsule Act II — Ultimate Armor (X=1850, Y=320 — Trần biển gai Area 1): Kích hoạt Vùng Đảo Trọng Lực (X=1150) lộn ngược lên trần nhà đi qua biển gai 1,150px để nhận trọn bộ Ultimate Armor (Nova Strike bất tử!). Vùng Đảo Trọng Lực lấy Secret Ultimate Armor -> Đấu trường Gate có vực thẳm giữa sàn! Area 1: Kích hoạt Vùng Đảo Trọng Lực đi ngược trên trần để vượt biển gai 1,150px và mở Secret Capsule ULTIMATE ARMOR. Area 2: Trạm hồi máu đầy trước phòng Gate. Đấu trường Gate có vực thẳm ở giữa sàn kèm 3 bệ lơ lửng! 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Vùng Đảo Trọng Lực, Capsule Ultimate Armor bí mật, Trạm hồi máu, Đấu trường Gate có vực thẳm giữa sàn + 3 bệ nổi. 🧱 Element & Tileset:",
+  "bossName": "Gate",
+  "weak": "Bắn vỡ Nightmare Orb để mảnh vỡ dội ngược vào Gate",
+  "attacks": "Nightmare Orb: Tạo cầu năng lượng nhiều màu; bắn vỡ cầu để mảnh vỡ văng ngược gây sát thương cho Gate. Floor Destruction: Phá hủy bệ đứng trong đấu trường để tạo hố vực. Beam Sweep: Bay lơ lửng bắn tia laser quét chéo. Overdrive (Phase 2): Thả liên tiếp 3 quả cầu Nightmare kết hợp tia laser."
+ },
+ "x6_f5_bossrush": {
+  "title": "Final Lab (8-Boss Rush -> Hell Sigma)",
+  "boss": "boss-x6_f5_bossrush",
+  "theme": "core",
+  "capsules": [],
+  "summary": "X6-FINAL [YT 01:29] Final Lab (8-Boss Rush -> Hell Sigma) — Boss: Hell Sigma 7600×960px • #4a61102f3f 📋 Copy Prompt AI ℹ️ Trận quyết chiến cuối cùng: Sử dụng Ultimate Armor vừa nhận ở Lab 3 hoặc Black Zero để chinh phục 8-Boss Rush và trùm cuối Hell Sigma. Trục rơi bẫy gai & Băng chuyền -> Trung tâm 8 Cổng Dịch Chuyển Boss Rush -> Hell Sigma Màn cuối cùng dài 7,600px: vượt qua hành lang bẫy gai, băng chuyền và bệ di chuyển để tiến vào Trung tâm 8 Cổng Dịch Chuyển Boss Rush trước khi mở cửa quyết chiến trùm cuối Hell Sigma. 🎯 Cơ chế di chuyển: 🗺️ Kiến trúc 4 phân khu: Hành lang bẫy gai & băng chuyền, Trung tâm 8 Cổng Dịch Chuyển Boss Rush, Hồi máu giữa trận, Cổng quyết chiến Hell Sigma. 🧱 Element & Tileset:"
+ }
+}

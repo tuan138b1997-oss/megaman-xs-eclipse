@@ -1,63 +1,70 @@
 # Kịch bản & sơ đồ toàn chiến dịch
 
-Màn mẫu đã duyệt: **Lò Nham Thạch** (`x5_dinorex`) — xem `lo-nham-thach-kich-ban.md`. 25 màn còn lại dùng cùng khung: phòng có mục đích rõ, mỗi màn 1 cơ chế chính + 1 phụ, đoạn dọc, checkpoint giữa, bí mật cần giáp/kỹ năng.
+Màn mẫu đã duyệt: **Lò Nham Thạch** (`x5_dinorex`), xem `../lo-nham-thach-kich-ban.md`. 25 màn còn lại được thiết kế theo đúng chuẩn đó: sơ đồ có địa hình theo ô (nền, dốc, hố, giếng dọc, kệ, bẫy, đường đi chính, lối bí mật), kịch bản từng phòng có tọa độ và thông số nhịp, bảng vật phẩm/kẻ địch, phần engine cần bổ sung, danh sách hình cần vẽ và dữ liệu JSON (`data/<id>.level.json`).
 
-## Chuẩn kích thước
-Theo màn mẫu Lò Nham Thạch: khung hình 640×360 px = 20×11.25 ô; hành lang trần→sàn 9 ô, khối trần luôn nằm trong khung; phòng nhảy bệ/vực/nước 11 ô; phòng 2 tầng 17 ô (hai hành lang chồng nhau); đấu trường cao 11 ô, rộng 20–30 ô; giếng rộng 12–20 ô, leo bằng đá tường và kệ nghỉ. X nhảy cao ~2.6 ô (vy 520), xa ~5 ô: gờ trên đường chính ≤ 2.5 ô, hố ≤ 4 ô; cao/xa hơn phải dùng đá tường, lướt-nhảy hoặc giáp, và chỉ dùng cho bí mật.
+![Tổng quan 25 màn](tong-quan-25-man.png)
 
-![Tổng quan](tong-quan-25-man.png)
+## Quy ước chung
 
-## Danh sách màn
+- **Kích thước (chuẩn đã duyệt):** khung hình 640×360 px = 20×11.25 ô; hành lang trần 1 ô + trong lòng 9 ô, trần luôn nằm trong khung; phòng nhảy bệ 11 ô; phòng 2 tầng 17 ô; đấu trường cao 11 ô, rộng 20–30 ô; giếng rộng 12–20 ô.
+- **Nhảy:** X nhảy cao ~2.6 ô, xa ~5 ô. Trên đường chính gờ ≤ 2.5 ô, nhảy xa ≤ 5 ô, lướt-nhảy ≤ 7 ô; mọi đường chính được **kiểm tra tự động** (`tools/lib.py`).
+- Mỗi màn có **2 Area**, **1 mini-boss** giữa màn, **2 checkpoint**, **4 Reploid**, 11–14 kẻ địch thường ở màn boss, 7–10 ở màn pháo đài (Sniper / Drone / Brute), đặt có chủ đích.
+- Màn boss: thêm **1 Heart Tank, 1 Sub-Tank** và capsule giáp đúng theo dữ liệu game. Đỉnh độ khó 7/10 ở đoạn cao trào.
+- Màn pháo đài: không có Heart Tank/Sub-Tank (như dòng X gốc), có trạm năng lượng lớn trước boss; chỉ Zero Space 3 và Gate Lab 3 có capsule bí mật. Đỉnh độ khó 8/10.
+- Mọi bẫy chết ngay đều có báo trước; không có đoạn tự cuộn bắt buộc (đoạn tự cuộn gốc làm lại thành đoạn đuổi do người chơi điều khiển).
+- Boss giữ bộ chiêu và điểm yếu theo dữ liệu game; pha 2 (dưới 50% HP) thêm một thay đổi môi trường gắn với cơ chế của màn.
 
-| Màn | Boss | Chủ đề | Cơ chế chính | Độ khó cao nhất | Bí mật |
+## Mở đầu và 7 màn boss X5 (Act I)
+
+| Màn | Boss | Capsule | Cơ chế chính | Cao trào | Bí mật |
 |---|---|---|---|---|---|
-| [Cao tốc Neo Arcadia](intro.md) | 1D-1000 → High Max | intro | Bảng chỉ dẫn nút, Tường bê tông phá bằng Ride Armor | 3 | 2 |
-| [Tàu bọc thép](x5_grizzly.md) | Crescent Grizzly | metal | Khớp nối toa tách theo thời gian, Hầm thấp quét qua nóc tàu (phải cúi/lướt) | 5 | 3 |
-| [Căn cứ đáy biển](x5_makkoeen.md) | Tidal Makkoeen | water | Công tắc rút/dâng mực nước, Dòng chảy ngang dưới nước | 5 | 3 |
-| [Nhà máy điện](x5_kraken.md) | Volt Kraken | volt | Ride Chaser chạy tự do (không tự cuộn), Sàn điện theo nhịp | 5 | 3 |
-| [Phòng thí nghiệm Laser](x5_hotarunicus.md) | Shining Hotarunicus | volt | Công tắc quang học, Gương xoay đổi hướng tia | 5 | 3 |
-| [Rừng đột biến](x5_rosered.md) | Spike Rosered | nature | Dây leo đu, Bùn làm chậm | 5 | 3 |
-| [Đài thiên văn](x5_necrobat.md) | Dark Necrobat | shadow | Khối nổi trôi chậm, Thấu kính đẩy lùi | 5 | 3 |
-| [Không quân](x5_pegacion.md) | Spiral Pegacion | wind | Boong nghiêng theo nhịp, Khối mây cứng trôi | 5 | 3 |
-| [Zero Space 1](x5_f1_dynamo.md) | Dynamo | shadow | Laser quét toàn màn hình + hốc trú ẩn | 6 | 0 |
-| [Zero Space 2](x5_f2_shadow.md) | Shadow Devil | shadow | Chuỗi bệ đổi pha dài | 6 | 0 |
-| [Zero Space 3](x5_f3_rangda.md) | Rangda Bangda W | shadow | Trọng lực đổi chiều theo nhịp trong giếng | 6 | 1 |
-| [Zero Space Final](x5_f4_sigma.md) | Final Sigma W | core | Sàn sụp từng mảng trong trận boss | 6 | 0 |
-| [Đền Inami](x6_turtloid.md) | Rainy Turtloid | nature | Mưa axit gây sát thương theo thời gian, Mái che an toàn | 5 | 4 |
-| [Viện Laser](x6_sheldon.md) | Shield Sheldon | shadow | Tường giả đi xuyên được, Gương xoay bằng đạn | 5 | 3 |
-| [Trung tâm vũ khí](x6_mijinion.md) | Infinity Mijinion | metal | Vòng ngắm Illumina, Bệ treo cáp đung đưa | 6 | 3 |
-| [Khu Amazon](x6_yammark.md) | Commander Yammark | nature | Nhánh đường đi tách đôi, Khúc gỗ trôi | 5 | 3 |
-| [Phòng thí nghiệm tái chế](x6_shark.md) | Metal Shark Player | metal | Tường ép đuổi tự cuộn, Tường rác phá bằng Ride Armor | 6 | 3 |
-| [Khu dung nham](x6_heatnix.md) | Blaze Heatnix | fire | Bệ phản lực Thruster, Vòng lửa Donut | 6 | 3 |
-| [Bắc Cực](x6_wolfang.md) | Blizzard Wolfang | ice | Tường băng trượt nhanh, Tuyết lở đuổi khi đang cưỡi Ride Chaser | 5 | 3 |
-| [Bảo tàng Trung tâm](x6_scaravich.md) | Ground Scaravich | metal | Báo động khi bị đèn pha phát hiện, Cột Totem chặn đường | 5 | 3 |
-| [Không gian ác mộng](x6_f1_nzero.md) | Nightmare Zero | shadow | Tầm nhìn hạn chế, Bệ ảo ảnh | 6 | 0 |
-| [Phòng thí nghiệm Gate 1](x6_f2_nmother.md) | Nightmare Mother | fire | Bệ xoay quanh trục | 7 | 0 |
-| [Phòng thí nghiệm Gate 2](x6_f3_highmax.md) | High Max | core | Totem chặn bệ | 7 | 0 |
-| [Phòng thí nghiệm Gate 3](x6_f4_gate.md) | Gate | core | Tinh thể Nightmare nổ | 6 | 1 |
-| [Phòng thí nghiệm cuối](x6_f5_bossrush.md) | 8 boss → Hell Sigma | core | Gai nhô theo nhịp trong trục rơi | 7 | 0 |
+| [Cao tốc Neo Arcadia](intro.md) | 1D-1000 → High Max | Fourth Armor (bộ đầy đủ) | Bảng chỉ dẫn nút hiện theo vùng; Hố "dạy chơi" (rơi mất máu, không chết) | R4 Tầng trên cao tốc (3) | capsule, Heart Tank, Sub-Tank |
+| [Tàu bọc thép](x5_grizzly.md) | Crescent Grizzly | Falcon Foot | Gió ngược trên nóc toa; Khớp nối toa tách theo thời gian | R6 Nóc toa đầu và hầm (7) | capsule, Heart Tank, Sub-Tank |
+| [Căn cứ đáy biển](x5_makkoeen.md) | Tidal Makkoeen | Falcon Head | Vùng nước (trọng lực 0.32); Mực nước thay đổi theo công tắc | R5 Ống hải lưu (7) | capsule, Heart Tank, Sub-Tank |
+| [Nhà máy điện](x5_kraken.md) | Volt Kraken | Falcon Arm | Ride Chaser chạy tự do; Tấm boost | R4 Tháp tụ điện (7) | capsule, Heart Tank, Sub-Tank |
+| [Phòng thí nghiệm Laser](x5_hotarunicus.md) | Shining Hotarunicus | Falcon Body | Tia laser; Công tắc quang học | R5 Vực hologram (7) | capsule, Heart Tank, Sub-Tank |
+| [Rừng đột biến](x5_rosered.md) | Spike Rosered | Gaea Foot | Bụi gai độc; Nấm bật | R6 Thân cây cổ thụ (7) | capsule, Heart Tank, Sub-Tank |
+| [Đài thiên văn](x5_necrobat.md) | Dark Necrobat | Gaea Head | Vùng trọng lực tùy chỉnh; Vùng làm chậm thời gian | R6 Quỹ đạo hố đen (7) | capsule, Heart Tank, Sub-Tank |
+| [Không quân](x5_pegacion.md) | Spiral Pegacion | Gaea Body | Gió giật theo lịch; Luồng khí nâng | R5 Tầng mây cao (7) | capsule, Heart Tank, Sub-Tank |
 
-## Giáp / kỹ năng mở bí mật
-| Màn | Bí mật | Cách lấy |
-|---|---|---|
-| Cao tốc Neo Arcadia | Capsule Fourth Armor (R5) | Dùng Ride Armor đấm vỡ tường tầng 2. |
-| Tàu bọc thép | Capsule Falcon Foot (R5) | Cần Ride Armor từ R4. |
-| Căn cứ đáy biển | Capsule Falcon Head (R3) | Đá tường trong nước lên hốc trần. |
-| Nhà máy điện | Capsule Falcon Arm (R4) | Đỉnh tháp tụ điện. |
-| Phòng thí nghiệm Laser | Capsule Falcon Body (R3) | Sau công tắc quang học #2. |
-| Rừng đột biến | Capsule Gaea Foot (R6) | Tán cây cổ thụ (Falcon bay hoặc nấm + lướt trên không). |
-| Đài thiên văn | Capsule Gaea Head (R4) | Đỉnh đài thiên văn cuối Area 1. |
-| Không quân | Capsule Gaea Body (R5) | Boong trên cùng chiến hạm 4. |
-| Zero Space 3 | Secret Capsule Ultimate X5 / Black Zero (R3) | Hốc trần trong vùng đảo trọng lực. |
-| Đền Inami | Capsule Shadow Body (R4) | Mái đền tầng cao. |
-| Viện Laser | Capsule Shadow Head (R4) | Xuyên tường giả ở tầng trên. |
-| Trung tâm vũ khí | Capsule Blade Head (R4) | Bệ cáp cuối Area 2. |
-| Khu Amazon | Capsule Blade Foot (R3a) | Nhánh trên. |
-| Phòng thí nghiệm tái chế | Capsule Shadow Foot (R3) | Sau tường rác thứ 2. |
-| Khu dung nham | Capsule Shadow Arm (R5) | Đỉnh trục leo dung nham. |
-| Bắc Cực | Capsule Blade Body (R3) | Vách băng cao. |
-| Bảo tàng Trung tâm | Capsule Blade Arm (R4) | Hốc cao Cell 2. |
-| Phòng thí nghiệm Gate 3 | Secret Ultimate Armor (R1) | Trần biển gai trong vùng đảo trọng lực. |
+## 4 màn pháo đài Zero Space (X5)
+
+| Màn | Boss | Capsule | Cơ chế chính | Cao trào | Bí mật |
+|---|---|---|---|---|---|
+| [Zero Space 1](x5_f1_dynamo.md) | Dynamo | — | Laser quét toàn chiều cao; Hốc trú trong sàn | R6 Hành lang tử thần (8) | — |
+| [Zero Space 2](x5_f2_shadow.md) | Shadow Devil | — | Bệ 2 pha; Luồng khí nâng bật/tắt theo nhịp | R6 Luồng nâng 2 (8) | — |
+| [Zero Space 3](x5_f3_rangda.md) | Rangda Bangda W | bí mật Black Zero / Ultimate Armor X5 | Vùng đảo trọng lực; Gai sàn/vách/trần | R4 Biển gai trọng lực ngược (8) | capsule |
+| [Zero Space Final](x5_f4_sigma.md) | Final Sigma W | — | Dùng lại đối tượng của Act I; Bệ chạy vòng quanh tâm trong trục dọc | R5 Trục lõi virus (8) | — |
+
+## 8 màn boss X6 (Act II)
+
+| Màn | Boss | Capsule | Cơ chế chính | Cao trào | Bí mật |
+|---|---|---|---|---|---|
+| [Đền Inami](x6_turtloid.md) | Rainy Turtloid | Shadow Body | Mưa axit theo nhịp; Cổng mở bằng công tắc | R6 Hồ axit (7) | capsule, Heart Tank, Sub-Tank |
+| [Viện Laser](x6_sheldon.md) | Shield Sheldon | Shadow Head | Sàn và vách kính trơn; Tia laser đi theo đường gương | R4 Bệ kính cao (7) | capsule, Heart Tank, Sub-Tank |
+| [Trung tâm vũ khí](x6_mijinion.md) | Infinity Mijinion | Blade Head | Tâm ngắm bám người chơi; Bệ treo cáp | R3 Vực cáp lớn (7) | capsule, Heart Tank, Sub-Tank |
+| [Khu Amazon](x6_yammark.md) | Commander Yammark | Blade Foot | Khúc gỗ trôi; Bệ hoa nở/khép theo nhịp | R7 Thác nước (7) | capsule, Heart Tank, Sub-Tank |
+| [Phòng thí nghiệm tái chế](x6_shark.md) | Metal Shark Player | Shadow Foot | Trần ép toàn phòng; Khối rác rơi theo làn và lịch | R6 Hầm tường ép đuổi (7) | capsule, Heart Tank, Sub-Tank |
+| [Khu dung nham](x6_heatnix.md) | Blaze Heatnix | Shadow Arm | Cột dung nham phun theo nhịp; Bệ phản lực bay ngang có hết nhiên liệu | R5 Trục núi lửa (7) | capsule, Heart Tank, Sub-Tank |
+| [Bắc Cực](x6_wolfang.md) | Blizzard Wolfang | Blade Body | Ride Chaser đổ dốc; Tảng băng lăn | R6 Sông băng trôi (7) | capsule, Heart Tank, Sub-Tank |
+| [Bảo tàng Trung tâm](x6_scaravich.md) | Ground Scaravich | Blade Arm | Đèn pha quét theo đường cố định; Cổng dịch chuyển theo cặp | R6 Cụm phòng Cell 2 (7) | capsule, Heart Tank, Sub-Tank |
+
+## 5 màn pháo đài Gate Lab (X6)
+
+| Màn | Boss | Capsule | Cơ chế chính | Cao trào | Bí mật |
+|---|---|---|---|---|---|
+| [Không gian ác mộng](x6_f1_nzero.md) | Nightmare Zero | — | Vùng tối nhiễu; Bệ ảo ảnh và bệ thật phản ứng ngược nhau với vệt đèn quét | R5 Giếng hai chiều (8) | — |
+| [Phòng thí nghiệm Gate 1](x6_f2_nmother.md) | Nightmare Mother | — | Bệ di động ngang; Dung nham dâng liên tục có tăng tốc | R3 Trục thang máy dung nham (8) | — |
+| [Phòng thí nghiệm Gate 2](x6_f3_highmax.md) | High Max | — | Bệ nhỏ 2 ô; Tia laser dọc chạy ngang | R5 Chuỗi bệ nhỏ 2 (8) | — |
+| [Phòng thí nghiệm Gate 3](x6_f4_gate.md) | Gate | bí mật Ultimate Armor | Tinh thể Nightmare; Vùng đảo trọng lực bật bằng công tắc ngụy trang | R5 Giếng tinh thể (8) | capsule |
+| [Phòng thí nghiệm cuối](x6_f5_bossrush.md) | 8 boss → Hell Sigma | — | Băng chuyền và trần gai; Sảnh 8 cổng | R3 Cầu thang Sigma (8) | — |
+
+## Công cụ
+
+- Dữ liệu từng màn: `tools/stages/<id>.py` (phòng ghép từ khối, thực thể, đường đi, kịch bản).
+- Thư viện: `tools/lib.py` (xếp phòng, kiểm tra đường chính, vẽ sơ đồ, viết kịch bản, xuất JSON); khối phòng: `tools/kit.py`.
+- `python3 tools/gen2.py` trong thư mục này sinh lại toàn bộ sơ đồ, kịch bản, JSON, README và ảnh tổng quan; `python3 tools/gen2.py <id>` sinh một màn.
+- Dữ liệu boss/capsule lấy từ `campaign-data.js` vào `tools/game_data.json`.
 
 ## Nguồn tham khảo
 Nguồn chính là mô tả cơ chế và vị trí capsule sẵn có trong dữ liệu dự án (`campaign-data.js`). Bổ sung thêm các mẫu thiết kế từ dòng X:
